@@ -1,0 +1,39 @@
+4
+
+*Duluth
+Smugglers-Run 327 C 1790 L 70 C 100
+Mustang(WOF) 290 ME 1720 E 120 W 80
+American-Eagle-Blue 297 EA 1660 E 120 I 70
+Green-Danky 292 VME 1710 M 100 G 120
+
+*Mankato
+Framer 328 VG 1780 M 60 S 50
+Bullseye 248 E 1710 M 40 L 10
+Carpainter 291 LRV 1690 A 70 S 70
+Terry 259 MF 1710 M 70 W 30
+
+*Minneapolis
+Frank 294 MV 1680 R 90 G 120
+Vigilante 319 R 1840 V 110 S 150
+Misato 330 E 1750 S 70 A 50
+Ethan 179 E 1720 R 50 S 30
+
+*Rochester
+Knight 329 M 1770 W 80 M 50
+Morty 286 S 1740 V 20 E 10
+Wattson 340 L 1730 W 120 E 120
+Shovel-Knight F50 M 1720 E 50 M 50
+
+*St Cloud
+Wolf-Legion 307 M 1820 A 120 E 180
+Backlot(KI) 168 RE 1710 F 70 A 70
+Biggs F77 M 1700 L 40 F 40
+Viscious 334 RV 1740 R 90 W 50
+
+*St Paul
+Bayonetta 289 MVG 1740 A 70 S 100
+Don-Corneo 332 V 1740 A 40 M 70
+Radical-Ed 136 EGL 1730 C 90 F 20
+May(RSE) 231 MR 1790 W 120 F 120
+
+/name pos types base strType strVal wkType wkVal
