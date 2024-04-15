@@ -1,10 +1,10 @@
 4
 
 *Macon
-Ice-Climbers 298 MI 1630 A 110 C 120
-Rupert-Price F80 M 1680 E 190 I 60
-Vortex(Caro) 275 RV 1590 R 220 M 30
-Eve 300 MA 1630 A 80 V 80
+Isaac L MI 1630 A 110 C 120
+Rupert M M 1680 E 190 I 60
+Valerie M RV 1590 R 220 M 30
+Eve E MA 1630 A 80 V 80
 
 *Minneapolis
 Frank 294 MV 1680 R 90 G 120
