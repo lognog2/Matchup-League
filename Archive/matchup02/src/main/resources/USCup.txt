@@ -13,10 +13,10 @@ Misato 330 E 1750 S 70 A 50
 Ethan 179 E 1720 R 50 S 30
 
 *Miami
-Mach-Tower 284 M 1700 I 70 L 30
-Ryuji 50 MRL 1850 E 80 A 80
-Kephen 201 M 1710 M 100 R 100
-Anaconda 269 RGW 1700 G 40 F 30
+Matthew 284 M 1700 I 70 L 30
+Reynold 50 MRL 1850 E 80 A 80
+Kelsey 201 M 1710 M 100 R 100
+Abdul 269 RGW 1700 G 40 F 30
 
 *Tallahassee
 Flik 245 MC 1680 E 30 V 20
