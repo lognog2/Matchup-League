@@ -1,0 +1,6 @@
+Duluth: 74
+Mankato: 39
+Minneapolis: 206
+Rochester: 51
+St Cloud: 51
+St Paul: 150

@@ -1,0 +1,11 @@
+Broward: 144
+Fort Myers: 138
+Jacksonville: 249
+Miami: 431
+Orlando: 396
+Palm Beach: 99
+Pensacola: 109
+St Petersburg: 96
+Tallahassee: 66
+Tampa: 409
+Space Coast
