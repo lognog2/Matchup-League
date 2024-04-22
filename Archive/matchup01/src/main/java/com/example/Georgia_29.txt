@@ -2,33 +2,33 @@
 4
 
 *Atlanta
-Mark L EC 1750 M 70 A 40
-Caroline M RGA 1660 A 70 R 40
-Casie M CV 1640 E 90 C 50
+Mater L EC 1750 M 70 A 40
+Carolina-Cyclone M RGA 1660 A 70 R 40
+Chick-Hicks M CV 1640 E 90 C 50
 Xavier E WM 1600 G 40 W 10
 
 *Augusta
-Bailey L MRV 1630 V 160 M 100
-Paul L E 1630 M 140 L 100
-Mike M G 1750 L 10 F 10
-May E FR 1560 G 80 R 40
+Boo-Blasters L MRV 1630 V 160 M 100
+Planet-Snoopy L E 1630 M 140 L 100
+Mr.-Saturn M G 1750 L 10 F 10
+Mullholland-Madness E FR 1560 G 80 R 40
 
 *Columbus
-Fred L MA 1640 A 60 I 40
-Brody M M 1690 V 120 A 120
+Falcon's-Fury L MA 1640 A 60 I 40
+Brawly M M 1690 V 120 A 120
 Winry M C 1630 S 20 E 40
-Bruster E G 1600 I 50 E 30
+Boomerang(WOF) E G 1600 I 50 E 30
 
 *Macon
-Isaac L MI 1630 A 110 C 120
-Rupert M M 1680 E 190 I 60
-Valerie M RV 1590 R 220 M 30
+Ice-Climbers L MI 1630 A 110 C 120
+Rupert-Price M M 1680 E 190 I 60
+Vortex(Caro) M RV 1590 R 220 M 30
 Eve E MA 1630 A 80 V 80
 
 *Savannah
-Will L A 1620 C 110 A 80
-Gabriel L MV 1580 S 70 R 100
-Ally M AE 1660 E 110 I 70
-Charles E VA 1630 R 150 E 100
+Windseeker(CP) L A 1620 C 110 A 80
+Goblin L MV 1580 S 70 R 100
+American-Eagle-Red M AE 1660 E 110 I 70
+Charles-Muntz E VA 1630 R 150 E 100
 
 /name pos types base strType strVal wkType wkVal

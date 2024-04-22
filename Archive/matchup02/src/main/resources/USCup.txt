@@ -1,25 +1,25 @@
 4
 
 *Macon
-Isaac L MI 1630 A 110 C 120
-Rupert M M 1680 E 190 I 60
-Valerie M RV 1590 R 220 M 30
-Eve E MA 1630 A 80 V 80
+Ice-Climbers 298 MI 1630 A 110 C 120
+Rupert-Price F80 M 1680 E 190 I 60
+Vortex(Caro) 275 RV 1590 R 220 M 30
+Eve 300 MA 1630 A 80 V 80
 
 *Minneapolis
 Frank 294 MV 1680 R 90 G 120
-Vicki 319 R 1840 V 110 S 150
+Vigilante 319 R 1840 V 110 S 150
 Misato 330 E 1750 S 70 A 50
 Ethan 179 E 1720 R 50 S 30
 
 *Miami
-Matthew 284 M 1700 I 70 L 30
-Reynold 50 MRL 1850 E 80 A 80
-Kelsey 201 M 1710 M 100 R 100
-Abdul 269 RGW 1700 G 40 F 30
+Mach-Tower 284 M 1700 I 70 L 30
+Ryuji 50 MRL 1850 E 80 A 80
+Kephen 201 M 1710 M 100 R 100
+Anaconda 269 RGW 1700 G 40 F 30
 
 *Tallahassee
-Phil 245 MC 1680 E 30 V 20
-Carl 321 R 1830 S 60 A 30
+Flik 245 MC 1680 E 30 V 20
+Carl-Fredrickson 321 R 1830 S 60 A 30
 Ken 341 MF 1720 F 200 R 120
-Steven 313 MG 1760 F 50 V 60
+Hermes 313 MG 1760 F 50 V 60
