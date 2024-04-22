@@ -1,0 +1,34 @@
+Fighter Name,Types,Base,strT,strVal,wkT,wkVal
+Frost Wizard,IGR,1660,C,60,F,80
+Frost Giant,IE,1750,W,120,F,60
+Frost Soldier,IM,1650,W,50,M,50
+Frost Dragon,IA,1700,C,100,F,150
+Flame Wizard,FGR,1680,I,90,W,40
+Flame Giant,FE,1600,C,80,W,60
+Flame Soldier,FM,1650,E,70,W,60
+Flame Dragon,FA,1740,C,100,W,140
+Lightning Wizard,LGR,1730,G,60,E,50
+Lightning Giant,LE,1640,C,100,R,80
+Lightning Soldier,LM,1630,W,90,M,120
+Lightning Dragon,LAR,1680,A,110,M,90
+Cyborg Wizard,CGR,1640,R,70,F,50
+Cyborg Dragon,CAR,1680,G,130,L,100
+Cyborg Giant,CE,1700,M,100,E,60
+Cyborg Soldier,CM,1750,M,150,I,150
+Sky Wizard,AGR,1620,I,50,G,90
+Sky Giant,AE,1640,F,50,M,70
+Sky Soldier,AM,1640,R,130,E,120
+Sky Dragon,AR,1670,L,40,F,80
+Aquatic Wizard,WGR,1650,F,120,L,150
+Aquatic Giant,WE,1640,F,50,A,100
+Aquatic Soldier,WM,1600,R,60,A,90
+Aquatic Dragon,WAR,1630,W,110,L,120
+High Sorcerer,GR,1850,G,70,S,200
+Magic Soldier,GM,1750,M,120,G,100
+Magic Giant,GE,1700,R,100,E,140
+Wyvern,GAR,1800,M,90,G,120
+Bigair,ASE,1800,G,60,F,80
+Yellow Danky,MGL,1750,V,150,E,100
+Green Danky,ME,1710,E,70,W,70
+Blue Danky,MA,1650,I,40,F,30
+Muco,RV,1700,M,150,E,70

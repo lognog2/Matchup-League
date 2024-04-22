@@ -1,0 +1,60 @@
+1	Bigair	ASE	1800	G	60	F	80
+2	Yellow Danky	MGL	1750	V	150	E	100
+3	Green Danky	ME	1710	E	70	W	70
+4	Blue Danky	MA	1650	I	40	F	30
+5	Muco	RV	1700	M	150	E	70
+6	Frost Wizard	IGR	1660	C	60	F	80
+7	Frost Giant	IE	1750	W	120	F	60
+8	Frost Soldier	IM	1650	W	50	M	50
+9	Frost Dragon	IA	1700	C	100	F	150
+10	Flame Wizard	FGR	1680	I	90	W	40
+11	Flame Giant	FE	1600	C	80	W	60
+12	Flame Soldier	FM	1650	E	70	W	60
+13	Flame Dragon	FA	1740	C	100	W	140
+14	Lightning Wizard	LGR	1730	G	60	E	50
+15	Lightning Giant	LE	1640	C	100	R	80
+16	Lightning Soldier	LM	1630	W	90	M	120
+17	Lightning Dragon	LAR	1680	A	110	M	90
+18	Cyborg Wizard	CGR	1640	R	70	F	50
+19	Cyborg Dragon	CAR	1680	G	130	L	100
+20	Cyborg Giant	CE	1700	M	100	E	60
+21	Cyborg Soldier	CM	1750	M	150	I	150
+22	Sky Wizard	AGR	1620	I	50	G	90
+23	Sky Giant	AE	1640	F	50	M	70
+24	Sky Soldier	AM	1640	R	130	E	120
+25	Sky Dragon	AR	1670	L	40	F	80
+26	Aquatic Wizard	WGR	1650	F	120	L	150
+27	Aquatic Giant	WE	1640	F	50	A	100
+28	Aquatic Soldier	WM	1600	R	60	A	90
+29	Aquatic Dragon	WAR	1630	W	110	L	120
+30	High Sorcerer	GR	1850	G	70	S	200
+31	Magic Soldier	GM	1750	M	120	G	100
+32	Magic Giant	GE	1700	R	100	E	140
+33	Wyvern	GAR	1800	M	90	G	120
+34	Mickey Mouse	S	1750	V	20	W	20
+35	Minnie Mouse	W	1690	S	10	G	10
+36	Don Quixote	SM	1820	W	50	R	40
+37	Sancho Panza	MR	1720	S	30	G	70
+38	Paul Bunyan	M	1780	M	60	W	40
+39	Babe the Blue Ox	EW	1710	I	40	A	50
+40	Bigfoot	M	1860	L	70	W	70
+41	Mothman	AV	1840	A	90	F	80
+42	Jersey Devil	VFA	1760	R	70	W	120
+43	Skinwalker	MV	1770	M	60	L	80
+44	Wendigo	IV	1790	I	120	G	90
+45	Chupacabra	EV	1740	G	70	M	100
+46	Loch Ness Monster	MW	1810	E	90	L	100
+47	Yeti	MIV	1820	R	80	F	120
+48	Thunderbird	AL	1800	W	150	R	60
+49	Juliet Capulet	SW	1720	F	150	V	100
+50	Romeo Montague	SMW	1820	W	150	V	100
+51	Mercutio	M	1740	W	50	M	120
+52	Tybalt	MV	1720	M	70	F	110
+53	Benvolio	M	1730	F	40	I	30
+54	Macbeth	SV	1810	M	40	V	80
+55	Lady Macbeth	V	1810	S	90	G	60
+56	Hamlet	SM	1800	V	50	G	50
+57	Claudius	VM	1740	S	100	R	70
+58	Horatio	W	1690	V	30	W	50
+59	Beowulf	SMR	1770	V	140	F	60
+60	Grendel	MV	1730	W	130	M	100
