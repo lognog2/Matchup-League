@@ -3,11 +3,13 @@
 New in 1.1.0:
 - Implemented a UI interface using JavaFX
 - Ability to 'test' matchups before choosing a card
+- Disabled autogen feature
 - Performance and structural enhancements
 - More in-depth changelog coming soon
 
 Coming soon in 1.1.1:
 - Postseason tournament with every league's winner
+- Bring back autogen
 - Multiple seasons in one playthrough (may be pushed back to 1.2)
 
 Coming soon in 1.2:
