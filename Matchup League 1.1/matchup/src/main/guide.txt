@@ -1,0 +1,22 @@
+Types:
+M = melee
+R = ranged
+E = explosive
+F = fire
+W = water
+L = electric
+G = magic
+C = mechanical
+A = aerial
+I = ice
+V = evil
+S = star
+. = null
+
+Styles:
+0: fighter selected at random (also is default)
+1: best to worst
+2: worst to best
+3: 2nd best to worst, best last
+4: my best attempt at AI
+99: real user
