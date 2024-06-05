@@ -4,7 +4,7 @@ New in 1.1.0:
 - Implemented a UI interface using JavaFX
 - Ability to 'test' matchups before choosing a card
 - Performance and structural enhancements
-More in-depth changelog coming soon
+- More in-depth changelog coming soon
 
 Coming soon in 1.1.1:
 - Postseason tournament with every league's winner
