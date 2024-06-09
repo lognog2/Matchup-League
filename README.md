@@ -7,13 +7,14 @@ New in 1.1.0:
 - Performance and structural improvements
 - More in-depth changelog coming soon
 
-Coming soon in 1.1.1:
+Coming soon in 1.1.1 (target release date: 6/14)
 - Postseason tournament with every league's winner
-- Bring back autogen
-- Multiple seasons in one playthrough (may be pushed back to 1.2)
+- Generic fighter replication
+- Actual documentation
 
 Coming soon in 1.2:
 - Currency system
+- Multiple seasons in one playthrough
 - League tiers - get promoted if you win your league
 - Tabletop multiplayer
 
