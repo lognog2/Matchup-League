@@ -7,7 +7,7 @@ New in 1.1.0:
 - Performance and structural improvements
 - More in-depth changelog coming soon
 
-Coming soon in 1.1.1 (target release date: 6/14)
+Coming soon in 1.1.1 (target release date: 6/13)
 - Postseason tournament with every league's winner
 - Generic fighter replication
 - Actual documentation
