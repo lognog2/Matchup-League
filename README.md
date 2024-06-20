@@ -1,6 +1,6 @@
 # Matchup League version 1.1.1
 
-## New in 1.1.1 (target release date: 6/13)
+## New in 1.1.1
 - Postseason tournament with every league's best team
 - Generic fighter replication
 - Smarter CPUs
