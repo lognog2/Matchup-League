@@ -1,19 +1,16 @@
-# Matchup League version 1.1.0
+# Matchup League version 1.1.1
 
-## New in 1.1.0
-- Implemented a UI interface using JavaFX
-- Ability to 'test' matchups before choosing a card
-- Disabled autogen feature
-- Performance and structural improvements
-- More in-depth changelog coming soon
-
-## Coming soon in 1.1.1 (target release date: 6/13)
-- Postseason tournament with every league's winner
+## New in 1.1.1 (target release date: 6/13)
+- Postseason tournament with every league's best team
 - Generic fighter replication
-- Actual documentation
+- Smarter CPUs
+- Bug fixes
+
+## Coming in 1.1.2 (Target release 7/6):
+- Loading screens
+- Tournament mode
 
 ## Coming soon in 1.2:
-- Currency system
 - Multiple seasons in one playthrough
 - League tiers - get promoted if you win your league
 - Tabletop multiplayer
