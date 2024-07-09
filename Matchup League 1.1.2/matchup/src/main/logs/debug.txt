@@ -1,0 +1,1895 @@
+2024-07-08T20:42:44.989294800-04:00[America/New_York]
+Debug writer initialized
+App.main
+App.start, javafx.stage.Stage@7123cbda
+FXML: MainMenu.newSeason
+Menu.startLoad
+App.loadMenu
+App.setRoot, load\load_screen
+new Loader
+new Loader, com.menu.load.LoadScreen@6d0e689a
+Loader.setLoadScreen, com.menu.load.LoadScreen@6d0e689a
+App.setLoader, com.menu.load.Loader@32945aca
+==========START THREAD: LOAD_DATA
+Loader.initProcedure, LOAD_DATA, 206.0
+Loader.setNextMenu, team_select
+runLater: Loader.setMessage, Connecting to database
+(This may take a moment...)
+App.getManager
+App.getSession
+App.getSF
+new Manager, SessionImpl(1658531091<open>)
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+Manager.getRepo
+Loader.addLoadUnits, 134.0
+new LU: 340.0
+App.getManager
+Manager.getRepo
+Manager.load_data, false
+Manager.setTeamSize, 5, 7
+Manager.setFPT, 7
+Manager.setFPG, 5
+App.getLoader
+runLater: Loader.setMessage, Loading fighters
+Loading Fighters from file f_sample.csv
+App.getLoader
+Load progress: 10%
+Load progress: 20%
+Load progress: 30%
+Load progress: 40%
+runLater: Loader.setMessage, Loading teams
+Loading Teams from file t_sample.csv
+App.getLoader
+Load progress: 50%
+Load progress: 60%
+App.getLoader
+Manager.requiredFighters
+Manager.extraFighters
+Loader.addLoadUnits, 167.0
+new LU: 801.6260162601604
+Manager.replicateGeneric
+Manager.extraFighters
+App.getLoader
+runLater: Loader.setMessage, Generating fighters
+Generating 174 fighters
+Load progress: 70%
+Load progress: 80%
+Manager.assignTeams_byLocation
+App.getLoader
+runLater: Loader.setMessage, Assigning teams to leagues
+Load progress: 90%
+runLater: Loader.setMessage, Ready to go!
+runLater: Loader.endLoad
+Manager.createByeTeam
+Final load progress: 0.9151724137930989
+==========END THREAD: LOAD_DATA
+App.setLoader, null
+App.setRoot, team_select
+App.setByeTeam, Bye
+TeamSelect.initialize
+TeamSelect.leagueListener
+TeamSelect.teamListener
+FXML: TeamSelect.startSeason
+Manager.addUser, lol, Team44
+Menu.setUserTeam, San Diego
+Menu.generateSchedule
+App.loadMenu
+App.setRoot, load\load_screen
+new Loader
+new Loader, com.menu.load.LoadScreen@13f35626
+Loader.setLoadScreen, com.menu.load.LoadScreen@13f35626
+App.setLoader, com.menu.load.Loader@49aab8b
+Menu.getLeagueList
+Manager.maxTPL
+==========START THREAD: PREDRAFT
+Loader.initProcedure, PREDRAFT, 80.0
+Loader.setNextMenu, draft_menu
+runLater: Loader.setMessage, Loading draft menu
+App.getLoader
+Menu.generateSeason
+runLater: Loader.setMessage, Generating schedule
+Manager.maxTPL
+Manager.generateSchedule, league1
+Team4.setNewSchedule, 9
+Team3.setNewSchedule, 9
+Team10.setNewSchedule, 9
+Team2.setNewSchedule, 9
+Team7.setNewSchedule, 9
+Team8.setNewSchedule, 9
+Team9.setNewSchedule, 9
+Team5.setNewSchedule, 9
+Team6.setNewSchedule, 9
+Team1.setNewSchedule, 9
+Miami vs Broward
+Jacksonville vs Palm Beach
+Tampa vs Orlando
+Fort Myers vs Tallahassee
+Pensacola vs St. Petersburg
+Miami vs Palm Beach
+Broward vs Orlando
+Jacksonville vs Tallahassee
+Tampa vs St. Petersburg
+Fort Myers vs Pensacola
+Miami vs Orlando
+Palm Beach vs Tallahassee
+Broward vs St. Petersburg
+Jacksonville vs Pensacola
+Tampa vs Fort Myers
+Miami vs Tallahassee
+Orlando vs St. Petersburg
+Palm Beach vs Pensacola
+Broward vs Fort Myers
+Jacksonville vs Tampa
+Miami vs St. Petersburg
+Tallahassee vs Pensacola
+Orlando vs Fort Myers
+Palm Beach vs Tampa
+Broward vs Jacksonville
+Miami vs Pensacola
+St. Petersburg vs Fort Myers
+Tallahassee vs Tampa
+Orlando vs Jacksonville
+Palm Beach vs Broward
+Miami vs Fort Myers
+Pensacola vs Tampa
+St. Petersburg vs Jacksonville
+Tallahassee vs Broward
+Orlando vs Palm Beach
+Miami vs Tampa
+Fort Myers vs Jacksonville
+Pensacola vs Broward
+St. Petersburg vs Palm Beach
+Tallahassee vs Orlando
+Miami vs Jacksonville
+Tampa vs Broward
+Fort Myers vs Palm Beach
+Pensacola vs Orlando
+St. Petersburg vs Tallahassee
+Manager.generateSchedule, league2
+Load progress: 20%
+Team16.setNewSchedule, 5
+Team12.setNewSchedule, 5
+Team11.setNewSchedule, 5
+Team13.setNewSchedule, 5
+Team14.setNewSchedule, 5
+Team15.setNewSchedule, 5
+St. Paul vs St. Cloud
+Mankato vs Rochester
+Duluth vs Minneapolis
+St. Paul vs Rochester
+St. Cloud vs Minneapolis
+Mankato vs Duluth
+St. Paul vs Minneapolis
+Rochester vs Duluth
+St. Cloud vs Mankato
+St. Paul vs Duluth
+Minneapolis vs Mankato
+Rochester vs St. Cloud
+St. Paul vs Mankato
+Duluth vs St. Cloud
+Minneapolis vs Rochester
+Manager.generateSchedule, league3
+Load progress: 40%
+Team24.setNewSchedule, 9
+Team23.setNewSchedule, 9
+Team17.setNewSchedule, 9
+Team26.setNewSchedule, 9
+Team22.setNewSchedule, 9
+Team20.setNewSchedule, 9
+Team19.setNewSchedule, 9
+Team21.setNewSchedule, 9
+Team18.setNewSchedule, 9
+Team25.setNewSchedule, 9
+Rochester vs Staten Island
+Queens vs Bronx
+Albany vs Long Island
+Syracuse vs Brooklyn
+Manhattan vs Buffalo
+Rochester vs Bronx
+Staten Island vs Long Island
+Queens vs Brooklyn
+Albany vs Buffalo
+Syracuse vs Manhattan
+Rochester vs Long Island
+Bronx vs Brooklyn
+Staten Island vs Buffalo
+Queens vs Manhattan
+Albany vs Syracuse
+Rochester vs Brooklyn
+Long Island vs Buffalo
+Bronx vs Manhattan
+Staten Island vs Syracuse
+Queens vs Albany
+Rochester vs Buffalo
+Brooklyn vs Manhattan
+Long Island vs Syracuse
+Bronx vs Albany
+Staten Island vs Queens
+Rochester vs Manhattan
+Buffalo vs Syracuse
+Brooklyn vs Albany
+Long Island vs Queens
+Bronx vs Staten Island
+Rochester vs Syracuse
+Manhattan vs Albany
+Buffalo vs Queens
+Brooklyn vs Staten Island
+Long Island vs Bronx
+Rochester vs Albany
+Syracuse vs Queens
+Manhattan vs Staten Island
+Buffalo vs Bronx
+Brooklyn vs Long Island
+Rochester vs Queens
+Albany vs Staten Island
+Syracuse vs Bronx
+Manhattan vs Long Island
+Buffalo vs Brooklyn
+Manager.generateSchedule, league4
+Load progress: 60%
+Team29.setNewSchedule, 5
+Team31.setNewSchedule, 5
+Team28.setNewSchedule, 5
+Team27.setNewSchedule, 5
+Team32.setNewSchedule, 5
+Team30.setNewSchedule, 5
+Columbus vs Macon
+Savannah vs Athens
+Augusta vs Atlanta
+Columbus vs Athens
+Macon vs Atlanta
+Savannah vs Augusta
+Columbus vs Atlanta
+Athens vs Augusta
+Macon vs Savannah
+Columbus vs Augusta
+Atlanta vs Savannah
+Athens vs Macon
+Columbus vs Savannah
+Augusta vs Macon
+Atlanta vs Athens
+Manager.generateSchedule, league5
+Load progress: 80%
+Team38.setNewSchedule, 15
+Team35.setNewSchedule, 15
+Team43.setNewSchedule, 15
+Team42.setNewSchedule, 15
+Team33.setNewSchedule, 15
+Team34.setNewSchedule, 15
+Team48.setNewSchedule, 15
+Team46.setNewSchedule, 15
+Team39.setNewSchedule, 15
+Team40.setNewSchedule, 15
+Team45.setNewSchedule, 15
+Team41.setNewSchedule, 15
+Team37.setNewSchedule, 15
+Team44.setNewSchedule, 15
+Team47.setNewSchedule, 15
+Team36.setNewSchedule, 15
+Los Angeles vs Inland Empire
+Fresno vs Santa Barbara
+Sacramento vs San Diego
+Pasadena vs Long Beach
+Anaheim vs Oakland
+Bakersfield vs San Francisco
+Santa Rosa vs Northern California
+San Jose vs Modesto
+Los Angeles vs Santa Barbara
+Inland Empire vs San Diego
+Fresno vs Long Beach
+Sacramento vs Oakland
+Pasadena vs San Francisco
+Anaheim vs Northern California
+Bakersfield vs Modesto
+Santa Rosa vs San Jose
+Los Angeles vs San Diego
+Santa Barbara vs Long Beach
+Inland Empire vs Oakland
+Fresno vs San Francisco
+Sacramento vs Northern California
+Pasadena vs Modesto
+Anaheim vs San Jose
+Bakersfield vs Santa Rosa
+Los Angeles vs Long Beach
+San Diego vs Oakland
+Santa Barbara vs San Francisco
+Inland Empire vs Northern California
+Fresno vs Modesto
+Sacramento vs San Jose
+Pasadena vs Santa Rosa
+Anaheim vs Bakersfield
+Los Angeles vs Oakland
+Long Beach vs San Francisco
+San Diego vs Northern California
+Santa Barbara vs Modesto
+Inland Empire vs San Jose
+Fresno vs Santa Rosa
+Sacramento vs Bakersfield
+Pasadena vs Anaheim
+Los Angeles vs San Francisco
+Oakland vs Northern California
+Long Beach vs Modesto
+San Diego vs San Jose
+Santa Barbara vs Santa Rosa
+Inland Empire vs Bakersfield
+Fresno vs Anaheim
+Sacramento vs Pasadena
+Los Angeles vs Northern California
+San Francisco vs Modesto
+Oakland vs San Jose
+Long Beach vs Santa Rosa
+San Diego vs Bakersfield
+Santa Barbara vs Anaheim
+Inland Empire vs Pasadena
+Fresno vs Sacramento
+Los Angeles vs Modesto
+Northern California vs San Jose
+San Francisco vs Santa Rosa
+Oakland vs Bakersfield
+Long Beach vs Anaheim
+San Diego vs Pasadena
+Santa Barbara vs Sacramento
+Inland Empire vs Fresno
+Los Angeles vs San Jose
+Modesto vs Santa Rosa
+Northern California vs Bakersfield
+San Francisco vs Anaheim
+Oakland vs Pasadena
+Long Beach vs Sacramento
+San Diego vs Fresno
+Santa Barbara vs Inland Empire
+Los Angeles vs Santa Rosa
+San Jose vs Bakersfield
+Modesto vs Anaheim
+Northern California vs Pasadena
+San Francisco vs Sacramento
+Oakland vs Fresno
+Long Beach vs Inland Empire
+San Diego vs Santa Barbara
+Los Angeles vs Bakersfield
+Santa Rosa vs Anaheim
+San Jose vs Pasadena
+Modesto vs Sacramento
+Northern California vs Fresno
+San Francisco vs Inland Empire
+Oakland vs Santa Barbara
+Long Beach vs San Diego
+Los Angeles vs Anaheim
+Bakersfield vs Pasadena
+Santa Rosa vs Sacramento
+San Jose vs Fresno
+Modesto vs Inland Empire
+Northern California vs Santa Barbara
+San Francisco vs San Diego
+Oakland vs Long Beach
+Los Angeles vs Pasadena
+Anaheim vs Sacramento
+Bakersfield vs Fresno
+Santa Rosa vs Inland Empire
+San Jose vs Santa Barbara
+Modesto vs San Diego
+Northern California vs Long Beach
+San Francisco vs Oakland
+Los Angeles vs Sacramento
+Pasadena vs Fresno
+Anaheim vs Inland Empire
+Bakersfield vs Santa Barbara
+Santa Rosa vs San Diego
+San Jose vs Long Beach
+Modesto vs Oakland
+Northern California vs San Francisco
+Los Angeles vs Fresno
+Sacramento vs Inland Empire
+Pasadena vs Santa Barbara
+Anaheim vs San Diego
+Bakersfield vs Long Beach
+Santa Rosa vs Oakland
+San Jose vs San Francisco
+Modesto vs Northern California
+runLater: Loader.setMessage, Ready to go!
+runLater: Loader.endLoad
+Load progress: 100%
+Final load progress: 1.0
+==========END THREAD: PREDRAFT
+App.setLoader, null
+App.setRoot, draft_menu
+Manager.getFPT
+DraftMenu.initialize
+runLater: DraftMenu.display, 1
+FXML: DraftMenu.beginDraft
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Thanos
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Omniman
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Satoru Gojo
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Sukuna
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects EVA 01
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Rick Sanchez
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Lilith
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Invincible
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, San Diego
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 28
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 27
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 26
+FXML: DraftMenu.nextPage
+runLater: DraftMenu.display, 27
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 26
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 25
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 24
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 23
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 22
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 21
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 20
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 19
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 18
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 17
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 16
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 15
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 14
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 13
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 12
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 11
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 10
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 9
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 8
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 7
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 6
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 5
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 4
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 3
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 2
+FXML: DraftMenu.prevPage
+runLater: DraftMenu.display, 1
+FXML: DraftMenu.userSelection, Kenjaku
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+runLater: DraftMenu.addSelection, San Diego selects Kenjaku
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Thor
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Yuta Okkotsu
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Cecil Stedman
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects EVA 02
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Rick Prime
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Atom Eve
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Allen the Alien
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Van Hohenheim
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Dwark in the Fl.
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects The Immortal
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Iron Man
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Hulk
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Suguru Geto
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Link
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Toji Fushiguro
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Aang
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Evil Morty
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Zelda
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Mahito
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Roy Mustang
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Captain America
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Ozai
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Planetina
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Dr. Strange
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Ganondorf
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Phoenix Person
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Megumi Fushigur.
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Sozin
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Elder Maxson
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects EVA 00
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Angstrom Levy
+runLater: DraftMenu.setTopText, Northern California
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Northern California
+runLater: DraftMenu.addSelection, Northern California selects Black Panther
+runLater: DraftMenu.setTopText, Duluth
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Duluth
+runLater: DraftMenu.addSelection, Duluth selects Deathclaw [180]
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Bucky Barnes
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Yuji Itadori
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Spiderman
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Ramiel
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Korra
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Deathclaw [38]
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Black Samson
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Rauru
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Edward Elric
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Monster Girl
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Deathclaw [202]
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Azula
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Odin
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Mei Mei
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, San Diego
+==========END THREAD: SimDraft
+FXML: DraftMenu.userSelection, Ultron
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+runLater: DraftMenu.addSelection, San Diego selects Ultron
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Zeruel
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Olivier Armstor.
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Kento Nanami
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Avatar Kyoshi
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Jogo
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Iroh
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Avatar Roku
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Venom
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Paladin Danse
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Sahaquiel
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Scar Ishvalan
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Masamichi Yaga
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Sole Survivor
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Zuko
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Scarlet Witch
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Yao Guai [45]
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Bird Person
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Robot
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects King Bradley
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Hanami
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Toge Inumaki
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Vision
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Aoi Todo
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Super Mutant [325]
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Loki
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Sachiel
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Yao Guai [247]
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Kellogg
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Alex Armstrong
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Choso
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Black Widow
+runLater: DraftMenu.setTopText, Northern California
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Northern California
+runLater: DraftMenu.addSelection, Northern California selects Toph
+runLater: DraftMenu.setTopText, Duluth
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Duluth
+runLater: DraftMenu.addSelection, Duluth selects Super Mutant [283]
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Pride
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Miles Morales
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Super Mutant [213]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Super Mutant [305]
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Super Mutant [314]
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Super Mutant [328]
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Super Mutant [336]
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Super Mutant [37]
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Alphonse Elric
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Envy
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Red Skull
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Greed-Ling
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Sidon
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Bulletproof
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, San Diego
+==========END THREAD: SimDraft
+FXML: DraftMenu.userSelection, Super Mutant
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+runLater: DraftMenu.addSelection, San Diego selects Super Mutant [181]
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Mr. Meeseeks [280]
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Super Mutant [289]
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Super Mutant [209]
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Super Mutant [306]
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Super Mutant [256]
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Appa
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Tenzin
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Super Mutant [334]
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Katara
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects EVA 03
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Hancock
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Preston Garvey
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Arael
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Space Beth
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Dagon
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Wong
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Lust
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Super Mutant [260]
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Synth [230]
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Mr. Meeseeks [269]
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Mass-Produced E. [26]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Greed
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Rex Splode
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Maki Zenin
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Mr. Meeseeks [309]
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Heimdall
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects War Machine
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Groot
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Mr. Meeseeks [162]
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Spider-Gwen
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Mr. Meeseeks [194]
+runLater: DraftMenu.setTopText, Northern California
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Northern California
+runLater: DraftMenu.addSelection, Northern California selects Synth [221]
+runLater: DraftMenu.setTopText, Duluth
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Duluth
+runLater: DraftMenu.addSelection, Duluth selects Synth [298]
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Synth [268]
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Synth [40]
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Mr. Meeseeks [303]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Shamshel
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Nick Valentine
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Sloth
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Mechamaru
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Mai Zenin
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Uraume
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Gamora
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Mr. Meeseeks [170]
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Shapesmith
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Raider [191]
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Nebula
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, San Diego
+==========END THREAD: SimDraft
+FXML: DraftMenu.userSelection, Drax
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+runLater: DraftMenu.addSelection, San Diego selects Drax
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Mr. Meeseeks [218]
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Synth [292]
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Synth [183]
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Raider [231]
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Mr. Meeseeks [318]
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Sokka
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Mr. Meeseeks [330]
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Raider [342]
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Raider [329]
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Gluttony
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Starlord
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Codsworth
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Nobara Kugisaki
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Quicksilver
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Squanchy
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Mirelurk [203]
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Mr. Meeseeks [192]
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Synth [250]
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Mr. Meeseeks [215]
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Raider [252]
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Mirelurk [287]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Morty Smith [310]
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Raider [39]
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Raider [282]
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Raider [263]
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Raider [327]
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Ling Yao
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Donald Ferguson
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Raider [171]
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Raider [238]
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Rocket Raccoon
+runLater: DraftMenu.setTopText, Northern California
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Northern California
+runLater: DraftMenu.addSelection, Northern California selects Morty Smith [154]
+runLater: DraftMenu.setTopText, Duluth
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Duluth
+runLater: DraftMenu.addSelection, Duluth selects Mirelurk [220]
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Raider [300]
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Mirelurk [251]
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Morty Smith [316]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Dupli-Kate
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Mirelurk [49]
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Junpei Yoshino
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Abrodolf Lincol.
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Morty Smith [175]
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Mirelurk [189]
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Raider [204]
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Raider [187]
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Raider [322]
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Raider [285]
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Morty Smith [324]
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, San Diego
+==========END THREAD: SimDraft
+FXML: DraftMenu.userSelection, Mirelurk
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+runLater: DraftMenu.addSelection, San Diego selects Mirelurk [297]
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Raider [343]
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Raider [331]
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Damien Darkbloo.
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Kaworu
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Mirelurk [332]
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Gearhead
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Riza Hawkeye
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Night Summer
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Mirelurk [173]
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Mirelurk [197]
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Dogmeat
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Beth Smith [186]
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Mirelurk [185]
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Beth Smith [155]
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Raider [248]
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Moblin [233]
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Moblin [275]
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Moblin [205]
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Beth Smith [174]
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Moblin [80]
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Summer Smith [157]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Moblin [224]
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Moblin [261]
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Moblin [266]
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Moblin [236]
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Shrink Rae
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Moblin [281]
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Bloodbug [234]
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Bloodbug [239]
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Bloodbug [286]
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Moblin [188]
+runLater: DraftMenu.setTopText, Northern California
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Northern California
+runLater: DraftMenu.addSelection, Northern California selects Maes Hughes
+runLater: DraftMenu.setTopText, Duluth
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Duluth
+runLater: DraftMenu.addSelection, Duluth selects Jerry Smith [222]
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Moblin [315]
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Moblin [312]
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Ryoji Kaji
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Bloodbug [338]
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Bloodbug [48]
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Purah
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Darkwing
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Bloodbug [271]
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Moblin [319]
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Jerry Smith [253]
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Jerry Smith [156]
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Lizalfo [206]
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Mr. Poopy Butth.
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Lizalfo [229]
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, San Diego
+==========END THREAD: SimDraft
+FXML: DraftMenu.userSelection, Lizalfo
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+runLater: DraftMenu.addSelection, San Diego selects Lizalfo [240]
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Lizalfo [311]
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Lizalfo [262]
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Lizalfo [243]
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Lizalfo [326]
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Lizalfo [79]
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Lizalfo [333]
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Sequid [217]
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Lizalfo [270]
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Lizalfo [226]
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Sequid [291]
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Sequid [276]
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Lizalfo [294]
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Sequid [299]
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Bokoblin [304]
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Sequid [308]
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Sequid [307]
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Misato Katsurag.
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Winry Rockbell
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Sequid [99]
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Lizalfo [211]
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Bokoblin [193]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Sequid [219]
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Bokoblin [228]
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Bokoblin [179]
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Bokoblin [177]
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Sequid [296]
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Bokoblin [255]
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Bokoblin [225]
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Gendo Ikari
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Lizalfo [265]
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Bokoblin [335]
+runLater: DraftMenu.setTopText, Northern California
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Northern California
+runLater: DraftMenu.addSelection, Northern California selects Bokoblin [184]
+runLater: DraftMenu.setTopText, Duluth
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Duluth
+runLater: DraftMenu.addSelection, Duluth selects Bokoblin [241]
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Bokoblin [78]
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Bokoblin [207]
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Sequid [216]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Bokoblin [244]
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Sequid [246]
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Bokoblin [254]
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Bokoblin [301]
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Sequid [259]
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Sequid [313]
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Bokoblin [257]
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Bokoblin [340]
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Sequid [323]
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Bokoblin [212]
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Sequid [182]
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, San Diego
+==========END THREAD: SimDraft
+FXML: DraftMenu.userSelection, Bokoblin
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+runLater: DraftMenu.addSelection, San Diego selects Bokoblin [317]
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Bokoblin [232]
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Bokoblin [237]
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Bokoblin [320]
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Bokoblin [267]
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Bokoblin [195]
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Bokoblin [242]
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Bokoblin [210]
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Bokoblin [284]
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Bokoblin [178]
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Bloatfly [196]
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Bloatfly [290]
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Bloatfly [223]
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Bokoblin [274]
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Bloatfly [249]
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Bloatfly [47]
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Bloatfly [190]
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Bloatfly [278]
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Bloatfly [302]
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Bloatfly [264]
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Radroach [245]
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Shinji Ikari
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Radroach [258]
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Rei Ayanami
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Radroach [273]
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Asuka Soryu
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Radroach [44]
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Radroach [201]
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Radroach [235]
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Radroach [272]
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Radroach [227]
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Radroach [277]
+runLater: DraftMenu.setTopText, Northern California
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Northern California
+runLater: DraftMenu.addSelection, Northern California selects Radroach [293]
+runLater: DraftMenu.setTopText, Duluth
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Duluth
+runLater: DraftMenu.addSelection, Duluth selects Radroach [295]
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Radroach [339]
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Radroach [214]
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Radroach [199]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Radroach [200]
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Radroach [198]
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Radroach [208]
+runLater: DraftMenu.endDraft
+==========END THREAD: SimDraft
+FXML: DraftMenu.nextMenu
+App.setRoot, season_menu
+SeasonMenu.initialize
+SeasonMenu.setLeague, California
+SeasonMenu.setStandings, California
+SeasonMenu.setGames, 0, California
+SeasonMenu.seasonOver
+SeasonMenu.userOnBye
+Team44.onBye, 0
+Team44.getGame, 0
+, game123
+Team44.getOpponent, 0
+Team44.getGame, 0
+Team44.getOpponent, 0
+Team44.getGame, 0
+SeasonMenu.leagueListener
+SeasonMenu.gameListener
+FXML: SeasonMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, San Diego, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game123.getGameString, Team44
+game130.getGameString, Team44
+game137.getGameString, Team44
+game146.getGameString, Team44
+game155.getGameString, Team44
+game164.getGameString, Team44
+game173.getGameString, Team44
+game182.getGameString, Team44
+game191.getGameString, Team44
+game200.getGameString, Team44
+game208.getGameString, Team44
+game215.getGameString, Team44
+game222.getGameString, Team44
+game229.getGameString, Team44
+game236.getGameString, Team44
+App.goBack
+App.setRoot, season_menu
+SeasonMenu.initialize
+SeasonMenu.setLeague, California
+SeasonMenu.setStandings, California
+SeasonMenu.setGames, 0, California
+SeasonMenu.seasonOver
+SeasonMenu.userOnBye
+Team44.onBye, 0
+Team44.getGame, 0
+, game123
+Team44.getOpponent, 0
+Team44.getGame, 0
+Team44.getOpponent, 0
+Team44.getGame, 0
+SeasonMenu.leagueListener
+SeasonMenu.gameListener
