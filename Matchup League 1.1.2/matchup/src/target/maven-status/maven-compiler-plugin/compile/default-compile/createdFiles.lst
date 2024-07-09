@@ -1,0 +1,10 @@
+com\repo\DAO.class
+com\Tournament.class
+com\repo\Manager.class
+com\Entities\Game.class
+com\Bracket.class
+com\Entities\League.class
+com\Entities\Team.class
+com\Schedule.class
+com\Entities\Player.class
+com\Entities\Fighter.class
