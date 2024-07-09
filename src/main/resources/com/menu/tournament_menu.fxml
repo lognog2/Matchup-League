@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.TournamentMenu">
+   <children>
+      <HBox alignment="TOP_CENTER" prefWidth="800.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#toTeamView" text="Team View">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Label fx:id="titleLabel" text="Tournament">
+         <font>
+            <Font size="40.0" />
+         </font></Label>
+      <Label fx:id="winnerLabel" text="Winner!" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+         <content>
+            <HBox fx:id="tourneyBox" alignment="CENTER_LEFT" prefWidth="200.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="thanksLabel" text="Thanks for playing :)" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="playButton" mnemonicParsing="false" onAction="#playGame" text="Play Game">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
