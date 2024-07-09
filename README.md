@@ -1,15 +1,12 @@
-# Matchup League version 1.1.1
+# Matchup League version 1.1.2
 
-## New in 1.1.1
-- Postseason tournament with every league's best team
-- Generic fighter replication
-- Smarter CPUs
-- Bug fixes
-
-## Coming in 1.1.2 (Target release 7/6):
-- Loading screens
-- Tournament mode
-
+## New in 1.1.2
+- Two new tournament types (League tournament and World Cup)
+- New league - California
+- Loading screens for long processes
+- Structural improvements
+- Debug log
+  
 ## Coming soon in 1.2:
 - Multiple seasons in one playthrough
 - League tiers - get promoted if you win your league
