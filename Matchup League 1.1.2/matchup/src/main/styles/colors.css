@@ -12,7 +12,9 @@
 .red {-fx-base: rgb(214, 33, 33);}
 .light-red {-fx-base: rgb(243, 17, 17);}
 .dark-red, .maroon, .wine-red { -fx-base: rgb(79, 5, 5);}
+.light-pink, .lilac {-fx-base: rgb(194, 151, 184);}
 .pink, .hot-pink {-fx-base: rgb(238, 33, 238);}
+.red-orange, .rust {-fx-base: rgb(186, 63, 29);}
 
 /* Orange colors */
 .orange {-fx-base: rgb(216, 96, 21);}
@@ -26,12 +28,13 @@
 /* Green colors */
 .green { -fx-base: rgb(15, 150, 55);}
 .light-green, .lime-green { -fx-base: rgb(85, 232, 87);}
-.dark-green {-fx-base: rgb(10, 109, 12);}
+.dark-green, .emerald {-fx-base: rgb(10, 109, 12);}
 
 /* Blue colors */
 .blue {-fx-base: rgb(30, 36, 195);}
 .light-blue, .sky-blue { -fx-base: rgb(33, 145, 237);}
 .dark-blue, .navy-blue {-fx-base: rgb(10, 8, 107);}
+.baby-blue, .crayola-blue {-fx-base: rgb(74,122,232)}
 .aqua {-fx-base: rgb(30, 211, 224);}
 .teal, .turquoise {-fx-base: rgb(26, 119, 122);}
 .indigo {-fx-base: rgb(54, 15, 172);}
@@ -43,13 +46,11 @@
 
 /* Custom colors - coolors.co */
 .salmon, .crayola-red {-fx-base: rgb(232, 72, 85);}
-.red-orange, .rust {-fx-base: rgb(186, 63, 29);}
 .pale-green, .cambridge-blue {-fx-base: rgb(119, 186, 153);}
 .blue-gray, .delft-blue {-fx-base: rgb(56, 57, 97);}
 .pale-blue, .air-superiority-blue {-fx-base: rgb(128, 161, 193);}
 .dark-blue-gray, .space-cadet {-fx-base:rgb(45, 48, 71);}
-.baby-blue, .crayola-blue {-fx-base: rgb(74,122,232)}
 .raisin, .raisin-black {-fx-base: rgb(49, 33, 39)}
 .dark-pink, .palatinate {-fx-base: rgb(87, 31, 78);}
-.light-pink, .lilac {-fx-base: rgb(194, 151, 184);}
+
 

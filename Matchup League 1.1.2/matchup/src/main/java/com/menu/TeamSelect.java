@@ -13,7 +13,7 @@ public class TeamSelect extends Menu
     private Team selectedTeam;
     @FXML private ChoiceBox<String> leagues;
     @FXML private ChoiceBox<String> teams;
-    @FXML private Label fans, errorLabel, debug;
+    @FXML private Label teamLabel, fansLabel, errorLabel, debug;
     @FXML private TextField name;
      
     @FXML
@@ -28,20 +28,17 @@ public class TeamSelect extends Menu
 
     private void leagueListener() {
         write("TeamSelect.leagueListener");
-        leagues.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>()
-        {
-            public void changed(ObservableValue<? extends Number> ov, Number oldVal, Number newVal)
-            {
-                if (newVal.intValue() >= 0)
-                {
+        leagues.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
+            public void changed(ObservableValue<? extends Number> ov, Number oldVal, Number newVal) {
+                if (newVal.intValue() >= 0) {
                     selectedLeague = leagueList.get(newVal.intValue());
 
-                    fans.setText("");
+                    fansLabel.setText("");
                     teams.getItems().clear();
                     for (Team t : selectedLeague.getTeamList())
                         teams.getItems().add(t.getName()); 
                 }
-                else System.out.println("league choice bar index is less than 0");
+                else write("league choice bar index is less than 0");
 
             }
         });
@@ -49,15 +46,15 @@ public class TeamSelect extends Menu
 
     private void teamListener() {
         write("TeamSelect.teamListener");
-        teams.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() 
-        {
-            public void changed(ObservableValue<? extends Number> ov, Number oldVal, Number newVal) 
-            {
+        teams.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
+            public void changed(ObservableValue<? extends Number> ov, Number oldVal, Number newVal) {
                 if (newVal.intValue() >= 0) {
                     selectedTeam = selectedLeague.getTeamList().get(newVal.intValue());
-                    fans.setText("Fans: " + selectedTeam.getFans());
+                    teamLabel.getStyleClass().clear();
+                    teamLabel.getStyleClass().add(selectedTeam.getColor(0));
+                    fansLabel.setText("Fans: " + selectedTeam.getFans());
                 }  
-                else System.out.println("team choice bar index is less than 0");
+                else write("team choice bar index is less than 0");
             }
         });
     }

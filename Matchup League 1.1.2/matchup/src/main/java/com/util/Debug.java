@@ -46,6 +46,7 @@ public abstract class Debug {
     /**
      * Writes a line to the debug log.
      * @param line
+     * @since 1.1.2
      */
     public static void write(String line) {
         try {
@@ -86,7 +87,7 @@ public abstract class Debug {
     }
 
     public static void error(int code, Exception e) {
-        write(code + ": " + e.toString());
+        write("Error " + code + ": " + e.toString());
     }    
 
     public static void startThread(String threadName) {

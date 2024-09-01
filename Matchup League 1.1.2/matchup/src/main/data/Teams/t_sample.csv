@@ -1,49 +1,49 @@
-Team Name,Fans,Location
-Broward,144,Florida
-Fort Myers,138,Florida
-Jacksonville,249,Florida
-Miami,431,Florida
-Orlando,396,Florida
-Palm Beach,99,Florida
-Pensacola,109,Florida
-St. Petersburg,96,Florida
-Tallahassee,66,Florida
-Tampa,409,Florida
-Duluth,74,Minnesota
-Mankato,39,Minnesota
-Minneapolis,206,Minnesota
-Rochester,51,Minnesota
-St. Cloud,51,Minnesota
-St. Paul,150,Minnesota
-Albany,141,New York
-Bronx,147,New York
-Brooklyn,274,New York
-Buffalo,156,New York
-Long Island,292,New York
-Manhattan,409,New York
-Queens,241,New York
-Rochester,128,New York
-Staten Island,50,New York
-Syracuse,183,New York
-Atlanta,625,Georgia
-Augusta,53,Georgia
-Columbus,101,Georgia
-Macon,76,Georgia
-Savannah,106,Georgia
-Athens,110,Georgia
-Anaheim,319,California
-Bakersfield,137,California
-Fresno,133,California
-Inland Empire,460,California
-Long Beach,90,California
-Los Angeles,758,California
-Modesto,173,California
-Northern California,74,California
-Oakland,168,California
-Pasadena,157,California
-Sacramento,284,California
-San Diego,348,California
-San Francisco,410,California
-San Jose,200,California
-Santa Barbara,157,California
-Santa Rosa,84,California
+Team Name,Fans,League,Primary,Secondary
+Broward,144,Florida,red,orange
+Fort Myers,138,Florida,lavender,teal
+Jacksonville,249,Florida,dark-gray,yellow
+Miami,431,Florida,pink,green
+Orlando,396,Florida,orange,blue
+Palm Beach,99,Florida,sky-blue,green
+Pensacola,109,Florida,red-orange,gray-blue
+St. Petersburg,96,Florida,aqua,light-red
+Tallahassee,66,Florida,green,light-gray
+Tampa,409,Florida,black,orange
+Atlanta,625,Georgia,dark-blue,light-gray
+Augusta,53,Georgia,emerald,yellow
+Columbus,101,Georgia,salmon,blue
+Macon,76,Georgia,maroon,white
+Savannah,106,Georgia,orange,dark-gray
+Athens,110,Georgia,dark-pink,light-blue
+Duluth,74,Minnesota,red-orange,black
+Mankato,39,Minnesota,red,blue
+Minneapolis,206,Minnesota,blue,orange
+Rochester,51,Minnesota,purple,yellow
+St. Cloud,51,Minnesota,sky-blue,gray
+St. Paul,150,Minnesota,green,navy-blue
+Albany,141,New York,,
+Bronx,147,New York,pale-green,dark-blue-gray
+Brooklyn,274,New York,,
+Buffalo,156,New York,,
+Long Island,292,New York,,
+Manhattan,409,New York,,
+Queens,241,New York,,
+Rochester,128,New York,baby-blue,raisin
+Staten Island,50,New York,,
+Syracuse,183,New York,,
+Anaheim,319,California,,
+Bakersfield,137,California,,
+Fresno,133,California,,
+Inland Empire,460,California,,
+Long Beach,90,California,green,yellow
+Los Angeles,758,California,baby-blue,black
+Modesto,173,California,dark-yellow,
+Oakland,168,California,,
+Pasadena,157,California,,
+Redding,74,California,dark-red,dark-green
+Sacramento,284,California,,
+San Diego,348,California,,
+San Francisco,410,California,,
+San Jose,200,California,pale-blue,salmon
+Santa Barbara,157,California,,
+Santa Rosa,84,California,wine-red,black

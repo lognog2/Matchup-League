@@ -63,7 +63,17 @@ public class Team extends DataEntity
     private int gamesPlayed;
 
     /**
+     * Team's colors. An array of strings that match color values in styles\color.css.
+     * @since 1.2.0
+     */
+    @Column(name = "colors")
+    private String[] colors;
+
+    /* RELATIONAL VARIABLES */
+
+    /**
      * League this team is part of.
+     * Null if team is not in a league.
      * @since 0.3
      */
     @ManyToOne(fetch = FetchType.EAGER)
@@ -107,6 +117,13 @@ public class Team extends DataEntity
         setName(line[0]);
         setFans(Integer.parseInt(line[1]));
         setLocation(line[2]);
+        if (line.length <= 3) {
+            setColors("black", "white");
+        } else if (line.length == 4) {
+            setColors(line[3], "n-a");
+        } else {
+            setColors(line[3], line[4]);
+        }
         wins = 0;
         gamesPlayed = 0;
         fighterList = new ArrayList<>();
@@ -199,7 +216,7 @@ public class Team extends DataEntity
      */
     public Team() {}
 
-    /* get methods */
+    /* GET METHODS */
 
     /**
      * Gets team ID
@@ -242,6 +259,19 @@ public class Team extends DataEntity
      * @since 0.3
      */
     public int getGamesPlayed() {return gamesPlayed;}
+
+    /**
+     * Gets the team's colors.
+     * @return
+     */
+    public String[] getColors() {return colors;}
+
+    /**
+     * Gets one color of the team.
+     * @param i index of colors array - 0 for primary, 1 for secondary
+     * @return
+     */
+    public String getColor(int i) {return colors[i];}
 
     /**
      * Gets this team's rank in the league standings.
@@ -370,7 +400,7 @@ public class Team extends DataEntity
         return points;
     }
 
-    /* set methods */
+    /* SET METHODS */
 
     /**
      * Sets team name.
@@ -411,6 +441,28 @@ public class Team extends DataEntity
      * @since 0.3
      */
     public void addLoss() {this.gamesPlayed += 1;}
+
+    /**
+     * Sets the team's colors. If colors have not been set, intializes an array of size 2.
+     * @param primary
+     * @param secondary
+     * @since 1.2.0
+     */
+    public void setColors(String primary, String secondary) {
+        if (colors == null) colors = new String[2];
+        colors[0] = primary;
+        colors[1] = secondary;
+    }
+
+    /**
+     * Sets one color
+     * @param i index - 0 for primary, 1 for secondary
+     * @param color new color
+     * @since 1.2.0
+     */
+    public void setColor(int i, String color) {
+        colors[i] = color;
+    }
 
     /**
      * Adds a fighter to this team.
