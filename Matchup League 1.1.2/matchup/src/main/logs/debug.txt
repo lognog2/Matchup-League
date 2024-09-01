@@ -6453,3 +6453,2290 @@ Manager.persistSolo, Orlando vs Fresno
 Manager.persistSolo, Bronx vs Minneapolis
 TournamentMenu.displayGames
 TournamentMenu.userPlays
+FXML: TournamentMenu.playGame
+TournamentMenu.userPlays
+App.setRoot, game_menu
+GameMenu.initialize
+Team13.getOpponent, 101
+Team13.getGame, 101
+Team13.getGame, 101
+Manager.getFPT
+Manager.getFPG
+GameMenu.setGrids
+GameMenu.setFighterList, Minneapolis, [], Grid hgap=0.0, vgap=0.0, alignment=CENTER, true
+Menu.displayFighters, [FighterCard@71401b61, FighterCard@4a663ec2, FighterCard@7674234a, FighterCard@63b36112, FighterCard@1259e516, FighterCard@69b259b1, FighterCard@3e8b49be], Grid hgap=0.0, vgap=0.0, alignment=CENTER
+GameMenu.setFighterList, Bronx, [], Grid hgap=0.0, vgap=0.0, alignment=CENTER, false
+Menu.displayFighters, [FighterCard@519cb010, FighterCard@449d82a9, FighterCard@73c65b8a, FighterCard@41d5ebda, FighterCard@757ddfc0, FighterCard@5d5d930c, FighterCard@1c069926], Grid hgap=0.0, vgap=0.0, alignment=CENTER
+GameMenu.setPlayField
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.matchup, Mirelurk, Link
+GameMenu.matchup, Mirelurk, Sahaquiel
+GameMenu.matchup, Mirelurk, Super Mutant
+GameMenu.matchup, Mirelurk, Squanchy
+GameMenu.matchup, Mirelurk, Raider
+GameMenu.matchup, Mirelurk, Sequid
+GameMenu.matchup, Mirelurk, Bloatfly
+GameMenu.selectFighter, Lizalfo
+GameMenu.resetOpponents
+GameMenu.matchup, Lizalfo, Link
+GameMenu.matchup, Lizalfo, Sahaquiel
+GameMenu.matchup, Lizalfo, Super Mutant
+GameMenu.matchup, Lizalfo, Squanchy
+GameMenu.matchup, Lizalfo, Raider
+GameMenu.matchup, Lizalfo, Sequid
+GameMenu.matchup, Lizalfo, Bloatfly
+GameMenu.selectFighter, Bloatfly
+GameMenu.resetOpponents
+GameMenu.matchup, Bloatfly, Link
+GameMenu.matchup, Bloatfly, Sahaquiel
+GameMenu.matchup, Bloatfly, Super Mutant
+GameMenu.matchup, Bloatfly, Squanchy
+GameMenu.matchup, Bloatfly, Raider
+GameMenu.matchup, Bloatfly, Sequid
+GameMenu.matchup, Bloatfly, Bloatfly
+GameMenu.selectFighter, Lizalfo
+GameMenu.resetOpponents
+GameMenu.matchup, Lizalfo, Link
+GameMenu.matchup, Lizalfo, Sahaquiel
+GameMenu.matchup, Lizalfo, Super Mutant
+GameMenu.matchup, Lizalfo, Squanchy
+GameMenu.matchup, Lizalfo, Raider
+GameMenu.matchup, Lizalfo, Sequid
+GameMenu.matchup, Lizalfo, Bloatfly
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.matchup, Sokka, Link
+GameMenu.matchup, Sokka, Sahaquiel
+GameMenu.matchup, Sokka, Super Mutant
+GameMenu.matchup, Sokka, Squanchy
+GameMenu.matchup, Sokka, Raider
+GameMenu.matchup, Sokka, Sequid
+GameMenu.matchup, Sokka, Bloatfly
+GameMenu.selectFighter, Super Mutant
+GameMenu.resetOpponents
+GameMenu.matchup, Super Mutant, Link
+GameMenu.matchup, Super Mutant, Sahaquiel
+GameMenu.matchup, Super Mutant, Super Mutant
+GameMenu.matchup, Super Mutant, Squanchy
+GameMenu.matchup, Super Mutant, Raider
+GameMenu.matchup, Super Mutant, Sequid
+GameMenu.matchup, Super Mutant, Bloatfly
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.matchup, Sokka, Link
+GameMenu.matchup, Sokka, Sahaquiel
+GameMenu.matchup, Sokka, Super Mutant
+GameMenu.matchup, Sokka, Squanchy
+GameMenu.matchup, Sokka, Raider
+GameMenu.matchup, Sokka, Sequid
+GameMenu.matchup, Sokka, Bloatfly
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.matchup, Mirelurk, Link
+GameMenu.matchup, Mirelurk, Sahaquiel
+GameMenu.matchup, Mirelurk, Super Mutant
+GameMenu.matchup, Mirelurk, Squanchy
+GameMenu.matchup, Mirelurk, Raider
+GameMenu.matchup, Mirelurk, Sequid
+GameMenu.matchup, Mirelurk, Bloatfly
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Mirelurk, Link
+Manager.mergeSoloMatch, fighter209, fighter72, -1
+Manager.mergeMatch, fighter209, fighter72, -1
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.matchup, Sokka, Sahaquiel
+GameMenu.matchup, Sokka, Super Mutant
+GameMenu.matchup, Sokka, Squanchy
+GameMenu.matchup, Sokka, Raider
+GameMenu.matchup, Sokka, Sequid
+GameMenu.matchup, Sokka, Bloatfly
+GameMenu.selectFighter, Super Mutant
+GameMenu.resetOpponents
+GameMenu.matchup, Super Mutant, Sahaquiel
+GameMenu.matchup, Super Mutant, Super Mutant
+GameMenu.matchup, Super Mutant, Squanchy
+GameMenu.matchup, Super Mutant, Raider
+GameMenu.matchup, Super Mutant, Sequid
+GameMenu.matchup, Super Mutant, Bloatfly
+GameMenu.selectFighter, Sole Survivor
+GameMenu.resetOpponents
+GameMenu.matchup, Sole Survivor, Sahaquiel
+GameMenu.matchup, Sole Survivor, Super Mutant
+GameMenu.matchup, Sole Survivor, Squanchy
+GameMenu.matchup, Sole Survivor, Raider
+GameMenu.matchup, Sole Survivor, Sequid
+GameMenu.matchup, Sole Survivor, Bloatfly
+GameMenu.selectFighter, Hulk
+GameMenu.resetOpponents
+GameMenu.matchup, Hulk, Sahaquiel
+GameMenu.matchup, Hulk, Super Mutant
+GameMenu.matchup, Hulk, Squanchy
+GameMenu.matchup, Hulk, Raider
+GameMenu.matchup, Hulk, Sequid
+GameMenu.matchup, Hulk, Bloatfly
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Super Mutant
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Super Mutant, Sahaquiel
+Manager.mergeSoloMatch, fighter332, fighter22, 1
+Manager.mergeMatch, fighter332, fighter22, 1
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.matchup, Sokka, Super Mutant
+GameMenu.matchup, Sokka, Squanchy
+GameMenu.matchup, Sokka, Raider
+GameMenu.matchup, Sokka, Sequid
+GameMenu.matchup, Sokka, Bloatfly
+GameMenu.selectFighter, Sole Survivor
+GameMenu.resetOpponents
+GameMenu.matchup, Sole Survivor, Super Mutant
+GameMenu.matchup, Sole Survivor, Squanchy
+GameMenu.matchup, Sole Survivor, Raider
+GameMenu.matchup, Sole Survivor, Sequid
+GameMenu.matchup, Sole Survivor, Bloatfly
+GameMenu.selectFighter, Hulk
+GameMenu.resetOpponents
+GameMenu.matchup, Hulk, Super Mutant
+GameMenu.matchup, Hulk, Squanchy
+GameMenu.matchup, Hulk, Raider
+GameMenu.matchup, Hulk, Sequid
+GameMenu.matchup, Hulk, Bloatfly
+GameMenu.selectFighter, Sole Survivor
+GameMenu.resetOpponents
+GameMenu.matchup, Sole Survivor, Super Mutant
+GameMenu.matchup, Sole Survivor, Squanchy
+GameMenu.matchup, Sole Survivor, Raider
+GameMenu.matchup, Sole Survivor, Sequid
+GameMenu.matchup, Sole Survivor, Bloatfly
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.matchup, Sokka, Super Mutant
+GameMenu.matchup, Sokka, Squanchy
+GameMenu.matchup, Sokka, Raider
+GameMenu.matchup, Sokka, Sequid
+GameMenu.matchup, Sokka, Bloatfly
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.matchup, Sokka, Super Mutant
+GameMenu.matchup, Sokka, Squanchy
+GameMenu.matchup, Sokka, Raider
+GameMenu.matchup, Sokka, Sequid
+GameMenu.matchup, Sokka, Bloatfly
+GameMenu.selectFighter, Sole Survivor
+GameMenu.resetOpponents
+GameMenu.matchup, Sole Survivor, Super Mutant
+GameMenu.matchup, Sole Survivor, Squanchy
+GameMenu.matchup, Sole Survivor, Raider
+GameMenu.matchup, Sole Survivor, Sequid
+GameMenu.matchup, Sole Survivor, Bloatfly
+GameMenu.selectFighter, Hulk
+GameMenu.resetOpponents
+GameMenu.matchup, Hulk, Super Mutant
+GameMenu.matchup, Hulk, Squanchy
+GameMenu.matchup, Hulk, Raider
+GameMenu.matchup, Hulk, Sequid
+GameMenu.matchup, Hulk, Bloatfly
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Sokka, Super Mutant
+Manager.mergeSoloMatch, fighter3, fighter252, 1
+Manager.mergeMatch, fighter3, fighter252, 1
+GameMenu.selectFighter, Sole Survivor
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Sole Survivor, Squanchy
+Manager.mergeSoloMatch, fighter34, fighter165, 1
+Manager.mergeMatch, fighter34, fighter165, 1
+GameMenu.selectFighter, Hulk
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Hulk, Raider
+Manager.mergeSoloMatch, fighter127, fighter278, 1
+Manager.mergeMatch, fighter127, fighter278, 1
+GameMenu.disableButtons
+Manager.mergeSoloGame, game246, Minneapolis, 1, 4
+Manager.mergeGame, game246, Minneapolis, 1, 4
+FXML: GameMenu.exitGame
+Manager.simRound, 101
+Manager.playGame, game245
+Manager.mergeMatch, fighter25, fighter8, 1
+Manager.mergeMatch, fighter141, fighter115, 1
+Manager.mergeMatch, fighter336, fighter40, 1
+Manager.mergeMatch, fighter146, fighter258, 1
+Manager.mergeMatch, fighter168, fighter36, -1
+Manager.mergeGame, game245, Orlando, 4, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 0
+App.flip, 1
+TournamentMenu.addGames
+Manager.persistSolo, Orlando vs Minneapolis
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+Menu.displayFighters, St. Cloud, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game48.getGameString, Team15
+App.flip, 1
+game50.getGameString, Team15
+App.flip, 1
+game52.getGameString, Team15
+App.flip, 1
+game56.getGameString, Team15
+App.flip, 0
+game60.getGameString, Team15
+App.flip, 0
+Menu.displayFighters, St. Paul, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game47.getGameString, Team16
+App.flip, 0
+game51.getGameString, Team16
+App.flip, 0
+game54.getGameString, Team16
+App.flip, 1
+game56.getGameString, Team16
+App.flip, 1
+game58.getGameString, Team16
+App.flip, 1
+Menu.displayFighters, Mankato, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game47.getGameString, Team12
+App.flip, 1
+game49.getGameString, Team12
+App.flip, 1
+game53.getGameString, Team12
+App.flip, 0
+game57.getGameString, Team12
+App.flip, 0
+game60.getGameString, Team12
+App.flip, 1
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team14
+App.flip, 1
+game50.getGameString, Team14
+App.flip, 0
+game54.getGameString, Team14
+App.flip, 0
+game57.getGameString, Team14
+App.flip, 1
+game59.getGameString, Team14
+App.flip, 1
+Menu.displayFighters, Duluth, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game48.getGameString, Team11
+App.flip, 0
+game51.getGameString, Team11
+App.flip, 1
+game53.getGameString, Team11
+App.flip, 1
+game55.getGameString, Team11
+App.flip, 1
+game59.getGameString, Team11
+App.flip, 0
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+Menu.displayFighters, St. Cloud, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game48.getGameString, Team15
+App.flip, 1
+game50.getGameString, Team15
+App.flip, 1
+game52.getGameString, Team15
+App.flip, 1
+game56.getGameString, Team15
+App.flip, 0
+game60.getGameString, Team15
+App.flip, 0
+Menu.displayFighters, St. Paul, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game47.getGameString, Team16
+App.flip, 0
+game51.getGameString, Team16
+App.flip, 0
+game54.getGameString, Team16
+App.flip, 1
+game56.getGameString, Team16
+App.flip, 1
+game58.getGameString, Team16
+App.flip, 1
+Menu.displayFighters, Mankato, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game47.getGameString, Team12
+App.flip, 1
+game49.getGameString, Team12
+App.flip, 1
+game53.getGameString, Team12
+App.flip, 0
+game57.getGameString, Team12
+App.flip, 0
+game60.getGameString, Team12
+App.flip, 1
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team14
+App.flip, 1
+game50.getGameString, Team14
+App.flip, 0
+game54.getGameString, Team14
+App.flip, 0
+game57.getGameString, Team14
+App.flip, 1
+game59.getGameString, Team14
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team18
+App.flip, 1
+game67.getGameString, Team18
+App.flip, 1
+game71.getGameString, Team18
+App.flip, 1
+game77.getGameString, Team18
+App.flip, 0
+game83.getGameString, Team18
+App.flip, 0
+game89.getGameString, Team18
+App.flip, 0
+game95.getGameString, Team18
+App.flip, 0
+game100.getGameString, Team18
+App.flip, 1
+game104.getGameString, Team18
+App.flip, 1
+game243.getGameString, Team18
+game246.getGameString, Team18
+App.flip, 0
+Menu.displayFighters, Savannah, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team31
+App.flip, 1
+game110.getGameString, Team31
+App.flip, 1
+game112.getGameString, Team31
+App.flip, 1
+game116.getGameString, Team31
+App.flip, 0
+game120.getGameString, Team31
+App.flip, 0
+game242.getGameString, Team31
+App.flip, 1
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team18
+App.flip, 1
+game67.getGameString, Team18
+App.flip, 1
+game71.getGameString, Team18
+App.flip, 1
+game77.getGameString, Team18
+App.flip, 0
+game83.getGameString, Team18
+App.flip, 0
+game89.getGameString, Team18
+App.flip, 0
+game95.getGameString, Team18
+App.flip, 0
+game100.getGameString, Team18
+App.flip, 1
+game104.getGameString, Team18
+App.flip, 1
+game243.getGameString, Team18
+game246.getGameString, Team18
+App.flip, 0
+Menu.displayFighters, Savannah, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team31
+App.flip, 1
+game110.getGameString, Team31
+App.flip, 1
+game112.getGameString, Team31
+App.flip, 1
+game116.getGameString, Team31
+App.flip, 0
+game120.getGameString, Team31
+App.flip, 0
+game242.getGameString, Team31
+App.flip, 1
+Menu.displayFighters, Fresno, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game123.getGameString, Team35
+App.flip, 0
+game132.getGameString, Team35
+App.flip, 0
+game141.getGameString, Team35
+App.flip, 0
+game150.getGameString, Team35
+App.flip, 0
+game159.getGameString, Team35
+App.flip, 0
+game168.getGameString, Team35
+App.flip, 0
+game176.getGameString, Team35
+App.flip, 1
+game183.getGameString, Team35
+App.flip, 1
+game190.getGameString, Team35
+App.flip, 1
+game197.getGameString, Team35
+App.flip, 1
+game204.getGameString, Team35
+App.flip, 1
+game211.getGameString, Team35
+App.flip, 1
+game218.getGameString, Team35
+App.flip, 1
+game225.getGameString, Team35
+App.flip, 1
+game234.getGameString, Team35
+App.flip, 0
+game242.getGameString, Team35
+App.flip, 0
+game245.getGameString, Team35
+App.flip, 1
+Menu.displayFighters, Orlando, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game4.getGameString, Team5
+App.flip, 0
+game10.getGameString, Team5
+App.flip, 0
+game15.getGameString, Team5
+App.flip, 1
+game19.getGameString, Team5
+App.flip, 1
+game23.getGameString, Team5
+App.flip, 1
+game27.getGameString, Team5
+App.flip, 1
+game31.getGameString, Team5
+App.flip, 1
+game37.getGameString, Team5
+App.flip, 0
+game43.getGameString, Team5
+App.flip, 0
+game241.getGameString, Team5
+game245.getGameString, Team5
+App.flip, 0
+game247.getGameString, Team5
+Menu.displayFighters, Fresno, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game123.getGameString, Team35
+App.flip, 0
+game132.getGameString, Team35
+App.flip, 0
+game141.getGameString, Team35
+App.flip, 0
+game150.getGameString, Team35
+App.flip, 0
+game159.getGameString, Team35
+App.flip, 0
+game168.getGameString, Team35
+App.flip, 0
+game176.getGameString, Team35
+App.flip, 1
+game183.getGameString, Team35
+App.flip, 1
+game190.getGameString, Team35
+App.flip, 1
+game197.getGameString, Team35
+App.flip, 1
+game204.getGameString, Team35
+App.flip, 1
+game211.getGameString, Team35
+App.flip, 1
+game218.getGameString, Team35
+App.flip, 1
+game225.getGameString, Team35
+App.flip, 1
+game234.getGameString, Team35
+App.flip, 0
+game242.getGameString, Team35
+App.flip, 0
+game245.getGameString, Team35
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+Menu.displayFighters, Orlando, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game4.getGameString, Team5
+App.flip, 0
+game10.getGameString, Team5
+App.flip, 0
+game15.getGameString, Team5
+App.flip, 1
+game19.getGameString, Team5
+App.flip, 1
+game23.getGameString, Team5
+App.flip, 1
+game27.getGameString, Team5
+App.flip, 1
+game31.getGameString, Team5
+App.flip, 1
+game37.getGameString, Team5
+App.flip, 0
+game43.getGameString, Team5
+App.flip, 0
+game241.getGameString, Team5
+game245.getGameString, Team5
+App.flip, 0
+game247.getGameString, Team5
+Menu.displayFighters, Fresno, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game123.getGameString, Team35
+App.flip, 0
+game132.getGameString, Team35
+App.flip, 0
+game141.getGameString, Team35
+App.flip, 0
+game150.getGameString, Team35
+App.flip, 0
+game159.getGameString, Team35
+App.flip, 0
+game168.getGameString, Team35
+App.flip, 0
+game176.getGameString, Team35
+App.flip, 1
+game183.getGameString, Team35
+App.flip, 1
+game190.getGameString, Team35
+App.flip, 1
+game197.getGameString, Team35
+App.flip, 1
+game204.getGameString, Team35
+App.flip, 1
+game211.getGameString, Team35
+App.flip, 1
+game218.getGameString, Team35
+App.flip, 1
+game225.getGameString, Team35
+App.flip, 1
+game234.getGameString, Team35
+App.flip, 0
+game242.getGameString, Team35
+App.flip, 0
+game245.getGameString, Team35
+App.flip, 1
+Menu.displayFighters, Savannah, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team31
+App.flip, 1
+game110.getGameString, Team31
+App.flip, 1
+game112.getGameString, Team31
+App.flip, 1
+game116.getGameString, Team31
+App.flip, 0
+game120.getGameString, Team31
+App.flip, 0
+game242.getGameString, Team31
+App.flip, 1
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team18
+App.flip, 1
+game67.getGameString, Team18
+App.flip, 1
+game71.getGameString, Team18
+App.flip, 1
+game77.getGameString, Team18
+App.flip, 0
+game83.getGameString, Team18
+App.flip, 0
+game89.getGameString, Team18
+App.flip, 0
+game95.getGameString, Team18
+App.flip, 0
+game100.getGameString, Team18
+App.flip, 1
+game104.getGameString, Team18
+App.flip, 1
+game243.getGameString, Team18
+game246.getGameString, Team18
+App.flip, 0
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.playGame
+TournamentMenu.userPlays
+App.setRoot, game_menu
+GameMenu.initialize
+Team13.getOpponent, 102
+Team13.getGame, 102
+Team13.getGame, 102
+Manager.getFPT
+Manager.getFPG
+GameMenu.setGrids
+GameMenu.setFighterList, Minneapolis, [], Grid hgap=0.0, vgap=0.0, alignment=CENTER, true
+Menu.displayFighters, [FighterCard@4b853ed5, FighterCard@3f7d8286, FighterCard@284e861a, FighterCard@43821198, FighterCard@2113fcab, FighterCard@722933bd, FighterCard@2e0b05b4], Grid hgap=0.0, vgap=0.0, alignment=CENTER
+GameMenu.setFighterList, Orlando, [], Grid hgap=0.0, vgap=0.0, alignment=CENTER, false
+Menu.displayFighters, [FighterCard@6b5e3fc5, FighterCard@321b1217, FighterCard@1c10f8e5, FighterCard@4e961966, FighterCard@542ca766, FighterCard@3ecd8c5e, FighterCard@25818cb2], Grid hgap=0.0, vgap=0.0, alignment=CENTER
+GameMenu.setPlayField
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.matchup, Mirelurk, Lilith
+GameMenu.matchup, Mirelurk, Odin
+GameMenu.matchup, Mirelurk, Super Mutant
+GameMenu.matchup, Mirelurk, Drax
+GameMenu.matchup, Mirelurk, Abrodolf Lincol.
+GameMenu.matchup, Mirelurk, Ryoji Kaji
+GameMenu.matchup, Mirelurk, Bokoblin
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.matchup, Mirelurk, Lilith
+GameMenu.matchup, Mirelurk, Odin
+GameMenu.matchup, Mirelurk, Super Mutant
+GameMenu.matchup, Mirelurk, Drax
+GameMenu.matchup, Mirelurk, Abrodolf Lincol.
+GameMenu.matchup, Mirelurk, Ryoji Kaji
+GameMenu.matchup, Mirelurk, Bokoblin
+GameMenu.selectFighter, Lizalfo
+GameMenu.resetOpponents
+GameMenu.matchup, Lizalfo, Lilith
+GameMenu.matchup, Lizalfo, Odin
+GameMenu.matchup, Lizalfo, Super Mutant
+GameMenu.matchup, Lizalfo, Drax
+GameMenu.matchup, Lizalfo, Abrodolf Lincol.
+GameMenu.matchup, Lizalfo, Ryoji Kaji
+GameMenu.matchup, Lizalfo, Bokoblin
+GameMenu.selectFighter, Bloatfly
+GameMenu.resetOpponents
+GameMenu.matchup, Bloatfly, Lilith
+GameMenu.matchup, Bloatfly, Odin
+GameMenu.matchup, Bloatfly, Super Mutant
+GameMenu.matchup, Bloatfly, Drax
+GameMenu.matchup, Bloatfly, Abrodolf Lincol.
+GameMenu.matchup, Bloatfly, Ryoji Kaji
+GameMenu.matchup, Bloatfly, Bokoblin
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.matchup, Mirelurk, Lilith
+GameMenu.matchup, Mirelurk, Odin
+GameMenu.matchup, Mirelurk, Super Mutant
+GameMenu.matchup, Mirelurk, Drax
+GameMenu.matchup, Mirelurk, Abrodolf Lincol.
+GameMenu.matchup, Mirelurk, Ryoji Kaji
+GameMenu.matchup, Mirelurk, Bokoblin
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.matchup, Sokka, Lilith
+GameMenu.matchup, Sokka, Odin
+GameMenu.matchup, Sokka, Super Mutant
+GameMenu.matchup, Sokka, Drax
+GameMenu.matchup, Sokka, Abrodolf Lincol.
+GameMenu.matchup, Sokka, Ryoji Kaji
+GameMenu.matchup, Sokka, Bokoblin
+GameMenu.selectFighter, Super Mutant
+GameMenu.resetOpponents
+GameMenu.matchup, Super Mutant, Lilith
+GameMenu.matchup, Super Mutant, Odin
+GameMenu.matchup, Super Mutant, Super Mutant
+GameMenu.matchup, Super Mutant, Drax
+GameMenu.matchup, Super Mutant, Abrodolf Lincol.
+GameMenu.matchup, Super Mutant, Ryoji Kaji
+GameMenu.matchup, Super Mutant, Bokoblin
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.matchup, Sokka, Lilith
+GameMenu.matchup, Sokka, Odin
+GameMenu.matchup, Sokka, Super Mutant
+GameMenu.matchup, Sokka, Drax
+GameMenu.matchup, Sokka, Abrodolf Lincol.
+GameMenu.matchup, Sokka, Ryoji Kaji
+GameMenu.matchup, Sokka, Bokoblin
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Sokka
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Sokka, Lilith
+Manager.mergeSoloMatch, fighter3, fighter25, -1
+Manager.mergeMatch, fighter3, fighter25, -1
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Hulk
+GameMenu.resetOpponents
+GameMenu.matchup, Hulk, Odin
+GameMenu.matchup, Hulk, Super Mutant
+GameMenu.matchup, Hulk, Drax
+GameMenu.matchup, Hulk, Abrodolf Lincol.
+GameMenu.matchup, Hulk, Ryoji Kaji
+GameMenu.matchup, Hulk, Bokoblin
+GameMenu.selectFighter, Sole Survivor
+GameMenu.resetOpponents
+GameMenu.matchup, Sole Survivor, Odin
+GameMenu.matchup, Sole Survivor, Super Mutant
+GameMenu.matchup, Sole Survivor, Drax
+GameMenu.matchup, Sole Survivor, Abrodolf Lincol.
+GameMenu.matchup, Sole Survivor, Ryoji Kaji
+GameMenu.matchup, Sole Survivor, Bokoblin
+GameMenu.selectFighter, Super Mutant
+GameMenu.resetOpponents
+GameMenu.matchup, Super Mutant, Odin
+GameMenu.matchup, Super Mutant, Super Mutant
+GameMenu.matchup, Super Mutant, Drax
+GameMenu.matchup, Super Mutant, Abrodolf Lincol.
+GameMenu.matchup, Super Mutant, Ryoji Kaji
+GameMenu.matchup, Super Mutant, Bokoblin
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.matchup, Mirelurk, Odin
+GameMenu.matchup, Mirelurk, Super Mutant
+GameMenu.matchup, Mirelurk, Drax
+GameMenu.matchup, Mirelurk, Abrodolf Lincol.
+GameMenu.matchup, Mirelurk, Ryoji Kaji
+GameMenu.matchup, Mirelurk, Bokoblin
+GameMenu.selectFighter, Super Mutant
+GameMenu.resetOpponents
+GameMenu.matchup, Super Mutant, Odin
+GameMenu.matchup, Super Mutant, Super Mutant
+GameMenu.matchup, Super Mutant, Drax
+GameMenu.matchup, Super Mutant, Abrodolf Lincol.
+GameMenu.matchup, Super Mutant, Ryoji Kaji
+GameMenu.matchup, Super Mutant, Bokoblin
+GameMenu.selectFighter, Sole Survivor
+GameMenu.resetOpponents
+GameMenu.matchup, Sole Survivor, Odin
+GameMenu.matchup, Sole Survivor, Super Mutant
+GameMenu.matchup, Sole Survivor, Drax
+GameMenu.matchup, Sole Survivor, Abrodolf Lincol.
+GameMenu.matchup, Sole Survivor, Ryoji Kaji
+GameMenu.matchup, Sole Survivor, Bokoblin
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Sole Survivor
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Sole Survivor, Odin
+Manager.mergeSoloMatch, fighter34, fighter141, 1
+Manager.mergeMatch, fighter34, fighter141, 1
+GameMenu.selectFighter, Hulk
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Hulk, Super Mutant
+Manager.mergeSoloMatch, fighter127, fighter336, 1
+Manager.mergeMatch, fighter127, fighter336, 1
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Super Mutant
+GameMenu.resetOpponents
+GameMenu.matchup, Super Mutant, Drax
+GameMenu.matchup, Super Mutant, Abrodolf Lincol.
+GameMenu.matchup, Super Mutant, Ryoji Kaji
+GameMenu.matchup, Super Mutant, Bokoblin
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.matchup, Mirelurk, Drax
+GameMenu.matchup, Mirelurk, Abrodolf Lincol.
+GameMenu.matchup, Mirelurk, Ryoji Kaji
+GameMenu.matchup, Mirelurk, Bokoblin
+GameMenu.selectFighter, Lizalfo
+GameMenu.resetOpponents
+GameMenu.matchup, Lizalfo, Drax
+GameMenu.matchup, Lizalfo, Abrodolf Lincol.
+GameMenu.matchup, Lizalfo, Ryoji Kaji
+GameMenu.matchup, Lizalfo, Bokoblin
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.matchup, Mirelurk, Drax
+GameMenu.matchup, Mirelurk, Abrodolf Lincol.
+GameMenu.matchup, Mirelurk, Ryoji Kaji
+GameMenu.matchup, Mirelurk, Bokoblin
+GameMenu.selectFighter, Super Mutant
+GameMenu.resetOpponents
+GameMenu.matchup, Super Mutant, Drax
+GameMenu.matchup, Super Mutant, Abrodolf Lincol.
+GameMenu.matchup, Super Mutant, Ryoji Kaji
+GameMenu.matchup, Super Mutant, Bokoblin
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Mirelurk
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Mirelurk, Drax
+Manager.mergeSoloMatch, fighter209, fighter146, 1
+Manager.mergeMatch, fighter209, fighter146, 1
+GameMenu.selectFighter, Super Mutant
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Super Mutant, Abrodolf Lincol.
+Manager.mergeSoloMatch, fighter332, fighter168, 1
+Manager.mergeMatch, fighter332, fighter168, 1
+GameMenu.disableButtons
+Manager.mergeSoloGame, game247, Minneapolis, 1, 4
+Manager.mergeGame, game247, Minneapolis, 1, 4
+FXML: GameMenu.exitGame
+Manager.simRound, 102
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+Menu.displayFighters, St. Cloud, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game48.getGameString, Team15
+App.flip, 1
+game50.getGameString, Team15
+App.flip, 1
+game52.getGameString, Team15
+App.flip, 1
+game56.getGameString, Team15
+App.flip, 0
+game60.getGameString, Team15
+App.flip, 0
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team18
+App.flip, 1
+game67.getGameString, Team18
+App.flip, 1
+game71.getGameString, Team18
+App.flip, 1
+game77.getGameString, Team18
+App.flip, 0
+game83.getGameString, Team18
+App.flip, 0
+game89.getGameString, Team18
+App.flip, 0
+game95.getGameString, Team18
+App.flip, 0
+game100.getGameString, Team18
+App.flip, 1
+game104.getGameString, Team18
+App.flip, 1
+game243.getGameString, Team18
+game246.getGameString, Team18
+App.flip, 0
+Menu.displayFighters, Manhattan, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game65.getGameString, Team22
+App.flip, 1
+game69.getGameString, Team22
+App.flip, 1
+game73.getGameString, Team22
+App.flip, 1
+game77.getGameString, Team22
+App.flip, 1
+game81.getGameString, Team22
+App.flip, 1
+game87.getGameString, Team22
+App.flip, 0
+game93.getGameString, Team22
+App.flip, 0
+game99.getGameString, Team22
+App.flip, 0
+game105.getGameString, Team22
+App.flip, 0
+Menu.displayFighters, Syracuse, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game65.getGameString, Team26
+App.flip, 0
+game70.getGameString, Team26
+App.flip, 1
+game74.getGameString, Team26
+App.flip, 1
+game78.getGameString, Team26
+App.flip, 1
+game82.getGameString, Team26
+App.flip, 1
+game86.getGameString, Team26
+App.flip, 1
+game92.getGameString, Team26
+App.flip, 0
+game98.getGameString, Team26
+App.flip, 0
+game104.getGameString, Team26
+App.flip, 0
+Menu.displayFighters, Queens, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game64.getGameString, Team23
+App.flip, 0
+game70.getGameString, Team23
+App.flip, 0
+game75.getGameString, Team23
+App.flip, 1
+game79.getGameString, Team23
+App.flip, 1
+game83.getGameString, Team23
+App.flip, 1
+game87.getGameString, Team23
+App.flip, 1
+game91.getGameString, Team23
+App.flip, 1
+game97.getGameString, Team23
+App.flip, 0
+game103.getGameString, Team23
+App.flip, 0
+Menu.displayFighters, Buffalo, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game61.getGameString, Team20
+App.flip, 1
+game67.getGameString, Team20
+App.flip, 0
+game73.getGameString, Team20
+App.flip, 0
+game79.getGameString, Team20
+App.flip, 0
+game85.getGameString, Team20
+App.flip, 0
+game90.getGameString, Team20
+App.flip, 1
+game94.getGameString, Team20
+App.flip, 1
+game98.getGameString, Team20
+App.flip, 1
+game102.getGameString, Team20
+App.flip, 1
+Menu.displayFighters, Albany, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team17
+App.flip, 0
+game69.getGameString, Team17
+App.flip, 0
+game75.getGameString, Team17
+App.flip, 0
+game80.getGameString, Team17
+App.flip, 1
+game84.getGameString, Team17
+App.flip, 1
+game88.getGameString, Team17
+App.flip, 1
+game92.getGameString, Team17
+App.flip, 1
+game96.getGameString, Team17
+App.flip, 1
+game102.getGameString, Team17
+App.flip, 0
+Menu.displayFighters, Long Island, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game64.getGameString, Team21
+App.flip, 1
+game68.getGameString, Team21
+App.flip, 1
+game72.getGameString, Team21
+App.flip, 1
+game76.getGameString, Team21
+App.flip, 1
+game82.getGameString, Team21
+App.flip, 0
+game88.getGameString, Team21
+App.flip, 0
+game94.getGameString, Team21
+App.flip, 0
+game100.getGameString, Team21
+App.flip, 0
+game105.getGameString, Team21
+App.flip, 1
+Menu.displayFighters, Brooklyn, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game62.getGameString, Team19
+App.flip, 1
+game66.getGameString, Team19
+App.flip, 1
+game72.getGameString, Team19
+App.flip, 0
+game78.getGameString, Team19
+App.flip, 0
+game84.getGameString, Team19
+App.flip, 0
+game90.getGameString, Team19
+App.flip, 0
+game95.getGameString, Team19
+App.flip, 1
+game99.getGameString, Team19
+App.flip, 1
+game103.getGameString, Team19
+App.flip, 1
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game62.getGameString, Team24
+App.flip, 0
+game68.getGameString, Team24
+App.flip, 0
+game74.getGameString, Team24
+App.flip, 0
+game80.getGameString, Team24
+App.flip, 0
+game85.getGameString, Team24
+App.flip, 1
+game89.getGameString, Team24
+App.flip, 1
+game93.getGameString, Team24
+App.flip, 1
+game97.getGameString, Team24
+App.flip, 1
+game101.getGameString, Team24
+App.flip, 1
+Menu.displayFighters, Staten Island, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game61.getGameString, Team25
+App.flip, 0
+game66.getGameString, Team25
+App.flip, 0
+game71.getGameString, Team25
+App.flip, 0
+game76.getGameString, Team25
+App.flip, 0
+game81.getGameString, Team25
+App.flip, 0
+game86.getGameString, Team25
+App.flip, 0
+game91.getGameString, Team25
+App.flip, 0
+game96.getGameString, Team25
+App.flip, 0
+game101.getGameString, Team25
+App.flip, 0
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team18
+App.flip, 1
+game67.getGameString, Team18
+App.flip, 1
+game71.getGameString, Team18
+App.flip, 1
+game77.getGameString, Team18
+App.flip, 0
+game83.getGameString, Team18
+App.flip, 0
+game89.getGameString, Team18
+App.flip, 0
+game95.getGameString, Team18
+App.flip, 0
+game100.getGameString, Team18
+App.flip, 1
+game104.getGameString, Team18
+App.flip, 1
+game243.getGameString, Team18
+game246.getGameString, Team18
+App.flip, 0
+Menu.displayFighters, Staten Island, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game61.getGameString, Team25
+App.flip, 0
+game66.getGameString, Team25
+App.flip, 0
+game71.getGameString, Team25
+App.flip, 0
+game76.getGameString, Team25
+App.flip, 0
+game81.getGameString, Team25
+App.flip, 0
+game86.getGameString, Team25
+App.flip, 0
+game91.getGameString, Team25
+App.flip, 0
+game96.getGameString, Team25
+App.flip, 0
+game101.getGameString, Team25
+App.flip, 0
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game62.getGameString, Team24
+App.flip, 0
+game68.getGameString, Team24
+App.flip, 0
+game74.getGameString, Team24
+App.flip, 0
+game80.getGameString, Team24
+App.flip, 0
+game85.getGameString, Team24
+App.flip, 1
+game89.getGameString, Team24
+App.flip, 1
+game93.getGameString, Team24
+App.flip, 1
+game97.getGameString, Team24
+App.flip, 1
+game101.getGameString, Team24
+App.flip, 1
+Menu.displayFighters, Brooklyn, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game62.getGameString, Team19
+App.flip, 1
+game66.getGameString, Team19
+App.flip, 1
+game72.getGameString, Team19
+App.flip, 0
+game78.getGameString, Team19
+App.flip, 0
+game84.getGameString, Team19
+App.flip, 0
+game90.getGameString, Team19
+App.flip, 0
+game95.getGameString, Team19
+App.flip, 1
+game99.getGameString, Team19
+App.flip, 1
+game103.getGameString, Team19
+App.flip, 1
+Menu.displayFighters, Long Island, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game64.getGameString, Team21
+App.flip, 1
+game68.getGameString, Team21
+App.flip, 1
+game72.getGameString, Team21
+App.flip, 1
+game76.getGameString, Team21
+App.flip, 1
+game82.getGameString, Team21
+App.flip, 0
+game88.getGameString, Team21
+App.flip, 0
+game94.getGameString, Team21
+App.flip, 0
+game100.getGameString, Team21
+App.flip, 0
+game105.getGameString, Team21
+App.flip, 1
+Menu.displayFighters, Albany, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team17
+App.flip, 0
+game69.getGameString, Team17
+App.flip, 0
+game75.getGameString, Team17
+App.flip, 0
+game80.getGameString, Team17
+App.flip, 1
+game84.getGameString, Team17
+App.flip, 1
+game88.getGameString, Team17
+App.flip, 1
+game92.getGameString, Team17
+App.flip, 1
+game96.getGameString, Team17
+App.flip, 1
+game102.getGameString, Team17
+App.flip, 0
+Menu.displayFighters, Buffalo, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game61.getGameString, Team20
+App.flip, 1
+game67.getGameString, Team20
+App.flip, 0
+game73.getGameString, Team20
+App.flip, 0
+game79.getGameString, Team20
+App.flip, 0
+game85.getGameString, Team20
+App.flip, 0
+game90.getGameString, Team20
+App.flip, 1
+game94.getGameString, Team20
+App.flip, 1
+game98.getGameString, Team20
+App.flip, 1
+game102.getGameString, Team20
+App.flip, 1
+Menu.displayFighters, Albany, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team17
+App.flip, 0
+game69.getGameString, Team17
+App.flip, 0
+game75.getGameString, Team17
+App.flip, 0
+game80.getGameString, Team17
+App.flip, 1
+game84.getGameString, Team17
+App.flip, 1
+game88.getGameString, Team17
+App.flip, 1
+game92.getGameString, Team17
+App.flip, 1
+game96.getGameString, Team17
+App.flip, 1
+game102.getGameString, Team17
+App.flip, 0
+Menu.displayFighters, Buffalo, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game61.getGameString, Team20
+App.flip, 1
+game67.getGameString, Team20
+App.flip, 0
+game73.getGameString, Team20
+App.flip, 0
+game79.getGameString, Team20
+App.flip, 0
+game85.getGameString, Team20
+App.flip, 0
+game90.getGameString, Team20
+App.flip, 1
+game94.getGameString, Team20
+App.flip, 1
+game98.getGameString, Team20
+App.flip, 1
+game102.getGameString, Team20
+App.flip, 1
+Menu.displayFighters, Queens, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game64.getGameString, Team23
+App.flip, 0
+game70.getGameString, Team23
+App.flip, 0
+game75.getGameString, Team23
+App.flip, 1
+game79.getGameString, Team23
+App.flip, 1
+game83.getGameString, Team23
+App.flip, 1
+game87.getGameString, Team23
+App.flip, 1
+game91.getGameString, Team23
+App.flip, 1
+game97.getGameString, Team23
+App.flip, 0
+game103.getGameString, Team23
+App.flip, 0
+Menu.displayFighters, Syracuse, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game65.getGameString, Team26
+App.flip, 0
+game70.getGameString, Team26
+App.flip, 1
+game74.getGameString, Team26
+App.flip, 1
+game78.getGameString, Team26
+App.flip, 1
+game82.getGameString, Team26
+App.flip, 1
+game86.getGameString, Team26
+App.flip, 1
+game92.getGameString, Team26
+App.flip, 0
+game98.getGameString, Team26
+App.flip, 0
+game104.getGameString, Team26
+App.flip, 0
+Menu.displayFighters, Manhattan, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game65.getGameString, Team22
+App.flip, 1
+game69.getGameString, Team22
+App.flip, 1
+game73.getGameString, Team22
+App.flip, 1
+game77.getGameString, Team22
+App.flip, 1
+game81.getGameString, Team22
+App.flip, 1
+game87.getGameString, Team22
+App.flip, 0
+game93.getGameString, Team22
+App.flip, 0
+game99.getGameString, Team22
+App.flip, 0
+game105.getGameString, Team22
+App.flip, 0
+Menu.displayFighters, Syracuse, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game65.getGameString, Team26
+App.flip, 0
+game70.getGameString, Team26
+App.flip, 1
+game74.getGameString, Team26
+App.flip, 1
+game78.getGameString, Team26
+App.flip, 1
+game82.getGameString, Team26
+App.flip, 1
+game86.getGameString, Team26
+App.flip, 1
+game92.getGameString, Team26
+App.flip, 0
+game98.getGameString, Team26
+App.flip, 0
+game104.getGameString, Team26
+App.flip, 0
+Menu.displayFighters, Queens, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game64.getGameString, Team23
+App.flip, 0
+game70.getGameString, Team23
+App.flip, 0
+game75.getGameString, Team23
+App.flip, 1
+game79.getGameString, Team23
+App.flip, 1
+game83.getGameString, Team23
+App.flip, 1
+game87.getGameString, Team23
+App.flip, 1
+game91.getGameString, Team23
+App.flip, 1
+game97.getGameString, Team23
+App.flip, 0
+game103.getGameString, Team23
+App.flip, 0
+Menu.displayFighters, Buffalo, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game61.getGameString, Team20
+App.flip, 1
+game67.getGameString, Team20
+App.flip, 0
+game73.getGameString, Team20
+App.flip, 0
+game79.getGameString, Team20
+App.flip, 0
+game85.getGameString, Team20
+App.flip, 0
+game90.getGameString, Team20
+App.flip, 1
+game94.getGameString, Team20
+App.flip, 1
+game98.getGameString, Team20
+App.flip, 1
+game102.getGameString, Team20
+App.flip, 1
+Menu.displayFighters, Albany, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team17
+App.flip, 0
+game69.getGameString, Team17
+App.flip, 0
+game75.getGameString, Team17
+App.flip, 0
+game80.getGameString, Team17
+App.flip, 1
+game84.getGameString, Team17
+App.flip, 1
+game88.getGameString, Team17
+App.flip, 1
+game92.getGameString, Team17
+App.flip, 1
+game96.getGameString, Team17
+App.flip, 1
+game102.getGameString, Team17
+App.flip, 0
+Menu.displayFighters, Long Island, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game64.getGameString, Team21
+App.flip, 1
+game68.getGameString, Team21
+App.flip, 1
+game72.getGameString, Team21
+App.flip, 1
+game76.getGameString, Team21
+App.flip, 1
+game82.getGameString, Team21
+App.flip, 0
+game88.getGameString, Team21
+App.flip, 0
+game94.getGameString, Team21
+App.flip, 0
+game100.getGameString, Team21
+App.flip, 0
+game105.getGameString, Team21
+App.flip, 1
+Menu.displayFighters, Brooklyn, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game62.getGameString, Team19
+App.flip, 1
+game66.getGameString, Team19
+App.flip, 1
+game72.getGameString, Team19
+App.flip, 0
+game78.getGameString, Team19
+App.flip, 0
+game84.getGameString, Team19
+App.flip, 0
+game90.getGameString, Team19
+App.flip, 0
+game95.getGameString, Team19
+App.flip, 1
+game99.getGameString, Team19
+App.flip, 1
+game103.getGameString, Team19
+App.flip, 1
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game62.getGameString, Team24
+App.flip, 0
+game68.getGameString, Team24
+App.flip, 0
+game74.getGameString, Team24
+App.flip, 0
+game80.getGameString, Team24
+App.flip, 0
+game85.getGameString, Team24
+App.flip, 1
+game89.getGameString, Team24
+App.flip, 1
+game93.getGameString, Team24
+App.flip, 1
+game97.getGameString, Team24
+App.flip, 1
+game101.getGameString, Team24
+App.flip, 1
+Menu.displayFighters, Staten Island, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game61.getGameString, Team25
+App.flip, 0
+game66.getGameString, Team25
+App.flip, 0
+game71.getGameString, Team25
+App.flip, 0
+game76.getGameString, Team25
+App.flip, 0
+game81.getGameString, Team25
+App.flip, 0
+game86.getGameString, Team25
+App.flip, 0
+game91.getGameString, Team25
+App.flip, 0
+game96.getGameString, Team25
+App.flip, 0
+game101.getGameString, Team25
+App.flip, 0
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team18
+App.flip, 1
+game67.getGameString, Team18
+App.flip, 1
+game71.getGameString, Team18
+App.flip, 1
+game77.getGameString, Team18
+App.flip, 0
+game83.getGameString, Team18
+App.flip, 0
+game89.getGameString, Team18
+App.flip, 0
+game95.getGameString, Team18
+App.flip, 0
+game100.getGameString, Team18
+App.flip, 1
+game104.getGameString, Team18
+App.flip, 1
+game243.getGameString, Team18
+game246.getGameString, Team18
+App.flip, 0
+Menu.displayFighters, Manhattan, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game65.getGameString, Team22
+App.flip, 1
+game69.getGameString, Team22
+App.flip, 1
+game73.getGameString, Team22
+App.flip, 1
+game77.getGameString, Team22
+App.flip, 1
+game81.getGameString, Team22
+App.flip, 1
+game87.getGameString, Team22
+App.flip, 0
+game93.getGameString, Team22
+App.flip, 0
+game99.getGameString, Team22
+App.flip, 0
+game105.getGameString, Team22
+App.flip, 0
+Menu.displayFighters, Syracuse, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game65.getGameString, Team26
+App.flip, 0
+game70.getGameString, Team26
+App.flip, 1
+game74.getGameString, Team26
+App.flip, 1
+game78.getGameString, Team26
+App.flip, 1
+game82.getGameString, Team26
+App.flip, 1
+game86.getGameString, Team26
+App.flip, 1
+game92.getGameString, Team26
+App.flip, 0
+game98.getGameString, Team26
+App.flip, 0
+game104.getGameString, Team26
+App.flip, 0
+Menu.displayFighters, Queens, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game64.getGameString, Team23
+App.flip, 0
+game70.getGameString, Team23
+App.flip, 0
+game75.getGameString, Team23
+App.flip, 1
+game79.getGameString, Team23
+App.flip, 1
+game83.getGameString, Team23
+App.flip, 1
+game87.getGameString, Team23
+App.flip, 1
+game91.getGameString, Team23
+App.flip, 1
+game97.getGameString, Team23
+App.flip, 0
+game103.getGameString, Team23
+App.flip, 0
+Menu.displayFighters, Buffalo, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game61.getGameString, Team20
+App.flip, 1
+game67.getGameString, Team20
+App.flip, 0
+game73.getGameString, Team20
+App.flip, 0
+game79.getGameString, Team20
+App.flip, 0
+game85.getGameString, Team20
+App.flip, 0
+game90.getGameString, Team20
+App.flip, 1
+game94.getGameString, Team20
+App.flip, 1
+game98.getGameString, Team20
+App.flip, 1
+game102.getGameString, Team20
+App.flip, 1
+Menu.displayFighters, Albany, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team17
+App.flip, 0
+game69.getGameString, Team17
+App.flip, 0
+game75.getGameString, Team17
+App.flip, 0
+game80.getGameString, Team17
+App.flip, 1
+game84.getGameString, Team17
+App.flip, 1
+game88.getGameString, Team17
+App.flip, 1
+game92.getGameString, Team17
+App.flip, 1
+game96.getGameString, Team17
+App.flip, 1
+game102.getGameString, Team17
+App.flip, 0
+Menu.displayFighters, Long Island, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game64.getGameString, Team21
+App.flip, 1
+game68.getGameString, Team21
+App.flip, 1
+game72.getGameString, Team21
+App.flip, 1
+game76.getGameString, Team21
+App.flip, 1
+game82.getGameString, Team21
+App.flip, 0
+game88.getGameString, Team21
+App.flip, 0
+game94.getGameString, Team21
+App.flip, 0
+game100.getGameString, Team21
+App.flip, 0
+game105.getGameString, Team21
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game63.getGameString, Team18
+App.flip, 1
+game67.getGameString, Team18
+App.flip, 1
+game71.getGameString, Team18
+App.flip, 1
+game77.getGameString, Team18
+App.flip, 0
+game83.getGameString, Team18
+App.flip, 0
+game89.getGameString, Team18
+App.flip, 0
+game95.getGameString, Team18
+App.flip, 0
+game100.getGameString, Team18
+App.flip, 1
+game104.getGameString, Team18
+App.flip, 1
+game243.getGameString, Team18
+game246.getGameString, Team18
+App.flip, 0
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+Menu.displayFighters, Orlando, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game4.getGameString, Team5
+App.flip, 0
+game10.getGameString, Team5
+App.flip, 0
+game15.getGameString, Team5
+App.flip, 1
+game19.getGameString, Team5
+App.flip, 1
+game23.getGameString, Team5
+App.flip, 1
+game27.getGameString, Team5
+App.flip, 1
+game31.getGameString, Team5
+App.flip, 1
+game37.getGameString, Team5
+App.flip, 0
+game43.getGameString, Team5
+App.flip, 0
+game241.getGameString, Team5
+game245.getGameString, Team5
+App.flip, 0
+game247.getGameString, Team5
+App.flip, 0
+Menu.displayFighters, Fresno, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game123.getGameString, Team35
+App.flip, 0
+game132.getGameString, Team35
+App.flip, 0
+game141.getGameString, Team35
+App.flip, 0
+game150.getGameString, Team35
+App.flip, 0
+game159.getGameString, Team35
+App.flip, 0
+game168.getGameString, Team35
+App.flip, 0
+game176.getGameString, Team35
+App.flip, 1
+game183.getGameString, Team35
+App.flip, 1
+game190.getGameString, Team35
+App.flip, 1
+game197.getGameString, Team35
+App.flip, 1
+game204.getGameString, Team35
+App.flip, 1
+game211.getGameString, Team35
+App.flip, 1
+game218.getGameString, Team35
+App.flip, 1
+game225.getGameString, Team35
+App.flip, 1
+game234.getGameString, Team35
+App.flip, 0
+game242.getGameString, Team35
+App.flip, 0
+game245.getGameString, Team35
+App.flip, 1
+Menu.displayFighters, Savannah, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team31
+App.flip, 1
+game110.getGameString, Team31
+App.flip, 1
+game112.getGameString, Team31
+App.flip, 1
+game116.getGameString, Team31
+App.flip, 0
+game120.getGameString, Team31
+App.flip, 0
+game242.getGameString, Team31
+App.flip, 1
+Menu.displayFighters, Fresno, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game123.getGameString, Team35
+App.flip, 0
+game132.getGameString, Team35
+App.flip, 0
+game141.getGameString, Team35
+App.flip, 0
+game150.getGameString, Team35
+App.flip, 0
+game159.getGameString, Team35
+App.flip, 0
+game168.getGameString, Team35
+App.flip, 0
+game176.getGameString, Team35
+App.flip, 1
+game183.getGameString, Team35
+App.flip, 1
+game190.getGameString, Team35
+App.flip, 1
+game197.getGameString, Team35
+App.flip, 1
+game204.getGameString, Team35
+App.flip, 1
+game211.getGameString, Team35
+App.flip, 1
+game218.getGameString, Team35
+App.flip, 1
+game225.getGameString, Team35
+App.flip, 1
+game234.getGameString, Team35
+App.flip, 0
+game242.getGameString, Team35
+App.flip, 0
+game245.getGameString, Team35
+App.flip, 1
+Menu.displayFighters, Savannah, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team31
+App.flip, 1
+game110.getGameString, Team31
+App.flip, 1
+game112.getGameString, Team31
+App.flip, 1
+game116.getGameString, Team31
+App.flip, 0
+game120.getGameString, Team31
+App.flip, 0
+game242.getGameString, Team31
+App.flip, 1
+Menu.displayFighters, Augusta, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team28
+App.flip, 0
+game111.getGameString, Team28
+App.flip, 1
+game113.getGameString, Team28
+App.flip, 1
+game115.getGameString, Team28
+App.flip, 1
+game119.getGameString, Team28
+App.flip, 0
+Menu.displayFighters, Columbus, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game106.getGameString, Team29
+App.flip, 0
+game109.getGameString, Team29
+App.flip, 0
+game112.getGameString, Team29
+App.flip, 0
+game115.getGameString, Team29
+App.flip, 0
+game118.getGameString, Team29
+App.flip, 0
+Menu.displayFighters, Augusta, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team28
+App.flip, 0
+game111.getGameString, Team28
+App.flip, 1
+game113.getGameString, Team28
+App.flip, 1
+game115.getGameString, Team28
+App.flip, 1
+game119.getGameString, Team28
+App.flip, 0
+Menu.displayFighters, Savannah, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team31
+App.flip, 1
+game110.getGameString, Team31
+App.flip, 1
+game112.getGameString, Team31
+App.flip, 1
+game116.getGameString, Team31
+App.flip, 0
+game120.getGameString, Team31
+App.flip, 0
+game242.getGameString, Team31
+App.flip, 1
+Menu.displayFighters, Atlanta, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game106.getGameString, Team27
+App.flip, 1
+game110.getGameString, Team27
+App.flip, 0
+game114.getGameString, Team27
+App.flip, 0
+game117.getGameString, Team27
+App.flip, 1
+game119.getGameString, Team27
+App.flip, 1
+Menu.displayFighters, Macon, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game107.getGameString, Team30
+App.flip, 1
+game109.getGameString, Team30
+App.flip, 1
+game113.getGameString, Team30
+App.flip, 0
+game117.getGameString, Team30
+App.flip, 0
+game120.getGameString, Team30
+App.flip, 1
+Menu.displayFighters, Atlanta, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game106.getGameString, Team27
+App.flip, 1
+game110.getGameString, Team27
+App.flip, 0
+game114.getGameString, Team27
+App.flip, 0
+game117.getGameString, Team27
+App.flip, 1
+game119.getGameString, Team27
+App.flip, 1
+Menu.displayFighters, Savannah, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team31
+App.flip, 1
+game110.getGameString, Team31
+App.flip, 1
+game112.getGameString, Team31
+App.flip, 1
+game116.getGameString, Team31
+App.flip, 0
+game120.getGameString, Team31
+App.flip, 0
+game242.getGameString, Team31
+App.flip, 1
+Menu.displayFighters, Atlanta, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game106.getGameString, Team27
+App.flip, 1
+game110.getGameString, Team27
+App.flip, 0
+game114.getGameString, Team27
+App.flip, 0
+game117.getGameString, Team27
+App.flip, 1
+game119.getGameString, Team27
+App.flip, 1
+Menu.displayFighters, Macon, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game107.getGameString, Team30
+App.flip, 1
+game109.getGameString, Team30
+App.flip, 1
+game113.getGameString, Team30
+App.flip, 0
+game117.getGameString, Team30
+App.flip, 0
+game120.getGameString, Team30
+App.flip, 1
+Menu.displayFighters, Athens, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game107.getGameString, Team32
+App.flip, 0
+game111.getGameString, Team32
+App.flip, 0
+game114.getGameString, Team32
+App.flip, 1
+game116.getGameString, Team32
+App.flip, 1
+game118.getGameString, Team32
+App.flip, 1
+Menu.displayFighters, Columbus, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game106.getGameString, Team29
+App.flip, 0
+game109.getGameString, Team29
+App.flip, 0
+game112.getGameString, Team29
+App.flip, 0
+game115.getGameString, Team29
+App.flip, 0
+game118.getGameString, Team29
+App.flip, 0
+Menu.displayFighters, Augusta, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team28
+App.flip, 0
+game111.getGameString, Team28
+App.flip, 1
+game113.getGameString, Team28
+App.flip, 1
+game115.getGameString, Team28
+App.flip, 1
+game119.getGameString, Team28
+App.flip, 0
+Menu.displayFighters, Columbus, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game106.getGameString, Team29
+App.flip, 0
+game109.getGameString, Team29
+App.flip, 0
+game112.getGameString, Team29
+App.flip, 0
+game115.getGameString, Team29
+App.flip, 0
+game118.getGameString, Team29
+App.flip, 0
+Menu.displayFighters, Augusta, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game108.getGameString, Team28
+App.flip, 0
+game111.getGameString, Team28
+App.flip, 1
+game113.getGameString, Team28
+App.flip, 1
+game115.getGameString, Team28
+App.flip, 1
+game119.getGameString, Team28
+App.flip, 0
+Menu.displayFighters, Columbus, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game106.getGameString, Team29
+App.flip, 0
+game109.getGameString, Team29
+App.flip, 0
+game112.getGameString, Team29
+App.flip, 0
+game115.getGameString, Team29
+App.flip, 0
+game118.getGameString, Team29
+App.flip, 0
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
+FXML: TournamentMenu.toTeamView
+App.setRoot, view\team_view
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+game46.getGameString, Team13
+App.flip, 0
+game49.getGameString, Team13
+App.flip, 0
+game52.getGameString, Team13
+App.flip, 0
+game55.getGameString, Team13
+App.flip, 0
+game58.getGameString, Team13
+App.flip, 0
+game244.getGameString, Team13
+game246.getGameString, Team13
+App.flip, 1
+game247.getGameString, Team13
+App.flip, 1
+App.goBack
+App.setRoot, tournament_menu
+TournamentMenu.initialize
+TournamentMenu.setResults
+App.flip, 1
+TournamentMenu.
+TournamentMenu.displayGames
+TournamentMenu.userPlays
