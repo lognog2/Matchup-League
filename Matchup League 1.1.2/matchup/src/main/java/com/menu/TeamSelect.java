@@ -32,14 +32,13 @@ public class TeamSelect extends Menu
             public void changed(ObservableValue<? extends Number> ov, Number oldVal, Number newVal) {
                 if (newVal.intValue() >= 0) {
                     selectedLeague = leagueList.get(newVal.intValue());
-
+                    teamLabel.setText("");
                     fansLabel.setText("");
                     teams.getItems().clear();
                     for (Team t : selectedLeague.getTeamList())
                         teams.getItems().add(t.getName()); 
                 }
                 else write("league choice bar index is less than 0");
-
             }
         });
     }
@@ -50,8 +49,8 @@ public class TeamSelect extends Menu
             public void changed(ObservableValue<? extends Number> ov, Number oldVal, Number newVal) {
                 if (newVal.intValue() >= 0) {
                     selectedTeam = selectedLeague.getTeamList().get(newVal.intValue());
-                    teamLabel.getStyleClass().clear();
-                    teamLabel.getStyleClass().add(selectedTeam.getColor(0));
+                    setTextColor(teamLabel, selectedTeam.getColor(0));
+                    teamLabel.setText(selectedTeam.getName());
                     fansLabel.setText("Fans: " + selectedTeam.getFans());
                 }  
                 else write("team choice bar index is less than 0");

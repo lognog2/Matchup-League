@@ -46,6 +46,8 @@ public class GameMenu extends Menu {
     
         userLabel.setText(userTeam.getName());
         opponentLabel.setText(opponentTeam.getName());
+        setTextColor(userLabel, userTeam.getColor(0));
+        setTextColor(opponentLabel, opponentTeam.getColor(0));
         setGrids();
     }
 

@@ -118,9 +118,9 @@ public class Team extends DataEntity
         setFans(Integer.parseInt(line[1]));
         setLocation(line[2]);
         if (line.length <= 3) {
-            setColors("black", "white");
+            setColors("black", "black");
         } else if (line.length == 4) {
-            setColors(line[3], "n-a");
+            setColors(line[3], line[3]);
         } else {
             setColors(line[3], line[4]);
         }

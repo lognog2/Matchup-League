@@ -32,18 +32,22 @@ public class SeasonMenu extends Menu
         setLeague(selectedLeague);
         
         teamLabel.setText(userTeam.getName());
+        setTextColor(teamLabel, userTeam.getColor(0));
         recordLabel.setText("Record: " + userTeam.getWins() + "-" + userTeam.getLosses());
         if (!seasonOver()) {
             roundLabel.setText("Game " + (round + 1) + "/" + userLeague.getGameAmt());
             if (userOnBye()) {
                 nextLabel.setText("On bye");
+                setTextColor(nextLabel, "black");
                 playButton.setText("Sim round");
             } else {
                 nextLabel.setText("Next game: vs " + userTeam.getOpponent(round).getName());
+                setTextColor(nextLabel, userTeam.getOpponent(round).getColor(0));
                 playButton.setText("Play game");
             }
         } else {
             roundLabel.setText("Season over");
+            setTextColor(nextLabel, "black");
             nextLabel.setText("Congrats! You finished " + App.addSuffix(userRank));
             playButton.setText("To tournament");
         }

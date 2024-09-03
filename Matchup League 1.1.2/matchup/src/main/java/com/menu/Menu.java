@@ -10,6 +10,7 @@ import com.menu.load.Loader;
 import com.menu.load.Loader.Procedure;
 import com.repo.*;
 import javafx.concurrent.Task;
+import javafx.scene.Parent;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 
@@ -269,6 +270,12 @@ public abstract class Menu extends App
         round = 100;
         tourney = new Tournament(tourneyTeams);
     }
+
+    protected void setTextColor(Parent node, String color) {
+        node.setStyle("-fx-text-fill: -"+color+";");
+    }
+
+
 
     /**
      * Gets list of teams to include in a tournament, depending on game mode

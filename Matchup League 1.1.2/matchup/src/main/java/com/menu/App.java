@@ -56,7 +56,7 @@ public class App extends Application {
         Debug.write("App.start", stage);
         navStack = new Stack<>();
         scene = new Scene(loadFXML("main_menu"), window_width, window_height);
-        scene.getStylesheets().add("src/main/styles/colors.css");
+        scene.getStylesheets().add(getClass().getResource("/css/colors.css").toExternalForm());
         stage.setScene(scene);
         stage.setMaximized(true);
         stage.show();

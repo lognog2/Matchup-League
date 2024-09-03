@@ -30,6 +30,7 @@ public class TeamView extends Menu {
     private void displayTeam(Team t) {
         leagueLabel.setText(t.getLeague().getName());
         teamLabel.setText(t.getName());
+        setTextColor(teamLabel, t.getColor(0));
         fansLabel.setText("Fans: " + t.getFans());
         recordLabel.setText("Record: " + t.getWins() + "-" + t.getLosses());
         displayFighters(t);
