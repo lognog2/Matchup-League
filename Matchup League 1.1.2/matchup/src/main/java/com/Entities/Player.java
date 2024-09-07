@@ -213,65 +213,19 @@ public class Player extends DataEntity
     /**
      * Gets index of next choice of fighter to play according to
      * strategy.
-     * @param fighters Available fighters on team
+     * @param fighters Available fighters on team. They should be in descending order by base power.
      * @return index of fighter choice
      * @since 1.1.0
+     * @version 2
      */
     public int getChoice(List<Fighter> fighters) {
         if (fighters.size() == 1) return 0;
-        else if (strategy == 0) return (int)(Math.random() * fighters.size());
-        else if (strategy == 1) return fighters.indexOf(bestFighter(fighters));
-        else if (strategy == 2) return fighters.indexOf(worstFighter(fighters));
-        else if (strategy == 3) return fighters.indexOf(secondBestFighter(fighters));
-        else return 0;
-    }
-    /**
-     * Gets the fighter with highest base from a list of fighters.
-     * @param fighters List of fighters
-     * @return fighter with highest base
-     * @since 1.1.0
-     * @version 2
-     */
-    private Fighter bestFighter (List<Fighter> fighters) {
-        return fighters.get(0);
-    }
-    /**
-     * Gets fighter with the lowest base power from a list of fighters. 
-     * @param fighters Fighter list
-     * @param trimExtras When true, disregards the worst (FPT - FPG) fighters
-     * @return Fighter with lowest base
-     * @since 1.1.0
-     * @version 3
-     */
-    private Fighter worstFighter (List<Fighter> fighters) {
-        int index = fighters.size() - manager.spareFighters() - 1;
-        //write(fighters.size() + " - " + manager.spareFighters() + " - 1 = " + index);
-        return fighters.get(index);
-    }
-    /**
-     * Gets the fighter with the second highest base from a list of fighters.
-     * If this is the last fighter to be played in the game, returns bestFighter instead.
-     * @param fighters List of fighters
-     * @return Fighter with second highest base
-     * @since 1.1.0
-     * @version 2
-     */
-    private Fighter secondBestFighter(List<Fighter> fighters) {
-        if (fighters.size() == (1 + (manager.spareFighters())))
-            return bestFighter(fighters);
-        else 
-            return fighters.get(1);
-    }
-
-    /*private Fighter smartFighter(List<Fighter> fighters)
-    {
-        List<Fighter> candidates = new ArrayList<>();
-     
-        for (Fighter f : fighters)
-        {
-
+        switch (strategy) {
+            case 0: return (int)(Math.random() * fighters.size()); //random fighter
+            case 1: return 0; //best fighter
+            case 2: return fighters.size() - 1; //worst fighter
+            case 3: return 1; //second best fighter
+            default: return 0;
         }
-
-        return worstFighter(candidates);
-    }*/
+    }
 }

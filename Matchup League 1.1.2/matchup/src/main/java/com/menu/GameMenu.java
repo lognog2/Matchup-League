@@ -136,9 +136,11 @@ public class GameMenu extends Menu {
     
     private int getCPUChoice() {
         write("GameMenu.getCPUChoice");
-        List<Fighter> availableFighters = new ArrayList<>(FPT - matchRound);
-        for (FighterCard fc : opponentFighters)
-            availableFighters.add(fc.getFighter());
+        List<Fighter> availableFighters = new ArrayList<>(FPG - matchRound);
+        for (int i = 0; i < FPG - matchRound; i++) {
+            availableFighters.add(opponentFighters.get(i).getFighter());
+        }
+            
         return opponentTeam.getPlayer().getChoice(availableFighters);
     }
 

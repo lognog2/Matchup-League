@@ -919,8 +919,8 @@ public class Manager
 
             double score1 = 0.0, score2 = 0.0;
             for (int i = 0; i < FPG; i += 1) {
-                int choice1 = team1.getPlayer().getChoice(teamList1);
-                int choice2 = team2.getPlayer().getChoice(teamList2);
+                int choice1 = team1.getPlayer().getChoice(teamList1.subList(0, FPG - i));
+                int choice2 = team2.getPlayer().getChoice(teamList2.subList(0, FPG - i));
                 Fighter f1 = teamList1.remove(choice1);
                 Fighter f2 = teamList2.remove(choice2); 
                 int result = Menu.matchup(f1, f2);

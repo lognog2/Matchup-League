@@ -14,6 +14,35 @@ Avatar Roku,AWFE,1900,V,100,W,150,0,Fire Nation
 Sozin,FV,1930,F,150,S,190,0,Fire Nation
 Avatar Kyoshi,AWFE,1910,E,180,R,60,0,Earth Kingdom
 Appa,A,1865,R,80,L,50,0,Air Nomads
+*Element Kingdoms,,,,,,,,
+Frost Wizard,IGR,1660,C,60,F,80,2,Frost Kingdom
+Frost Giant,IE,1750,W,120,F,60,2,Frost Kingdom
+Frost Soldier,IM,1650,W,50,M,50,2,Frost Kingdom
+Frost Dragon,IA,1700,C,100,F,150,2,Frost Kingdom
+Flame Wizard,FGR,1680,I,90,W,40,2,Flame Kingdom
+Flame Giant,FE,1600,C,80,W,60,2,Flame Kingdom
+Flame Soldier,FM,1650,E,70,W,60,2,Flame Kingdom
+Flame Dragon,FA,1740,C,100,W,140,2,Flame Kingdom
+Lightning Wizard,LGR,1730,G,60,E,50,2,Storm Kingdom
+Lightning Giant,LE,1640,C,100,R,80,2,Storm Kingdom
+Lightning Soldier,LM,1630,W,90,M,120,2,Storm Kingdom
+Lightning Dragon,LAR,1680,A,110,M,90,2,Storm Kingdom
+Cyborg Wizard,CGR,1640,R,70,F,50,2,Cyber Kingdom
+Cyborg Dragon,CAR,1680,G,130,L,100,2,Cyber Kingdom
+Cyborg Giant,CE,1700,M,100,E,60,2,Cyber Kingdom
+Cyborg Soldier,CM,1750,M,150,I,150,2,Cyber Kingdom
+Sky Wizard,AGR,1620,I,50,G,90,2,Cloud Kingdom
+Sky Giant,AE,1640,F,50,M,70,2,Cloud Kingdom
+Sky Soldier,AM,1640,R,130,E,120,2,Cloud Kingdom
+Sky Dragon,AR,1670,L,40,F,80,2,Cloud Kingdom
+Aquatic Wizard,WGR,1650,F,120,L,150,2,Ocean Kingdom
+Aquatic Giant,WE,1640,F,50,A,100,2,Ocean Kingdom
+Aquatic Soldier,WM,1600,R,60,A,90,2,Ocean Kingdom
+Aquatic Dragon,WAR,1630,W,110,L,120,2,Ocean Kingdom
+High Sorcerer,GR,1850,G,70,S,200,1,Magic Kingdom
+Magic Soldier,GM,1750,M,120,G,100,1,Magic Kingdom
+Magic Giant,GE,1700,R,100,E,140,1,Magic Kingdom
+Wyvern,GAR,1800,M,90,G,120,1,Magic Kingdom
 *Evangelion,,,,,,,,
 EVA 00,CME,1930,A,140,E,140,0,Japan
 EVA 01,SMR,1990,V,180,E,200,0,Japan
@@ -40,19 +69,19 @@ Nick Valentine,RC,1840,C,100,L,60,0,Commonwealth
 Dogmeat,M,1790,M,40,E,60,0,Commonwealth
 Super Mutant,VE,1870,V,110,R,50,8,Commonwealth
 Deathclaw,M,1920,M,80,E,130,1,Commonwealth
-Raider,VR,1820,W,40,R,90,12,Commonwealth
-Synth,VCL,1850,C,70,F,70,7,Commonwealth
+Raider,VR,1820,W,40,R,90,12,Raiders
+Synth,VCL,1850,C,70,F,70,7,Institute
 Hancock,R,1860,V,80,M,50,0,Commonwealth
-Paladin Danse,RCL,1910,L,120,C,80,0,Commonwealth
-Elder Maxson,E,1930,A,160,F,200,0,Commonwealth
+Paladin Danse,RCL,1910,L,120,C,80,0,Brotherhood of Steel
+Elder Maxson,E,1930,A,160,F,200,0,Brotherhood of Steel
 Radroach,MA,1600,W,20,M,10,15,Commonwealth
 Yao Guai,M,1890,M,70,L,90,3,Commonwealth
 Codsworth,CF,1830,S,80,E,100,0,Commonwealth
 Bloatfly,RA,1650,R,80,A,40,7,Commonwealth
 Bloodbug,MWA,1750,W,60,M,70,5,Commonwealth
 Mirelurk,MW,1810,F,80,V,60,8,Commonwealth
-Kellogg,RI,1880,L,140,S,180,0,Commonwealth
-Preston Garvey,RL,1860,R,60,C,50,0,Commonwealth
+Kellogg,RI,1880,L,140,S,180,0,Institute
+Preston Garvey,RL,1860,R,60,C,50,0,Minutemen
 *Fullmetal Alchemist,,,,,,,,
 Edward Elric,SMCG,1920,G,120,E,60,0,Amestris
 Alphonse Elric,MG,1870,V,70,C,70,0,Amestris
@@ -104,6 +133,28 @@ Robot,C,1890,C,110,G,100,0,United States
 Donald Ferguson,RC,1820,V,60,L,50,0,United States
 Monster Girl,MG,1920,M,100,R,60,0,United States
 Sequid,MV,1700,M,70,E,140,6,Mars
+*JoJo's Bizzare Adventure 1-3,,,,,,,,
+Jonathan Joestar,SMGF,1940,I,150,R,120,0,England
+Speedwagon,R,1770,V,50,S,40,0,England
+Will Zeppelli,FG,1870,I,160,M,80,0,Italy
+Dio Brando,EGI,1950,G,110,F,90,0,England
+Erina,W,1620,S,100,V,20,0,England
+Joseph Joestar,SMGFL,1970,V,120,A,70,0,England
+Smokey,M,1740,S,40,R,50,0,United States
+Santana,VMW,1880,W,170,F,160,0,Mexico
+Wamuu,EV,1920,E,120,W,110,0,Mexico
+Esidisi,RVFW,1940,G,90,S,70,0,Mexico
+Kars,MVA,1960,R,100,F,180,0,Mexico
+Von Stroheim,RC,1840,R,120,L,100,0,Germany
+Caesar Zeppeli,MEWG,1920,M,70,A,90,0,Italy
+Straizo,MVI,1850,G,60,E,100,0,China
+Jotaro Kujo,SMG,2000,V,180,M,70,0,Japan
+Avdol,EFG,1900,M,60,W,100,0,Egypt
+Kakyoin,MRG,1890,E,80,G,90,0,Japan
+Polnareff,MG,1880,A,150,F,110,0,France
+Iggy,RGC,1830,I,120,E,120,0,United States
+DIO,VMG,2000,G,100,S,160,0,England
+Hol Horse,RG,1820,R,70,V,70,0,United States
 *Jujustsu Kaisen,,,,,,,,
 Yuji Itadori,SMG,1930,V,60,E,40,0,Japan
 Megumi Fushiguro,G,1940,M,50,V,80,0,Japan
@@ -159,6 +210,76 @@ Venom,VR,1910,E,100,G,60,0,Symbiote
 Miles Morales,RL,1880,R,50,C,60,0,United States
 Spider-Gwen,R,1850,A,60,L,40,0,United States
 Nebula,RC,1840,C,60,L,60,0,Titan
+*Overwatch,,,,,,,,
+Tracer,RL,1800,M,60,V,90,0,England
+Reaper,RV,1860,M,70,R,70,0,United States
+Widowmaker,RV,1820,G,80,C,60,0,France
+Pharah,EA,1830,R,60,C,110,0,Egypt
+Reinhardt,MRF,1930,F,50,A,100,0,Germany
+Mercy,A,1710,G,50,I,30,0,Switzerland
+Torbjorn,RCF,1850,F,100,E,70,0,Sweden
+Hanzo,R,1820,R,50,C,50,0,Japan
+Winston,L,1910,E,40,W,80,0,Moon
+Zenyatta,RC,1780,V,110,L,90,0,Nepal
+Bastion,REC,1880,E,60,M,50,0,Unknown
+Symmetra,RL,1850,C,120,E,100,0,India
+Zarya,RE,1910,L,80,G,50,0,Russia
+Cassidy,R,1840,R,50,E,70,0,United States
+Soldier 76,RE,1860,C,80,M,60,0,United States
+Lucio,RL,1740,E,90,V,60,0,Brazil
+Roadhog,R,1920,M,70,R,70,0,Australia
+Junkrat,E,1830,E,90,C,120,0,Australia
+DVA,REC,1950,L,40,F,60,0,South Korea
+Mei,RI,1820,G,80,F,70,0,China
+Genji,MRC,1810,V,100,E,70,0,Japan
+Ana,RW,1750,C,100,V,50,0,Egypt
+Sombra,RL,1810,R,80,E,120,0,Mexico
+Orisa,RC,1930,A,70,L,60,0,Numbani
+Doomfist,MRV,1900,M,50,R,70,0,Nigeria
+Moira,VG,1770,E,100,A,60,0,Ireland
+Brigitte,M,1730,F,80,I,80,0,Sweden
+Hammond,MRC,1910,C,40,R,60,0,Moon
+Ashe,REF,1840,C,70,W,110,0,United States
+Baptise,RE,1760,A,130,G,50,0,Haiti
+Sigma,EA,1920,E,30,C,80,0,Netherlands
+Echo,REAC,1820,G,80,L,100,0,Singapore
+Sojourn,RC,1850,R,60,G,90,0,Canada
+Junker Queen,MR,1900,M,40,C,70,0,Australia
+Kiriko,RG,1750,R,60,V,60,0,Japan
+Ramattra,MRC,1920,V,60,M,50,0,Nepal
+Lifeweaver,RG,1730,R,60,C,50,0,Thailand
+Illari,RFA,1740,V,90,E,60,0,Peru
+Mauga,RF,1940,E,60,C,60,0,Samoa
+Venture,ME,1810,W,100,V,90,0,Canada
+Juno,RWA,1740,F,90,G,50,0,Mars
+*Public Domain,,,,,,,,
+Beowulf,SMR,1770,V,140,F,60,0,England
+Grendel,MV,1730,W,130,M,100,0,England
+Don Quixote,SM,1820,W,50,R,40,0,Spain
+Sancho Panza,MR,1720,S,30,G,70,0,Spain
+Juliet Capulet,W,1720,F,150,V,100,0,Italy
+Romeo Montague,SMW,1820,W,150,V,100,0,Italy
+Mercutio,M,1740,W,50,M,120,0,Italy
+Tybalt,MV,1720,M,70,F,110,0,Italy
+Benvolio,M,1730,F,40,I,30,0,Italy
+Macbeth,SV,1810,M,40,V,80,0,Scotland
+Lady Macbeth,V,1810,S,90,G,60,0,Scotland
+Hamlet,SM,1800,V,50,G,50,0,Denmark
+Claudius,VM,1740,S,100,R,70,0,Denmark
+Horatio,W,1690,V,30,W,50,0,Denmark
+Mickey Mouse,S,1750,V,20,W,20,0,United States
+Minnie Mouse,W,1690,S,10,G,10,0,United States
+Paul Bunyan,M,1780,M,60,W,40,0,United States
+Babe the Blue Ox,EW,1710,I,40,A,50,0,United States
+Bigfoot,M,1860,L,70,W,70,0,United States
+Mothman,AV,1840,A,90,F,80,0,United States
+Jersey Devil,VFA,1760,R,70,W,120,0,United States
+Skinwalker,MV,1770,M,60,L,80,1,United States
+Wendigo,IV,1790,I,120,G,90,0,United States
+Chupacabra,EV,1740,G,70,M,100,0,Mexico
+Loch Ness Monster,MW,1810,E,90,L,100,0,Scotland
+Yeti,MIV,1820,R,80,F,120,0,Nepal
+Thunderbird,AL,1800,W,150,R,60,1,United States
 *Rick and Morty,,,,,,,,
 Rick Sanchez,SMRE,2030,C,150,V,150,0,Citadel of Ricks
 Morty Smith,SW,1820,V,50,M,50,1,Citadel of Ricks

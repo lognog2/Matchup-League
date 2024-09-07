@@ -118,7 +118,7 @@ public class Team extends DataEntity
         setFans(Integer.parseInt(line[1]));
         setLocation(line[2]);
         if (line.length <= 3) {
-            setColors("black", "black");
+            setColors();
         } else if (line.length == 4) {
             setColors(line[3], line[3]);
         } else {
@@ -137,6 +137,7 @@ public class Team extends DataEntity
         this.name = name;
         setFans(0);
         setLocation("");
+        setColors();
         wins = 0;
         gamesPlayed = 0;
         fighterList = new ArrayList<>();
@@ -152,7 +153,8 @@ public class Team extends DataEntity
         {
             setName(randomName());
             setLocation("Autogen");
-            setFans((int)Math.random() * 101); //range: 0 - 100
+            setFans((int)(Math.random() * 101)); //range: 0 - 100
+            setColors();
             wins = 0;
             gamesPlayed = 0;
         }
@@ -160,6 +162,7 @@ public class Team extends DataEntity
             setName("default");
             setLocation("");
             setFans(0);
+            setColors();
             wins = 0;
             gamesPlayed = 0;
             Player auto = new Player(true);
@@ -176,6 +179,7 @@ public class Team extends DataEntity
         setName("Bye");
         setLocation("Bye");
         setFans(fans);
+        setColors();
         wins = 0;
         gamesPlayed = 100;
         fighterList = new ArrayList<>(1);
@@ -190,6 +194,7 @@ public class Team extends DataEntity
         setName(t.getName());
         setFans(t.getFans());
         setLocation(t.location);
+        setColors(t.getColor(0), t.getColor(1));
         wins = t.getWins();
         gamesPlayed = t.getGamesPlayed();
         fighterList = new ArrayList<>(t.getFighterList());
@@ -205,6 +210,7 @@ public class Team extends DataEntity
         setName(newName);
         setFans(t.getFans());
         setLocation(t.location);
+        setColors(t.getColor(0), t.getColor(1));
         wins = t.getWins();
         gamesPlayed = t.getGamesPlayed();
         fighterList = new ArrayList<>(t.getFighterList());
@@ -441,6 +447,14 @@ public class Team extends DataEntity
      * @since 0.3
      */
     public void addLoss() {this.gamesPlayed += 1;}
+
+    /**
+     * Sets colors to default (black and black)
+     * @since 1.2.0
+     */
+    public void setColors() {
+        setColors("black", "black");
+    }
 
     /**
      * Sets the team's colors. If colors have not been set, intializes an array of size 2.

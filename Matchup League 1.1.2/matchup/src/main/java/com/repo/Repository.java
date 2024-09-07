@@ -64,7 +64,7 @@ public class Repository
             fDAO.load_data("Fighters", "f_sample.csv");
             if (useTeams) {
                 loader.setMessage("Loading teams");
-                String teamFile = (debug) ? "t_test.csv" : "t_sample.csv";
+                String teamFile = (debug) ? "t_test" : "uhs.csv";
                 tDAO.load_data("Teams", teamFile);
             } else {
                 loader.addLoadUnits((double)getTotalRarity());
