@@ -1,0 +1,83 @@
+2024-10-29T22:00:11.314090600-04:00[America/New_York]
+Debug writer initialized
+App.main
+App.start, javafx.stage.Stage@2104e0b3
+FXML: MainMenu.newSeason
+Menu.startLoad
+App.loadMenu
+App.setRoot, load\load_screen
+new Loader
+new Loader, com.menu.load.LoadScreen@40a9e4ab
+Loader.setLoadScreen, com.menu.load.LoadScreen@40a9e4ab
+App.setLoader, com.menu.load.Loader@60a8ff81
+==========START THREAD: LOAD_DATA
+Loader.initProcedure, LOAD_DATA, 178.0
+Loader.setNextMenu, team_select
+runLater: Loader.setMessage, Connecting to database
+(This may take a moment...)
+App.getManager
+App.getSession
+App.getSF
+new Manager, SessionImpl(1390029566<open>)
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+Manager.getRepo
+Loader.addLoadUnits, 96.0
+new LU: 274.0
+App.getManager
+Manager.getRepo
+Manager.load_data, false
+Manager.setTeamSize, 5, 7
+Manager.setFPT, 7
+Manager.setFPG, 5
+App.getLoader
+runLater: Loader.setMessage, Loading fighters
+Loading Fighters from file f_sample.csv
+App.getLoader
+Load progress: 10%
+Load progress: 20%
+Load progress: 30%
+Load progress: 40%
+Load progress: 50%
+Load progress: 60%
+Load progress: 70%
+Load progress: 80%
+Load progress: 90%
+Load progress: 100%
+runLater: Loader.setMessage, Loading teams
+Loading Teams from file uhs.csv
+App.getLoader
+Load progress: 110%
+Load progress: 120%
+Load progress: 130%
+App.getLoader
+Manager.requiredFighters
+Manager.extraFighters
+Loader.addLoadUnits, 232.0
+new LU: -465.1627906976714
+Manager.replicateGeneric
+Manager.extraFighters
+App.getLoader
+runLater: Loader.setMessage, Generating fighters
+Generating 239 fighters
+Manager.assignTeams_byLocation
+App.getLoader
+runLater: Loader.setMessage, Assigning teams to leagues
+java.lang.NullPointerException: Cannot invoke "com.Entities.Player$Strategy.getStrategy(int)" because "this.strategy" is null
+runLater: Loader.setMessage, Ready to go!
+runLater: Loader.endLoad
+Manager.createByeTeam
+Final load progress: 0.8000699930007117
+==========END THREAD: LOAD_DATA
+App.setLoader, null
+App.setRoot, team_select
+TeamSelect.initialize
+TeamSelect.leagueListener
+TeamSelect.teamListener
+FXML: TeamSelect.toMenu
+Manager.removeAllUsers
+App.toMainMenu
+App.setRoot, main_menu

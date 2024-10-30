@@ -1,0 +1,29 @@
+Element Kingdoms,,,,,,,,
+Frost Wizard,IGR,1660,C,60,F,80,2,Frost Kingdom
+Frost Giant,IE,1750,W,120,F,60,2,Frost Kingdom
+Frost Soldier,IM,1650,W,50,M,50,2,Frost Kingdom
+Frost Dragon,IA,1700,C,100,F,150,2,Frost Kingdom
+Flame Wizard,FGR,1680,I,90,W,40,2,Flame Kingdom
+Flame Giant,FE,1600,C,80,W,60,2,Flame Kingdom
+Flame Soldier,FM,1650,E,70,W,60,2,Flame Kingdom
+Flame Dragon,FA,1740,C,100,W,140,2,Flame Kingdom
+Lightning Wizard,LGR,1730,G,60,E,50,2,Storm Kingdom
+Lightning Giant,LE,1640,C,100,R,80,2,Storm Kingdom
+Lightning Soldier,LM,1630,W,90,M,120,2,Storm Kingdom
+Lightning Dragon,LAR,1680,A,110,M,90,2,Storm Kingdom
+Cyborg Wizard,CGR,1640,R,70,F,50,2,Cyber Kingdom
+Cyborg Dragon,CAR,1680,G,130,L,100,2,Cyber Kingdom
+Cyborg Giant,CE,1700,M,100,E,60,2,Cyber Kingdom
+Cyborg Soldier,CM,1750,M,150,I,150,2,Cyber Kingdom
+Sky Wizard,AGR,1620,I,50,G,90,2,Cloud Kingdom
+Sky Giant,AE,1640,F,50,M,70,2,Cloud Kingdom
+Sky Soldier,AM,1640,R,130,E,120,2,Cloud Kingdom
+Sky Dragon,AR,1670,L,40,F,80,2,Cloud Kingdom
+Aquatic Wizard,WGR,1650,F,120,L,150,2,Ocean Kingdom
+Aquatic Giant,WE,1640,F,50,A,100,2,Ocean Kingdom
+Aquatic Soldier,WM,1600,R,60,A,90,2,Ocean Kingdom
+Aquatic Dragon,WAR,1630,W,110,L,120,2,Ocean Kingdom
+High Sorcerer,GR,1850,G,70,S,200,1,Magic Kingdom
+Magic Soldier,GM,1750,M,120,G,100,1,Magic Kingdom
+Magic Giant,GE,1700,R,100,E,140,1,Magic Kingdom
+Wyvern,GAR,1800,M,90,G,120,1,Magic Kingdom
