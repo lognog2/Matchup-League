@@ -2,7 +2,7 @@ package com.menu;
 
 import java.io.IOException;
 import com.Bracket;
-import com.Entities.Game;
+import com.entities.Game;
 import com.menu.card.GameCard;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;

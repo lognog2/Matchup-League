@@ -1,7 +1,7 @@
 package com.menu.card;
 
-import com.Entities.Game;
-import com.Entities.Team;
+import com.entities.Game;
+import com.entities.Team;
 import com.menu.App;
 
 import java.io.IOException;

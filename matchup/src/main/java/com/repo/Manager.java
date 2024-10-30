@@ -2,7 +2,7 @@ package com.repo;
 
 import org.hibernate.*;
 import com.Schedule;
-import com.Entities.*;
+import com.entities.*;
 import com.menu.App;
 import com.menu.Menu;
 import com.menu.load.Loader;

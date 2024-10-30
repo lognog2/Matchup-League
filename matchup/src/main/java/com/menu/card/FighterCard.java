@@ -1,7 +1,7 @@
 package com.menu.card;
 
 import java.io.IOException;
-import com.Entities.Fighter;
+import com.entities.Fighter;
 import com.menu.App;
 
 import javafx.event.ActionEvent;

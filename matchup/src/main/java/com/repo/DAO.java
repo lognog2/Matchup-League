@@ -32,7 +32,7 @@ public class DAO<T> {
      * Name of the directory the entity classes are in.
      * @since 1.0
      */
-    private final String packageName = "matchup.Entities.";
+    private final String packageName = "matchup.entities.";
 
     /**
      * Constructs a DAO with

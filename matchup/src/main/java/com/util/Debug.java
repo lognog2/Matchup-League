@@ -14,7 +14,7 @@ import javafx.application.Platform;
  * <p>Manager
  * <p>Loader
  * <p>All menu classes
- * <p>Entities, as needed
+ * <p>entities, as needed
  * @since 1.1.2
  */
 public abstract class Debug {

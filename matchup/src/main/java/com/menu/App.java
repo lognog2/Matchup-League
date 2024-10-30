@@ -12,7 +12,7 @@ import java.util.Stack;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import com.Entities.Team;
+import com.entities.Team;
 import com.menu.load.Loader;
 import com.repo.Manager;
 import com.util.Debug;

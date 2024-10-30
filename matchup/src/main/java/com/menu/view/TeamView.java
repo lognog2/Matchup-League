@@ -1,7 +1,7 @@
 package com.menu.view;
 
 import java.io.IOException;
-import com.Entities.*;
+import com.entities.*;
 import com.menu.App;
 import com.menu.Menu;
 

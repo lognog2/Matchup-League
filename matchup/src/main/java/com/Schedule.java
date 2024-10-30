@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import org.hibernate.Session;
-import com.Entities.*;
+import com.entities.*;
 import com.menu.App;
 //import com.javafx.load.Loader;
 import com.util.Debug;

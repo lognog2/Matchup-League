@@ -8,7 +8,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import com.Entities.*;
+import com.entities.*;
 import com.menu.card.FighterCard;
 
 /**

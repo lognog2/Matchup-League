@@ -8,7 +8,7 @@ import com.repo.Manager;
 import com.repo.Repository;
 
 /**
- * The Entities class is an abstract class which all entity classes extend. 
+ * The entities class is an abstract class which all entity classes extend. 
  * In Hibernate, an entity is an object that can be stored in the database. 
  * Each entity has its own table, and entity objects can be 
  * persisted or merged into the database.

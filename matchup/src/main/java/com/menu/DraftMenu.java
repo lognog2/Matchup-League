@@ -9,7 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import com.Entities.*;
+import com.entities.*;
 import com.menu.card.FighterCard;
 import java.util.List;
 

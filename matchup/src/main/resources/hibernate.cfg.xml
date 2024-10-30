@@ -30,11 +30,11 @@
         <property name="hibernate.cache.region.factory_class">org.hibernate.cache.jcache.JCacheRegionFactory</property>
 
         <!-- Annotated classes -->
-        <mapping class="com.Entities.Fighter"/>
-        <mapping class="com.Entities.Team"/>
-        <mapping class="com.Entities.League"/>
-        <mapping class="com.Entities.Player"/>
-        <mapping class="com.Entities.Game"/>
+        <mapping class="com.entities.Fighter"/>
+        <mapping class="com.entities.Team"/>
+        <mapping class="com.entities.League"/>
+        <mapping class="com.entities.Player"/>
+        <mapping class="com.entities.Game"/>
 
     </session-factory>
 </hibernate-configuration>

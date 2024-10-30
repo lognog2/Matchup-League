@@ -3,7 +3,7 @@ package com.repo;
 import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
-import com.Entities.*;
+import com.entities.*;
 import com.menu.App;
 import com.menu.load.Loader;
 
@@ -161,7 +161,7 @@ public class Repository
      * @since 1.0
      */
     public List<Game> getGames_inLeague_byRound(int round, League lg) 
-    {return gDAO.run_selectionQuery("SELECT DISTINCT g FROM com.Entities.Game g " +
+    {return gDAO.run_selectionQuery("SELECT DISTINCT g FROM com.entities.Game g " +
     "JOIN g.teams t " + "JOIN t.league l " +
     "WHERE g.round = " + round + " AND l.name = '" + lg.getName() + "'");}
     

@@ -2,7 +2,7 @@ package com;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.Entities.Team;
+import com.entities.Team;
 import com.menu.card.GameCard;
 
 import javafx.scene.layout.VBox;

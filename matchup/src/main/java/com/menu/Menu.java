@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import com.Tournament;
-import com.Entities.*;
+import com.entities.*;
 import com.menu.card.FighterCard;
 import com.menu.load.Loader;
 import com.menu.load.Loader.Procedure;
