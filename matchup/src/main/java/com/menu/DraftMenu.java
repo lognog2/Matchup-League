@@ -1,6 +1,7 @@
 package com.menu;
 
 import java.io.IOException;
+import java.util.List;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
@@ -11,7 +12,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import com.entities.*;
 import com.menu.card.FighterCard;
-import java.util.List;
+import com.util.Debug;
 
 /**
  * Controller for the draft menu.
@@ -205,7 +206,7 @@ public class DraftMenu extends Menu {
             //write("execute: DraftMenu.endDraft");
             draftButton.setText("End draft");
             draftButton.setOnAction
-                (event -> {try {nextMenu();} catch (IOException e) {e.printStackTrace();}});
+                (event -> {try {nextMenu();} catch (IOException e) {Debug.error(-1, e);}});
             int index = topBar.getChildren().indexOf(roundLabel);
             topBar.getChildren().set(index, draftButton);
         });

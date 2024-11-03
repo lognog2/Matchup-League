@@ -9,9 +9,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Stack;
+import java.util.Map;
+import java.util.HashMap;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import com.entities.Player.Strategy;
 import com.entities.Team;
 import com.menu.load.Loader;
 import com.repo.Manager;
@@ -40,21 +43,23 @@ public class App extends Application {
      */
     private static Stack<String> navStack;
 
+    /**
+     * Map of all strategies, indexed by their ID.
+     * @since 1.2.0
+     */
+    public static Map<Integer, Strategy> strategyMap;
+
     private static Manager appManager;
     private static Loader loader;
 
     private static SessionFactory sf;
     private static Session ses;
 
-    /*@Override
-    public void init() throws Exception {
-        super.init();
-    }*/
-
     @Override
     public void start(Stage stage) throws IOException {
         Debug.write("App.start", stage);
         navStack = new Stack<>();
+        strategyMap = new HashMap<>();
         scene = new Scene(loadFXML("main_menu"), window_width, window_height);
         scene.getStylesheets().add(getClass().getResource("/css/colors.css").toExternalForm());
         stage.setScene(scene);
@@ -69,8 +74,8 @@ public class App extends Application {
      * @version 1.1.2
      */
     public static void main(String[] args)  {
-        Debug.init();
         Debug.write("App.main");
+        Debug.init();
         launch(args);
         if (ses != null && ses.isOpen()) ses.close();
         if (sf != null && sf.isOpen()) sf.close();
@@ -115,8 +120,7 @@ public class App extends Application {
             navStack.add(fxml);
             scene.setRoot(loadFXML(fxml));
         } catch (IOException e) {
-            Debug.error(e);
-            e.printStackTrace();
+            Debug.error(-1, e);
         }
     }
 

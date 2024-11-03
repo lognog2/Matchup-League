@@ -7,7 +7,6 @@ import com.menu.App;
 import com.menu.Menu;
 import com.menu.load.Loader;
 import com.util.Debug;
-
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -229,7 +228,7 @@ public class Manager
      */
     public boolean transferTeam(Team t, League newLeague) {
         //Debug.write("Manager.transferTeam", t.getName(), newLeague.getName());
-        return unassignTeam(t) && assignTeam(t, newLeague) >= 0;
+        return unassignTeam(t) && assignTeam(t, newLeague) > 0;
     }
 
     /**
@@ -258,7 +257,7 @@ public class Manager
 
     /**
      * Adds a fighter to a team, and removes the fighter with the worst
-     * base from the team if full.
+     * base (or in a tie, highter mod diff) from the team if full.
      * @param f new fighter
      * @param t team
      * @return true if new fighter was added, false if not
@@ -268,24 +267,30 @@ public class Manager
     public boolean replaceFighter(Fighter f, Team t) {
         //Debug.write("Manager.replaceFighter", f.getID(), t.getID());
         try {
+            //check if team is full
             if (t.getFighterListSize() < FPT)
                 return assignFighter(f, t);
+
             //sort fighters on team by base, lowest to highest
             t.getFighterList().sort(Comparator.comparing(Fighter::getBase));
             Fighter worst = t.getFighter(0);
+
+            // check if f is better than the worst fighter on team
             if (f.getBase() > worst.getBase() || (f.getBase() == worst.getBase() && f.modDiff() > worst.modDiff())) {
                 return unassignFighter(worst) && assignFighter(f, t);
             }
-            else return false;
+            else {
+                //Debug.warn(0, f.getID() + " was not added to " + t.getID()); 
+                return false;
+            }
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return false;
         } 
     }
 
     /**
-     * Assigns a fighter to a team.
+     * Assigns a fighter to a team. This should only be used when you assume the team is not already full.
      * @param f fighter
      * @param t team
      * @return true if successful, false if not
@@ -298,12 +303,11 @@ public class Manager
                 t.addFighter(f);
                 return true;
             } else {
-                Debug.write("assignFighter failed: team is full");
+                Debug.error(-5, new Exception("assignFighter failed: team is full"));
                 return false; 
             } 
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return false;
         }  
     }
@@ -325,12 +329,12 @@ public class Manager
                 return true;
             }
             else {
-                System.out.println("failed to remove " + f.getName() + " from " + t.getName() + ": team is already empty");
+                String message = "failed to remove " + f.getName() + " from " + t.getName() + ": team is already empty";
+                Debug.error(-5, new Exception(message));
                 return false;
             }  
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return false;
         }  
     }
@@ -348,8 +352,7 @@ public class Manager
             t.addPlayer(p);
             return true;
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return false;
         } 
     }
@@ -366,8 +369,7 @@ public class Manager
             p.getTeam().removePlayer();
             return true;
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return false;
         } 
     }
@@ -376,7 +378,7 @@ public class Manager
      * Assigns a team to a league.
      * @param t team
      * @param lg league
-     * @return 0 if team added, 1 if team wasn't added, -1 if error occured
+     * @return {@link ExitCode} 1: Team was added, -1: Runtime error, -5: League was full
      * @since 0.3
      */
     public int assignTeam(Team t, League lg) {
@@ -384,15 +386,14 @@ public class Manager
         try {
             if (lg.getTeamListSize() < maxTPL) {
                 lg.addTeam(t);
-                return 0;
-            }
-            else {
-                Debug.write("Failed to add " + t.getID() + " to " + lg.getID() + ": league is full");
-                return 1;  
+                return 1; //success
+            } else {
+                String message = "Failed to add " + t.getID() + " to " + lg.getID() + ": league is full";
+                Debug.error(-5, new Exception(message));
+                return -5;  
             }
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return -1;
         } 
     }
@@ -415,8 +416,7 @@ public class Manager
             }
             else return false;  
         } catch (RuntimeException e) {;
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return false;
         } 
     }
@@ -444,7 +444,7 @@ public class Manager
                 Player autoP = new Player(true);
                 autoTm = autoTm.autogen();
                 assignPlayer(autoP, autoTm);
-                if (assignTeam(autoTm, autoLg) != 0) {
+                if (assignTeam(autoTm, autoLg) <= 0) {
                     autoLg = new League(true);
                     assignTeam(autoTm, autoLg);
                     persist(autoLg);
@@ -460,8 +460,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }   
     }
@@ -483,8 +482,7 @@ public class Manager
             Debug.write("\n" + amt + " fighters added");
             return true;
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return false;
         }
     }
@@ -512,8 +510,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -538,7 +535,8 @@ public class Manager
             Player user = new Player(username, 99);
             persist(user);
             if (!transferTeam(userTeam, user)) {
-                Debug.write("Failed to add user " + username + " to " + userTeam.getID());
+                String message = "Failed to add user " + username + " to " + userTeam.getID();
+                Debug.warn(0, message);
                 tr.rollback();
                 tr = null;
                 return false;
@@ -550,8 +548,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -581,8 +578,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -634,8 +630,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -666,7 +661,7 @@ public class Manager
                 leagueCache.put(location, target);
             }
 
-            if (!mergeTeam(t, target)) return false;
+            if (!autogen_mergeTeam(t, target)) return false;
             loader.addProgress();
         }
         return true;
@@ -711,8 +706,8 @@ public class Manager
      * using a 'raffle' system. A fighter's rarity is how many entries
      * they have in the raffle.
      * @param amt
-     * @return 1. Successfully replicated fighters; 0. No fighters needed to be replicated;
-     * -1. Runtime error; -2. Failed to persist fighter; -3. No generic fighters to replicate
+     * @return 1: Successfully replicated fighters 0: No fighters needed to be replicated;
+     * -1: Runtime error; -2: Failed to persist fighter; -3: No generic fighters to replicate
      * @since 1.1.1
      * @version 2
      */
@@ -766,7 +761,6 @@ public class Manager
         } catch (RuntimeException e) {
             if (loader != null) loader.setMessage("(-1)An error occured generating fighters");
             //if (tr != null) tr.rollback();
-            e.printStackTrace();
             Debug.error(-1, e);
             return -1;
         }
@@ -790,10 +784,9 @@ public class Manager
             return true;
         }
         catch (RuntimeException e) {
-            if (loader != null) loader.setMessage("An error occured generating fighters");
+            if (loader != null) loader.setMessage("(-1)An error occured generating fighters");
             //if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return false;
         }
     }
@@ -832,8 +825,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -860,8 +852,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -884,8 +875,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -939,8 +929,7 @@ public class Manager
 
             mergeGame(g, outcome, (int)score1, (int)score2);
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
         }
     }
 
@@ -987,8 +976,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -1020,8 +1008,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             //if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-1, e);
             return false;
         }
         
@@ -1035,7 +1022,7 @@ public class Manager
      * @since 1.1.1
      */
     public boolean persistSolo(DataEntity de) {
-        Debug.write("Manager.persistSolo", de.getName());
+        Debug.write("Manager.persistSolo", de.getID());
         Transaction tr = null;
         try {
             tr = ses.beginTransaction();
@@ -1046,8 +1033,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -1064,8 +1050,7 @@ public class Manager
             ses.persist(de);
             return true;
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -1104,8 +1089,7 @@ public class Manager
             ses.merge(g);
             return true;
         } catch (RuntimeException e) {
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -1121,8 +1105,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -1151,7 +1134,7 @@ public class Manager
             ses.merge(f2);
             return true;
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -1167,7 +1150,7 @@ public class Manager
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -1180,17 +1163,23 @@ public class Manager
      * @return true if both assignments successful, false if not
      * @since 1.1.2
      */
-    public boolean mergeTeam(Team t, League lg) {
+    public boolean autogen_mergeTeam(Team t, League lg) {
         //Debug.write("mergeTeam", t.getID(), lg.getID());
+        try {
         String autoName = "player" + t.getID();
         Player autoPlayer = new Player(autoName + " (CPU)");
 
-        if (assignTeam(t, lg) == 0 && assignPlayer(autoPlayer, t)) {
+        if (assignTeam(t, lg) > 0 && assignPlayer(autoPlayer, t)) {
             ses.merge(autoPlayer);
             ses.merge(t);
             ses.merge(lg);
             return true;
         } else {
+            Debug.write("Could not ");
+            return false;
+        }
+        } catch (RuntimeException e) {
+            Debug.error(-2, e);
             return false;
         }
     }
@@ -1237,8 +1226,10 @@ public class Manager
             return byeTeam;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         }
     }
 } //end class Manager
+
+// Congrats!! You made it to the end of the Manager class!

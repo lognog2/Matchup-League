@@ -72,7 +72,6 @@ public class Repository
             //lgDAO.load_data("Leagues","lg_sample.csv");
             return true;
         } catch (RuntimeException | IOException e) {
-            e.printStackTrace();
             return false;
         }
     }

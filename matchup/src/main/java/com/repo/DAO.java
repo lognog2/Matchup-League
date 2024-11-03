@@ -2,11 +2,9 @@ package com.repo;
 
 import org.hibernate.*;
 import org.hibernate.query.Query;
-
 import com.menu.App;
 import com.menu.load.Loader;
 import com.util.Debug;
-
 import java.util.List;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -84,8 +82,7 @@ public class DAO<T> {
             tr = null;
         } catch (RuntimeException | ReflectiveOperationException e) {
             if (tr != null) tr.rollback();
-            e.printStackTrace();
-            Debug.error(e);
+            Debug.error(-2, e);
         }
         lineReader.close();
     }
@@ -104,7 +101,7 @@ public class DAO<T> {
             System.out.println(query);
             ses.createNativeMutationQuery(query).executeUpdate();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
         }
     }
 
@@ -124,7 +121,7 @@ public class DAO<T> {
             Query<T> query = ses.createQuery(line, table);
             list = query.getResultList();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
         }
         return list;
     } 
@@ -134,8 +131,7 @@ public class DAO<T> {
      * @return List of all objects in table
      * @since 0.3
      */
-    public List<T> select() 
-    {
+    public List<T> select() {
         List<T> list = null;
         try
         {
@@ -145,7 +141,7 @@ public class DAO<T> {
             Query<T> query = ses.createQuery(line, table);
             list = query.getResultList();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         } //finally {ses.close();}
 
@@ -157,8 +153,7 @@ public class DAO<T> {
      * @return List of objects that fit condition
      * @since 1.0
      */
-    public List<T> select(String condition)
-    {
+    public List<T> select(String condition) {
         List<T> list = null;
         try
         {
@@ -166,7 +161,7 @@ public class DAO<T> {
             Query<T> query = ses.createQuery(line, table);
             list = query.getResultList();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         }
 
@@ -177,8 +172,7 @@ public class DAO<T> {
      * SELECT name FROM table (gets the names of all objects in table)
      * @return List of names
      */
-    public List<String> selectNames()
-    {
+    public List<String> selectNames() {
         List<String> list = null;
         try
         {
@@ -186,7 +180,7 @@ public class DAO<T> {
             Query<String> query = ses.createQuery(line, String.class);
             list = query.getResultList();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         }
         return list;
@@ -213,7 +207,7 @@ public class DAO<T> {
             Query<T> query = ses.createQuery(line, table);
             list = query.getResultList();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         }
         return list;
@@ -226,8 +220,7 @@ public class DAO<T> {
      * @return First object that meets condition
      * @since 1.0
      */
-    public T selectOne(String column, Object value)
-    {
+    public T selectOne(String column, Object value) {
         try
         {
             String line = "SELECT e FROM " + table.getName() + " e WHERE e." + column + " = :value";
@@ -237,7 +230,7 @@ public class DAO<T> {
             T obj = query.uniqueResult();
             return obj;
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         }
     }
@@ -247,8 +240,7 @@ public class DAO<T> {
      * @return First object that meets condition
      * @since 1.0
      */
-    public T selectOne(String condition)
-    {
+    public T selectOne(String condition) {
         try
         {
             String line = "SELECT e FROM " + table.getName() + " e WHERE " + condition;
@@ -257,7 +249,7 @@ public class DAO<T> {
             T obj = query.uniqueResult();
             return obj;
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         }
     }
@@ -268,15 +260,14 @@ public class DAO<T> {
      * @return List of objects in desired order
      * @since 0.3
      */
-    public List<T> orderByDesc(String column) 
-    {
+    public List<T> orderByDesc(String column) {
         try {
             String line = "FROM " + table.getName() + " ORDER BY " + column + " DESC";
             //System.out.println("SELECT * " + line);
             Query<T> query = ses.createQuery(line, table);
             return query.list();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         }
     }
@@ -287,15 +278,14 @@ public class DAO<T> {
      * @return All objects that meet condition, ordered by column
      * @since 1.0
      */
-    public List<T> orderByDesc(String column, String condition) 
-    {
+    public List<T> orderByDesc(String column, String condition) {
         try {
             String line = "FROM " + table.getName() + " WHERE " + condition + " ORDER BY " + column + " DESC";
             //System.out.println("SELECT * " + line);
             Query<T> query = ses.createQuery(line, table);
             return query.list();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         }
     }
@@ -316,7 +306,7 @@ public class DAO<T> {
             query.setMaxResults(amt); // Limit the number of results returned
             return query.list();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return null;
         }
     }
@@ -325,15 +315,14 @@ public class DAO<T> {
      * @return The amount of all objects in table
      * @since 1.0
      */
-    public long count()
-    {
+    public long count() {
         try {
             String line = "SELECT COUNT(*) FROM " + table.getName();
             //System.out.println(line);
             Query<Long> query = ses.createQuery(line, Long.class);
             return query.uniqueResult();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return 0;
         }
     }
@@ -343,8 +332,7 @@ public class DAO<T> {
      * @return Amount of objects that meet condition
      * @since 1.0
      */
-    public long count(String condition)
-    {
+    public long count(String condition) {
         try {
             String line = "SELECT COUNT(*) FROM " + table.getName() + " WHERE " + condition;
             //System.out.println(line);
@@ -361,8 +349,7 @@ public class DAO<T> {
      * @return Average value of variable across all objects in table
      * @since 1.0
      */
-    public double avg(String column)
-    {
+    public double avg(String column) {
         try {
             String line = "SELECT AVG(" + column + ") FROM " + table.getName();
             //System.out.println(line);
@@ -383,8 +370,7 @@ public class DAO<T> {
      * @return Average value of variable across objects that meet condition
      * @since 1.0
      */
-    public double avg(String column, String condition)
-    {
+    public double avg(String column, String condition) {
         try {
             String line = "SELECT AVG(" + column + ") FROM " + table.getName() + " WHERE " + condition;
             //System.out.println(line);
@@ -403,8 +389,7 @@ public class DAO<T> {
      * @param column Name of variable
      * @return Maximum value of variable across all objects in table
      */
-    public double max(String column)
-    {
+    public double max(String column) {
         try {
             String line = "SELECT MAX(" + column + ") FROM " + table.getName();
             //System.out.println(line);
@@ -424,8 +409,7 @@ public class DAO<T> {
      * @param condition Verbatim condition
      * @return Maximum value of variable from objects that meet condition
      */
-    public double max(String column, String condition)
-    {
+    public double max(String column, String condition) {
         try {
             String line = "SELECT MAX(" + column + ") FROM " + table.getName() + " WHERE " + condition;
             //System.out.println(line);
@@ -446,8 +430,7 @@ public class DAO<T> {
      * @return Sum of variable for each object in table
      * @since 1.1.1
      */
-    public int sum(String column)
-    {
+    public int sum(String column) {
         try {
             String line = "SELECT SUM(" + column + ") FROM " + table.getName();
             Query<Long> query = ses.createQuery(line, Long.class);
@@ -457,7 +440,7 @@ public class DAO<T> {
             else
                 return sum.intValue();
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            Debug.error(-2, e);
             return 0;
         }
     }

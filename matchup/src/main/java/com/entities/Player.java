@@ -1,9 +1,9 @@
 package com.entities;
 
+import jakarta.persistence.*;
 import java.util.List;
 import java.util.UUID;
-
-import jakarta.persistence.*;
+import com.util.Debug;
 
 /**
  * Player is an Entity class that represents a player, which is where
@@ -46,7 +46,7 @@ public class Player extends DataEntity
      */
     public Player(String name) {
         setName(name);
-        setStrategy((int)(Math.random() * CPU_STYLES()));
+        setStrategy((int)(Math.random() * cpuStrategies()));
     }
     /**
      * Constructs a user or CPU player with specified name and strategy.
@@ -67,7 +67,7 @@ public class Player extends DataEntity
     public Player(String[] line) {
         setName(line[0]);
         if (line.length <= 1)
-            setStrategy((int)(Math.random() * CPU_STYLES()));
+            setStrategy((int)(Math.random() * cpuStrategies()));
         else
             setStrategy(Integer.parseInt(line[1]));
     }
@@ -79,7 +79,7 @@ public class Player extends DataEntity
     public Player(boolean autogen) {
         if (autogen) {
             setName(randomName());
-            setStrategy((int)(Math.random() * CPU_STYLES()));
+            setStrategy((int)(Math.random() * cpuStrategies()));
         }
         else {
             setName("Bye");
@@ -99,7 +99,7 @@ public class Player extends DataEntity
      * @return 4
      * @since 1.0
      */
-    public int CPU_STYLES() {return 4;}
+    public int cpuStrategies() {return strategyMap.size() - 2;}
     
     /**
      * Gets name of the player.
@@ -167,7 +167,7 @@ public class Player extends DataEntity
      * @since 1.0
      */
     public void setStrategy(int id) {
-        this.strategy = strategy.getStrategy(id);
+        this.strategy = strategyMap.get(id);
     }
 
     /**
@@ -209,6 +209,8 @@ public class Player extends DataEntity
      * @since 1.2.0
      */
     public enum Strategy {
+        // if you add a non-cpu style, remember to update cpuStrategies
+        BYE(-1, null),
         RANDOM(0, (size) -> {return (int)(Math.random() * size);}),
         BEST(1, (size) -> {return 0;}),
         WORST(2, (size) -> {return size - 1;}),
@@ -221,6 +223,10 @@ public class Player extends DataEntity
         Strategy(int ID, Selection choice) {
             this.ID = ID;
             this.choice = choice;
+            if (strategyMap == null) {
+                Debug.write("strategy got here before map");
+            }
+            strategyMap.put(ID, this);
         }
 
         public int getID() {
@@ -228,10 +234,6 @@ public class Player extends DataEntity
         }
         public int getChoice(int size) {
             return choice.select(size);
-        }
-
-        public Strategy getStrategy(int ID) {
-            return (ID < values().length - 1) ? values()[ID] : USER;
         }
     } //end Strategy enum
     @FunctionalInterface

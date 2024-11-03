@@ -1,15 +1,20 @@
-2024-10-29T23:43:49.601095400-04:00[America/New_York]
 Debug writer initialized
+2024-11-03T03:45:27.240596600-05:00[America/New_York]
+File location:src\main\logs\debug.txt
+
 App.main
-App.start, javafx.stage.Stage@5a26b5c2
-FXML: MainMenu.newSeason
+App.start, javafx.stage.Stage@66d09cbe
+FXML: MainMenu.newTournament
+App.setRoot, tournament_select
+FXML: TournamentSelect.initialize
+FXML: TournamentSelect.select
 Menu.startLoad
 App.loadMenu
 App.setRoot, load\load_screen
 new Loader
-new Loader, com.menu.load.LoadScreen@29f77aac
-Loader.setLoadScreen, com.menu.load.LoadScreen@29f77aac
-App.setLoader, com.menu.load.Loader@fe159e2
+new Loader, com.menu.load.LoadScreen@235e11e3
+Loader.setLoadScreen, com.menu.load.LoadScreen@235e11e3
+App.setLoader, com.menu.load.Loader@399567a4
 ==========START THREAD: LOAD_DATA
 Loader.initProcedure, LOAD_DATA, 178.0
 Loader.setNextMenu, team_select
@@ -18,3 +23,487 @@ runLater: Loader.setMessage, Connecting to database
 App.getManager
 App.getSession
 App.getSF
+new Manager, SessionImpl(1313813729<open>)
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+Manager.getRepo
+Loader.addLoadUnits, 178.0
+new LU: 356.0
+DataEntity.onStart, false
+App.getManager
+Manager.getRepo
+Manager.load_data, false
+Manager.setTeamSize, 5, 7
+Manager.setFPT, 7
+Manager.setFPG, 5
+App.getLoader
+runLater: Loader.setMessage, Loading fighters
+Loading Fighters from file f_sample.csv
+App.getLoader
+Load progress: 10%
+Load progress: 20%
+Load progress: 30%
+Load progress: 40%
+Load progress: 50%
+Load progress: 60%
+Load progress: 70%
+Load progress: 80%
+Loader.addLoadUnits, 166.0
+new LU: 1200.228571428553
+Manager.setLeagueSize, 2, 101
+Manager.setMaxTPL, 101
+Manager.setMinTPL, 2
+Manager.replicateGenericOnce
+App.getLoader
+Load progress: 90%
+Manager.assignFighters_byNation
+App.getLoader
+runLater: Loader.setMessage, Assigning fighters to teams
+:/
+MLWARN 0: null
+fighter61 was not added to Team15
+Load progress: 100%
+:/
+MLWARN 0: null
+fighter75 was not added to Team16
+:/
+MLWARN 0: null
+fighter76 was not added to Team16
+:/
+MLWARN 0: null
+fighter77 was not added to Team16
+:/
+MLWARN 0: null
+fighter95 was not added to Team21
+:/
+MLWARN 0: null
+fighter98 was not added to Team21
+:/
+MLWARN 0: null
+fighter99 was not added to Team21
+:/
+MLWARN 0: null
+fighter123 was not added to Team14
+:/
+MLWARN 0: null
+fighter125 was not added to Team14
+:/
+MLWARN 0: null
+fighter134 was not added to Team14
+:/
+MLWARN 0: null
+fighter146 was not added to Team14
+:/
+MLWARN 0: null
+fighter148 was not added to Team14
+:/
+MLWARN 0: null
+fighter151 was not added to Team12
+:/
+MLWARN 0: null
+fighter158 was not added to Team12
+:/
+MLWARN 0: null
+fighter159 was not added to Team12
+:/
+MLWARN 0: null
+fighter160 was not added to Team12
+:/
+MLWARN 0: null
+fighter161 was not added to Team12
+:/
+MLWARN 0: null
+fighter162 was not added to Team12
+:/
+MLWARN 0: null
+fighter163 was not added to Team12
+:/
+MLWARN 0: null
+fighter164 was not added to Team12
+:/
+MLWARN 0: null
+fighter165 was not added to Team12
+:/
+MLWARN 0: null
+fighter170 was not added to Team12
+:/
+MLWARN 0: null
+fighter171 was not added to Team12
+:/
+MLWARN 0: null
+fighter172 was not added to Team12
+:/
+MLWARN 0: null
+fighter177 was not added to Team14
+:/
+MLWARN 0: null
+fighter180 was not added to Team14
+:/
+MLWARN 0: null
+fighter182 was not added to Team14
+:/
+MLWARN 0: null
+fighter186 was not added to Team14
+:/
+MLWARN 0: null
+fighter191 was not added to Team14
+Load progress: 110%
+:/
+MLWARN 0: null
+fighter196 was not added to Team14
+:/
+MLWARN 0: null
+fighter197 was not added to Team14
+:/
+MLWARN 0: null
+fighter199 was not added to Team14
+:/
+MLWARN 0: null
+fighter200 was not added to Team14
+:/
+MLWARN 0: null
+fighter203 was not added to Team14
+:/
+MLWARN 0: null
+fighter209 was not added to Team12
+:/
+MLWARN 0: null
+fighter215 was not added to Team14
+:/
+MLWARN 0: null
+fighter216 was not added to Team14
+:/
+MLWARN 0: null
+fighter222 was not added to Team12
+:/
+MLWARN 0: null
+fighter230 was not added to Team14
+:/
+MLWARN 0: null
+fighter236 was not added to Team12
+:/
+MLWARN 0: null
+fighter244 was not added to Team29
+:/
+MLWARN 0: null
+fighter257 was not added to Team14
+:/
+MLWARN 0: null
+fighter258 was not added to Team14
+:/
+MLWARN 0: null
+fighter259 was not added to Team14
+:/
+MLWARN 0: null
+fighter260 was not added to Team14
+:/
+MLWARN 0: null
+fighter261 was not added to Team14
+:/
+MLWARN 0: null
+fighter262 was not added to Team14
+:/
+MLWARN 0: null
+fighter263 was not added to Team14
+:/
+MLWARN 0: null
+fighter264 was not added to Team14
+:/
+MLWARN 0: null
+fighter265 was not added to Team14
+:/
+MLWARN 0: null
+fighter269 was not added to Team14
+:/
+MLWARN 0: null
+fighter272 was not added to Team14
+:/
+MLWARN 0: null
+fighter273 was not added to Team14
+:/
+MLWARN 0: null
+fighter274 was not added to Team14
+:/
+MLWARN 0: null
+fighter277 was not added to Team14
+:/
+MLWARN 0: null
+fighter281 was not added to Team14
+:/
+MLWARN 0: null
+fighter287 was not added to Team16
+:/
+MLWARN 0: null
+fighter288 was not added to Team16
+:/
+MLWARN 0: null
+fighter289 was not added to Team16
+:/
+MLWARN 0: null
+fighter290 was not added to Team16
+:/
+MLWARN 0: null
+fighter291 was not added to Team16
+:/
+MLWARN 0: null
+fighter292 was not added to Team16
+:/
+MLWARN 0: null
+fighter293 was not added to Team16
+:/
+MLWARN 0: null
+fighter294 was not added to Team16
+:/
+MLWARN 0: null
+fighter295 was not added to Team16
+:/
+MLWARN 0: null
+fighter296 was not added to Team16
+:/
+MLWARN 0: null
+fighter297 was not added to Team16
+:/
+MLWARN 0: null
+fighter298 was not added to Team16
+:/
+MLWARN 0: null
+fighter299 was not added to Team16
+:/
+MLWARN 0: null
+fighter300 was not added to Team16
+:/
+MLWARN 0: null
+fighter301 was not added to Team16
+:/
+MLWARN 0: null
+fighter302 was not added to Team24
+:/
+MLWARN 0: null
+fighter303 was not added to Team24
+:/
+MLWARN 0: null
+fighter304 was not added to Team24
+:/
+MLWARN 0: null
+fighter305 was not added to Team24
+:/
+MLWARN 0: null
+fighter306 was not added to Team24
+:/
+MLWARN 0: null
+fighter307 was not added to Team24
+:/
+MLWARN 0: null
+fighter308 was not added to Team24
+:/
+MLWARN 0: null
+fighter309 was not added to Team24
+:/
+MLWARN 0: null
+fighter310 was not added to Team24
+:/
+MLWARN 0: null
+fighter311 was not added to Team24
+:/
+MLWARN 0: null
+fighter312 was not added to Team24
+:/
+MLWARN 0: null
+fighter313 was not added to Team24
+:/
+MLWARN 0: null
+fighter314 was not added to Team24
+:/
+MLWARN 0: null
+fighter315 was not added to Team24
+:/
+MLWARN 0: null
+fighter324 was not added to Team17
+:/
+MLWARN 0: null
+fighter326 was not added to Team17
+:/
+MLWARN 0: null
+fighter327 was not added to Team17
+:/
+MLWARN 0: null
+fighter328 was not added to Team24
+:/
+MLWARN 0: null
+fighter329 was not added to Team24
+:/
+MLWARN 0: null
+fighter330 was not added to Team24
+:/
+MLWARN 0: null
+fighter331 was not added to Team24
+:/
+MLWARN 0: null
+fighter332 was not added to Team24
+:/
+MLWARN 0: null
+fighter333 was not added to Team24
+:/
+MLWARN 0: null
+fighter334 was not added to Team24
+:/
+MLWARN 0: null
+fighter335 was not added to Team24
+:/
+MLWARN 0: null
+fighter336 was not added to Team24
+:/
+MLWARN 0: null
+fighter342 was not added to Team16
+:/
+MLWARN 0: null
+fighter343 was not added to Team16
+:/
+MLWARN 0: null
+fighter345 was not added to Team16
+:/
+MLWARN 0: null
+fighter346 was not added to Team16
+:/
+MLWARN 0: null
+fighter347 was not added to Team16
+:/
+MLWARN 0: null
+fighter348 was not added to Team16
+:/
+MLWARN 0: null
+fighter349 was not added to Team16
+:/
+MLWARN 0: null
+fighter350 was not added to Team16
+:/
+MLWARN 0: null
+fighter351 was not added to Team16
+:/
+MLWARN 0: null
+fighter352 was not added to Team16
+:/
+MLWARN 0: null
+fighter359 was not added to Team18
+:/
+MLWARN 0: null
+fighter360 was not added to Team16
+:/
+MLWARN 0: null
+fighter361 was not added to Team16
+:/
+MLWARN 0: null
+fighter362 was not added to Team16
+:/
+MLWARN 0: null
+fighter363 was not added to Team16
+:/
+MLWARN 0: null
+fighter364 was not added to Team16
+:/
+MLWARN 0: null
+fighter365 was not added to Team16
+:/
+MLWARN 0: null
+fighter366 was not added to Team16
+:/
+MLWARN 0: null
+fighter371 was not added to Team65
+:/
+MLWARN 0: null
+fighter377 was not added to Team24
+:/
+MLWARN 0: null
+fighter378 was not added to Team24
+:/
+MLWARN 0: null
+fighter383 was not added to Team28
+:/
+MLWARN 0: null
+fighter384 was not added to Team28
+:/
+MLWARN 0: null
+fighter385 was not added to Team16
+:/
+MLWARN 0: null
+fighter386 was not added to Team16
+:/
+MLWARN 0: null
+fighter387 was not added to Team16
+:/
+MLWARN 0: null
+fighter388 was not added to Team16
+:/
+MLWARN 0: null
+fighter389 was not added to Team16
+:/
+MLWARN 0: null
+fighter391 was not added to Team16
+:/
+MLWARN 0: null
+fighter392 was not added to Team16
+:/
+MLWARN 0: null
+fighter411 was not added to Team10
+:/
+MLWARN 0: null
+fighter412 was not added to Team10
+:/
+MLWARN 0: null
+fighter413 was not added to Team10
+:/
+MLWARN 0: null
+fighter414 was not added to Team10
+:/
+MLWARN 0: null
+fighter427 was not added to Team6
+:/
+MLWARN 0: null
+fighter428 was not added to Team6
+:/
+MLWARN 0: null
+fighter435 was not added to Team7
+:/
+MLWARN 0: null
+fighter436 was not added to Team7
+:/
+MLWARN 0: null
+fighter439 was not added to Team8
+:/
+MLWARN 0: null
+fighter440 was not added to Team8
+:/
+MLWARN 0: null
+fighter442 was not added to Team12
+:/
+MLWARN 0: null
+fighter447 was not added to Team14
+:/
+MLWARN 0: null
+fighter449 was not added to Team14
+:/
+MLWARN 0: null
+fighter450 was not added to Team14
+:/
+MLWARN 0: null
+fighter451 was not added to Team14
+:/
+MLWARN 0: null
+fighter452 was not added to Team14
+Manager.getWorldCupTeams
+Load progress: 120%
+Load progress: 130%
+runLater: Loader.setMessage, Ready to go!
+runLater: Loader.endLoad
+Manager.createByeTeam
+Final load progress: 1.3182727099599998
+==========END THREAD: LOAD_DATA
+App.setLoader, null
+App.setRoot, team_select
+App.setByeTeam, Bye
+TeamSelect.initialize
+TeamSelect.leagueListener
+TeamSelect.teamListener

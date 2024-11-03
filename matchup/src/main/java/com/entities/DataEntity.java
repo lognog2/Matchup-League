@@ -2,10 +2,10 @@ package com.entities;
 
 import java.io.IOException;
 import java.util.UUID;
-
 import com.menu.App;
 import com.repo.Manager;
 import com.repo.Repository;
+import com.util.Debug;
 
 /**
  * The entities class is an abstract class which all entity classes extend. 
@@ -36,6 +36,7 @@ public abstract class DataEntity extends App
      * @since 1.1.2
      */
     public static void onStart(boolean debug) {
+        Debug.write("DataEntity.onStart", debug);
         manager = getManager();
         repo = manager.getRepo();
         manager.load_data(debug);
@@ -50,7 +51,7 @@ public abstract class DataEntity extends App
      * @since 1.1.2
      */
     public abstract String getID();
-
+    
     /**
      * Generates a random name by getting a random UUID and making a String
      * out of the first eight digits.

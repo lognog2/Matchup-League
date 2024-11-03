@@ -3,6 +3,7 @@ package com.menu.card;
 import com.entities.Game;
 import com.entities.Team;
 import com.menu.App;
+import com.util.Debug;
 
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
@@ -48,7 +49,7 @@ public class GameCard extends VBox {
             gcc.setCard(this);
             return true;
         } catch (IOException e) {
-            e.printStackTrace();
+            Debug.error(-1, e);
             return false;
         }
     }

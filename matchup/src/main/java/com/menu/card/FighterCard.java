@@ -3,6 +3,7 @@ package com.menu.card;
 import java.io.IOException;
 import com.entities.Fighter;
 import com.menu.App;
+import com.util.Debug;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -54,8 +55,7 @@ public class FighterCard extends VBox
             fcc.setFighterCard(this);
             return true;
         } catch (IOException e) {
-            System.out.println("Error displaying fighter card");
-            e.printStackTrace();
+            Debug.error(-1, e);
             return false;
         }
     }
