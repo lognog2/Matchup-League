@@ -1,11 +1,7 @@
 package com.entities;
 
-import java.io.IOException;
 import java.util.UUID;
 import com.menu.App;
-import com.repo.Manager;
-import com.repo.Repository;
-import com.util.Debug;
 
 /**
  * The entities class is an abstract class which all entity classes extend. 
@@ -17,32 +13,7 @@ import com.util.Debug;
  */
 public abstract class DataEntity extends App
 {
-    /**
-     * A Repository object used by entity classes.
-     * @since 1.1.0
-     */
-    protected static Repository repo;
-    /**
-     * A Manager object used by entity classes.
-     * @since 1.1.1
-     */
-    protected static Manager manager;
-
-    /**
-     * Sets entity manager and repository to app manager.
-     * Loads entity data from files.
-     * @param debug true if in test mode, false if in normal mode
-     * @throws IOException 
-     * @since 1.1.2
-     */
-    public static void onStart(boolean debug) {
-        Debug.write("DataEntity.onStart", debug);
-        manager = getManager();
-        repo = manager.getRepo();
-        manager.load_data(debug);
-    }
-
-    public abstract Object getName();
+    public abstract String getName();
 
     /**
      * Returns the name of type of entity plus their ID.

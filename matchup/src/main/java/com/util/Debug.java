@@ -18,10 +18,10 @@ import javafx.application.Platform;
  * <p>Loader
  * <p>All menu classes
  * <p>Entities, as needed
- * @see ExitCode
- * @see Log
  * @since 1.1.2
  * @version 2
+ * @see ExitCode
+ * @see Log
  */
 public abstract class Debug {
 
@@ -53,8 +53,8 @@ public abstract class Debug {
     /**
      * Writes a line to the debug log. All other debug write methods funnel into this method.
      * @param line
-     * @see Log#write(Object)
      * @since 1.1.2
+     * @see Log#write(Object)
      */
     public static void write(Object obj) {
         //if (obj == null) obj = "null";
@@ -65,8 +65,8 @@ public abstract class Debug {
      * Writes a line, along with names/references of objects separated by commas, to debug log.
      * @param line
      * @param objs Array of objects
-     * @see #write(Object)
      * @since 1.1.2
+     * @see #write(Object)
      */
     public static void write(String line, Object... objs) {
         StringBuilder sb = new StringBuilder(line);
@@ -82,13 +82,13 @@ public abstract class Debug {
      * <p>If the passed code is less than zero, it is automatically called as {@link #error(int)}.
      * @param code exit code
      * @param obj object to add to message on new line, unless null
-     * @see #write(Object)
      * @since 1.2.0
+     * @see #write(Object)
      */
     public static void write(int code, Object obj) {
         
         if (code > 0) {
-            StringBuilder sb = new StringBuilder(":)\nMLEXIT " + code + ": " + codeMap.get(code));
+            StringBuilder sb = new StringBuilder("MLEXIT " + code + ": " + codeMap.get(code));
             if (obj != null) sb.append("\n" + obj.toString());
             write(sb);
         } else {
@@ -100,8 +100,8 @@ public abstract class Debug {
      * Writes a message to the debug log from an {@link ExitCode}.
      * <p>If the passed code is less than zero, it is automatically called as {@link #error(int)}.
      * @param code exit code
-     * @see #write(Object)
      * @since 1.2.0
+     * @see #write(Object)
      */
     public static void write(int code) {
         if (code < 0) {
@@ -111,32 +111,47 @@ public abstract class Debug {
         }
     }
 
+    /* DEBUG WARN */
+
+    /**
+     * Writes a warning message to the debug log with no exit code.
+     * @param obj object to write
+     * @since 1.2.0
+     * @see #write(Object)
+     */
+    public static void warn(Object obj) {
+        write("MLWARN\n" + obj.toString());
+    }
+
     /**
      * Writes a warning message to the debug log.
      * @param obj object to include with warning message
-     * @see #write(Object)
      * @since 1.2.0
+     * @see #write(Object)
      */
     public static void warn(int code, Object obj) {
-        StringBuilder sb = new StringBuilder(":/\nMLWARN " + code + ": " + codeMap.get(code));
+        StringBuilder sb = new StringBuilder("MLWARN " + code + ": " + codeMap.get(code));
         if (obj != null) sb.append("\n" + obj.toString());
         write(sb);
     }
 
     /**
-     * @see #warn(int, Object)
+     * Writes a warning message with the passed exit code and a null object.
      * @param code exit code
      * @since 1.2.0
+     * @see #warn(int, Object)
      */
     public static void warn(int code) {
         warn(code, null);
     }
 
+    /* DEBUG SPECIAL PHRASES */
+
     /**
      * Writes a message to the debug log indicating the start of a thread.
      * @param threadName
-     * @see #write(Object)
      * @since 1.1.2
+     * @see #write(Object)
      */
     public static void startThread(String threadName) {
         write("==========START THREAD: " + threadName);
@@ -145,8 +160,8 @@ public abstract class Debug {
     /**
      * Writes a message to the debug log indicating the end of a thread.
      * @param threadName
-     * @see #write(Object)
      * @since 1.1.2
+     * @see #write(Object)
      */
     public static void endThread(String threadName) {
         write("==========END THREAD: " + threadName);
@@ -157,8 +172,8 @@ public abstract class Debug {
     /**
      * Writes an object to the error log. All other error write methods funnel into this method.
      * @param obj object
-     * @see Log#write(Object)
      * @since 1.2.0
+     * @see Log#write(Object)
      */
     public static void error(Object obj) {
         errorLog.write(obj);
@@ -168,8 +183,8 @@ public abstract class Debug {
      * Writes an object to the debug log and a stack trace to the error log.
      * @param obj object
      * @param ste stack trace element
-     * @see #error(Object)
      * @since 1.2.0
+     * @see #error(Object)
      */
     public static void error(Object obj, StackTraceElement[] ste) {
         write(">:(\n" + obj.toString());
@@ -178,8 +193,8 @@ public abstract class Debug {
 
     /**
      * Writes an exception message to the debug log and its stack trace to the error log.
-     * @see #error(Object, StackTraceElement[])
      * @since 1.2.0
+     * @see #error(Object, StackTraceElement[])
      */
     public static void error(Exception e) {
         error(e, e.getStackTrace());
@@ -188,9 +203,9 @@ public abstract class Debug {
     /**
      * Writes an {@link ExitCode} error and a thrown exception to the debug and error logs.
      * @param code exit code
-     * @param e
-     * @see #error(Object, StackTraceElement[])
+     * @param e exception
      * @since 1.2.0
+     * @see #error(Object, StackTraceElement[])
      */
     public static void error(int code, Exception e) {
         error("MLERROR " + code + ": " + codeMap.get(code) + "\n" + e.getMessage(), e.getStackTrace());
@@ -200,8 +215,8 @@ public abstract class Debug {
      * Writes an {@link ExitCode} error and a new exception with the passed message to the debug and error logs.
      * @param code exit code
      * @param message exception message
-     * @see #error(Object, StackTraceElement[])
      * @since 1.2.0
+     * @see #error(Object, StackTraceElement[])
      */
     public static void error(int code, String message) {
         Exception e = new Exception(message);
@@ -211,17 +226,20 @@ public abstract class Debug {
     /**
      * Writes an {@link ExitCode} error to the debug and error logs without a preexisting exception.
      * @param code exit code
-     * @see #error(int, String)
      * @since 1.2.0
+     * @see #error(int, String)
      */
     public static void error(int code) {
         error(code, "This error was thrown without an exception");
     }  
 
     /**
+     * Exit codes are given at the end of a task according to its result.
+     * Positive codes are completions and negative codes are incompletions.
      * @since 1.2.0
      */
     enum ExitCode {
+        CONFLICTWARN (5, "Conflict warning"),
         NOTASK (0, "No actions taken"),
         SUCCESS (1, "Success"),
         JAVAERROR (-1, "Java error"),
@@ -229,7 +247,7 @@ public abstract class Debug {
         INSUFFDATA(-3, "Insufficient data"),
         LOGERROR(-4, "Log error"),
         CONFLICT(-5, "Conflict error");
-
+        
         private final int code;
         private final String message;
 

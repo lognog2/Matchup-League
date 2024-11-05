@@ -1,6 +1,5 @@
 package com.menu;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import com.Tournament;
@@ -8,7 +7,6 @@ import com.entities.*;
 import com.menu.card.FighterCard;
 import com.menu.load.Loader;
 import com.menu.load.Loader.Procedure;
-import com.repo.*;
 import javafx.concurrent.Task;
 import javafx.scene.Parent;
 import javafx.scene.layout.ColumnConstraints;
@@ -22,8 +20,6 @@ import javafx.scene.layout.GridPane;
  */
 public abstract class Menu extends App
 {
-    protected static Repository repo;
-    protected static Manager manager;
     protected static List<League> leagueList;
     protected static Team userTeam;
     protected static League userLeague;
@@ -33,26 +29,35 @@ public abstract class Menu extends App
     protected static int round;
 
     /**
-     * @throws IOException 
+     * Starts load data procedure.
+     * @since 1.1.2
+     * @see Loader
+     * @see Procedure
      */
-    public static void startLoad() throws IOException {
-        write("Menu.startLoad");
-
-        Loader loader = loadMenu();
+    public static void startLoadData() {
+        write("Menu.startLoadData");
+        //TODO: persist and assign simultaneously
+        loadMenu();
         /* Load units:
-        * fighter file size: 178
-        * team file size: 48
-        * batch assign: same as dataset size */
-        double loadUnits = 178.0;
+        * fighter file size * 2
+        * total rarity * 2
+        * (The * 2 is once for loading fighter and once for assigning fighter)
+        */
+        App.addFile("Fighters", "f_sample.csv");
+        if (!isWC()) {
+            String teamFile = (debug) ? "t_test.csv" : "t_sample.csv";
+            App.addFile("Teams", teamFile);
+        }
+        double loadUnits = App.getLineCount(false);
         loader.initProcedure(Procedure.LOAD_DATA, loadUnits);
         Task<Void> task = new Task<Void>() {
             @Override
             protected Void call() throws Exception {
-                manager = getManager();
-                repo = manager.getRepo();
-                if (isWC()) loader.addLoadUnits(178.0);
-                else loader.addLoadUnits(48.0 * 2.0); 
-                DataEntity.onStart(debug);
+                write("start load data procedure");
+                App.initSession();
+                if (isWC()) loader.addLoadUnits(loadUnits);
+                else loader.addLoadUnits(48.0); 
+                manager.load_data(debug);
                 setLeagueList();
                 loader.setMessage("Ready to go!");
                 loader.endLoad();

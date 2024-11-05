@@ -93,20 +93,26 @@ public class Loader {
     }
 
     /**
-     * Add new processes to the current loading screen.
+     * Adds new processes to the current loading screen.
+     * Recalculates loading units so loading bar still ends at 100%.
      * <p>Resizes total load units by the formula N = L + (a/p)
      * <p>N = new total load units
      * <p>L = old total load units 
      * <p>a = number of new load units
      * <p>p = percent of progress bar remaining
      * @param amt number of load units to add
+     * @return number of load units after added
      * @since 1.1.2
+     * @version 2
      */
-    public void addLoadUnits(double amt) {
+    public double addLoadUnits(double amt) {
         Debug.write("Loader.addLoadUnits", amt);
         double remProg = 1.0 - loadScreen.getProgress(); //remaining progress
-        loadUnits += (amt / remProg);
-        write("new LU: " + loadUnits);
+        if (remProg > 0.0) {
+            loadUnits += (amt / remProg);
+            write("new LU: " + loadUnits);
+        } else Debug.warn("no new load units added");
+        return loadUnits;
     }
 
     /**
@@ -116,8 +122,12 @@ public class Loader {
     public void endLoad() {
         write("runLater: Loader.endLoad");
         Platform.runLater(() -> {
-                //write("execute: Loader.endLoad");
-                write("Final load progress: " + loadScreen.getProgress());
+                double finalProgress = loadScreen.getProgress();
+                write("Final load progress: " + finalProgress);
+                int finalPercent = (int)(finalProgress * 100);
+                if (finalPercent < 99 || finalPercent > 100) {
+                    Debug.warn(5, "Load progress did not finish at 100%");
+                }
                 Debug.endThread(proc.toString());
                 proc = null;
                 App.setLoader(null);
@@ -125,10 +135,23 @@ public class Loader {
         });
     }
 
+    /**
+     * Debug write shortcut
+     * @param line written to debug log
+     * @since 1.1.2
+     * @see Debug#write(Object)
+     */
     public void write(String line) {
         Debug.write(line);
     }
 
+    /**
+     * Enum of procedures that can be done by the program.
+     * Procedures have 2 terms: 
+     * <p><code>nextMenu</code>: FXML name of the menu to display after loading
+     * <p><code>initMessage</code>" first message to display on loading screen"
+     * @since 1.1.2
+     */
     public enum Procedure {
         /**
          * Sets up load data procedure.

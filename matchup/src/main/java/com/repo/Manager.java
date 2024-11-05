@@ -303,7 +303,8 @@ public class Manager
                 t.addFighter(f);
                 return true;
             } else {
-                Debug.error(-5, new Exception("assignFighter failed: team is full"));
+                String message = "Failed to assign " + f.getID() + "to" + t.getID() + ": team is full";
+                Debug.error(-5, new Exception(message));
                 return false; 
             } 
         } catch (RuntimeException e) {
@@ -626,7 +627,7 @@ public class Manager
 
             tr.commit();
             tr = null;
-            //System.out.println("all teams added successfully");
+            Debug.write(1, "All data loaded successfully");
             return true;
         } catch (RuntimeException e) {
             if (tr != null) tr.rollback();
@@ -716,12 +717,11 @@ public class Manager
 
         long amt = extraFighters();
         if (amt >= FPT) {
-            Debug.write("0: No replication needed, with " + amt + " to spare");
+            Debug.write("0", "No replication needed, with " + amt + " to spare");
             return 0;
         }
 
         // If extra fighters are needed, generates just enough to fill each team plus one extra team.
-        //Transaction tr = null;
         Loader loader = App.getLoader();
         try {
             //tr = ses.beginTransaction();
@@ -732,8 +732,7 @@ public class Manager
             int totalRarity = repo.getTotalRarity();
             if (generics.isEmpty() || totalRarity < 1) {
                 loader.setMessage("(-3)An error occured generating fighters");
-                Debug.write("-3: No generic fighters to replicate");
-                //tr.rollback();
+                Debug.error(-3, "No generic fighters to replicate");
                 return -3;
             }
             for (int i = 0; i < reqFighters; i++) {
@@ -746,8 +745,7 @@ public class Manager
                             break;
                         else {
                             loader.setMessage("(-2)An error occured generating fighters");
-                            Debug.write("-2: An error occured persisting fighter " + f.getName());
-                            //tr.rollback();
+                            Debug.error(-2, "An error occured persisting " + f.getID());
                             return -2;
                         }
                     }
@@ -785,17 +783,26 @@ public class Manager
         }
         catch (RuntimeException e) {
             if (loader != null) loader.setMessage("(-1)An error occured generating fighters");
-            //if (tr != null) tr.rollback();
             Debug.error(-1, e);
             return false;
         }
     }
 
+    /**
+     * @return number of fighters left over after every team has been filled
+     * @since 1.0
+     * @see Repository#extraFighters(int)
+     */
     public long extraFighters() {
         Debug.write("Manager.extraFighters");
         return repo.extraFighters(FPT);
     }
-
+    /**
+     * @return how many fighters are still needed to fill every team,
+     * or 0 if there are already enough
+     * @since 1.0
+     * @see #extraFighters()
+     */
     public long requiredFighters() {
         Debug.write("Manager.requiredFighters");
         long extra = -1 * extraFighters();

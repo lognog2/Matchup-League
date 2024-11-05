@@ -1,10 +1,8 @@
 package com.menu.view;
 
-import java.io.IOException;
 import com.entities.*;
 import com.menu.App;
 import com.menu.Menu;
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
@@ -91,5 +89,5 @@ public class TeamView extends Menu {
     }
 
     //TODO: change name
-    @FXML private void toSeasonMenu() throws IOException {App.goBack();}
+    @FXML private void toSeasonMenu() {App.goBack();}
 }

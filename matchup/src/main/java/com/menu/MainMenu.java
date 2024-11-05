@@ -13,7 +13,7 @@ public class MainMenu extends Menu
         write("FXML: MainMenu.newSeason");
         setMode(Mode.SEASON);
         debug = debugCheckBox.isSelected();
-        startLoad();
+        startLoadData();
     }
 
     @FXML

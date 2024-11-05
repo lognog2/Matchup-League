@@ -4,8 +4,6 @@ import com.entities.Game;
 import com.entities.Team;
 import com.menu.App;
 import com.util.Debug;
-
-import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.VBox;
@@ -42,13 +40,13 @@ public class GameCard extends VBox {
 
     private boolean connect() {
         try {
-            FXMLLoader loader = App.getLoader(fxmlPath);
+            FXMLLoader loader = App.getFXMLLoader(fxmlPath);
             Parent root = App.loadFXML(loader);
             getChildren().add(root);
             gcc = loader.getController();
             gcc.setCard(this);
             return true;
-        } catch (IOException e) {
+        } catch (RuntimeException e) {
             Debug.error(-1, e);
             return false;
         }

@@ -77,5 +77,5 @@
 
 #bg-main {
     background-color: -white;
-    -fx-background-color: linear-gradient(from 0% 0% to 50% 100%, -white, -blue);
+    -fx-background-color: linear-gradient(from 50% 0% to 50% 100%, -light-blue, -navy-blue);
 }

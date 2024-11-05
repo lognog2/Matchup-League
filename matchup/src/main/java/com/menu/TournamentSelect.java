@@ -33,7 +33,7 @@ public class TournamentSelect extends Menu {
             errorLabel.setVisible(true);
         } else {
             setMode((Mode)modes.getSelectedToggle().getUserData());
-            startLoad();
+            startLoadData();
         }
     }
 }

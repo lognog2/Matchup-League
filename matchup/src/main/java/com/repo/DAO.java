@@ -7,7 +7,6 @@ import com.menu.load.Loader;
 import com.util.Debug;
 import java.util.List;
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 
 /**
@@ -49,28 +48,22 @@ public class DAO<T> {
      * @param folder Folder name to read data from, should be the same
      * name as its table
      * @param file File name to read data from
-     * @throws IOException
      * @since 0.3
      * @version 3
      */
-    public void load_data(String folder, String file) throws IOException {
+    public void load_data(String folder, String file) {
         Debug.write("Loading " + folder + " from file " + file);
+
+        BufferedReader lineReader = App.getLineReader(folder, file);
+
         Transaction tr = null;
-
-        //matchup\src\main\data\Fighters\f_sample.csv
-        final String dataPath = "src\\main\\data";
-        String filePath = dataPath + "\\" + folder + "\\" + file;
-
-        BufferedReader lineReader = new BufferedReader(new FileReader(filePath));
-        String line = lineReader.readLine(); //skip over first line
-
         try {
+            String line = lineReader.readLine(); //skip over first line
             tr = ses.beginTransaction();
             Loader loader = App.getLoader();
             int i = 0;
-            while((line = lineReader.readLine()) != null)
-            {
-                if (line.isEmpty() || line.charAt(0) != '*') {
+            while((line = lineReader.readLine()) != null) {
+                if (line.charAt(0) != '*') {
                     String[] data = line.split(",");
                     T temp = table.getDeclaredConstructor(String[].class).newInstance((Object) data);
                     ses.persist(temp);
@@ -80,11 +73,13 @@ public class DAO<T> {
             }
             tr.commit();
             tr = null;
-        } catch (RuntimeException | ReflectiveOperationException e) {
+            lineReader.close();
+        } catch (IOException e) {
+            Debug.error(-4, e);
+        } catch (Exception e) {
             if (tr != null) tr.rollback();
             Debug.error(-2, e);
         }
-        lineReader.close();
     }
     
     /**
@@ -105,7 +100,7 @@ public class DAO<T> {
         }
     }
 
-    /* select methods, no transaction required */
+    /* SELECT methods, no transaction required */
 
     /**
      * Runs a custom selection query

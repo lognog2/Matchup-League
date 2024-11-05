@@ -29,6 +29,7 @@ public class Player extends DataEntity
      * Strategy determines what order to play fighters and draft range.
      * 99 denotes user.
      * @since 1.0
+     * @see Strategy
      */
     @Column(name = "strategy")
     private Strategy strategy;
@@ -36,6 +37,7 @@ public class Player extends DataEntity
     /**
      * Team this player makes decisions for.
      * @since 1.0
+     * @see Team
      */
     @OneToOne (mappedBy = "player", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Team team;
@@ -52,15 +54,17 @@ public class Player extends DataEntity
      * Constructs a user or CPU player with specified name and strategy.
      * Users have a strategy of 99.
      * @param name Name of player
-     * @param strategy Strategy of player
+     * @param stratID Strategy of player
      * @since 1.0
      */
-    public Player(String name, int strategy) {
+    public Player(String name, int stratID) {
         setName(name);
-        setStrategy(strategy);
+        setStrategy(stratID);
     }
     /**
-     * Required by Hibernate
+     * Constructs a Player from a string array. 
+     * Index 0 is the name and an optional index 1 is the strategy ID.
+     * If no ID is provided a random one from the CPU strategies is given.
      * @param line String array
      * @since 1.0
      */
@@ -156,18 +160,25 @@ public class Player extends DataEntity
      * If new strategy number is not recognized, reverts to random
      * @param strategy new strategy
      * @since 1.0
+     * @see Strategy
      */
     public void setStrategy(Strategy strategy) {
         this.strategy = strategy;
     }
     /**
      * Sets player strategy.
-     * If new strategy number is not recognized, reverts to 0
+     * If new strategy number is not recognized, reverts to {@link Strategy#RANDOM}
      * @param strategy new strategy
      * @since 1.0
+     * @see #setStrategy(Strategy)
      */
     public void setStrategy(int id) {
-        this.strategy = strategyMap.get(id);
+        Strategy strat = strategyMap.get(id);
+        if (strat == null) { 
+            Debug.warn("Strategy with ID " + id + " not recognized, given the random strat");
+            strat = Strategy.RANDOM; 
+        }
+        setStrategy(strat);
     }
 
     /**
@@ -209,7 +220,10 @@ public class Player extends DataEntity
      * @since 1.2.0
      */
     public enum Strategy {
-        // if you add a non-cpu style, remember to update cpuStrategies
+        /*  if you add a non-cpu style, remember to update:
+         *  Player.cpuStrategies
+         *  Repository.getAllUsers
+         * */
         BYE(-1, null),
         RANDOM(0, (size) -> {return (int)(Math.random() * size);}),
         BEST(1, (size) -> {return 0;}),

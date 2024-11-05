@@ -1,16 +1,17 @@
 package com.repo;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
 import com.entities.*;
 import com.menu.App;
 import com.menu.load.Loader;
+import com.util.Debug;
 
 /** 
  * Repository serves as the 'middleman' between DAO and surface classes.
  * This is the only class that should have DAO objects.
  * @since 1.1.0
+ * @see DAO
  */
 public class Repository 
 {
@@ -18,8 +19,9 @@ public class Repository
      * Empty constructor
      * @since 1.1.0
      */
-    public Repository()
-    {}
+    public Repository() {
+        Debug.write("new Repository");
+    }
 
     /**
      * DAO for accessing the Fighter table.
@@ -56,22 +58,22 @@ public class Repository
      * @since 1.0
      */
     public boolean load_data(boolean debug, boolean useTeams) {
+        Debug.write("Repository.load_data", debug, useTeams);
         try {
             Loader loader = App.getLoader();
-            //String fighterFile = (test) ? "f_sample.csv" : "f_test.csv";
-            //fDAO.load_data("Fighters", fighterFile);
             loader.setMessage("Loading fighters");
             fDAO.load_data("Fighters", "f_sample.csv");
             if (useTeams) {
                 loader.setMessage("Loading teams");
-                String teamFile = (debug) ? "t_test" : "uhs.csv";
+                String teamFile = (debug) ? "t_test" : "t_sample.csv";
                 tDAO.load_data("Teams", teamFile);
             } else {
-                loader.addLoadUnits((double)getTotalRarity());
+                //add double total rarity, once to generate and once to assign
+                loader.addLoadUnits((double)(getTotalRarity()*2));
             }
             //lgDAO.load_data("Leagues","lg_sample.csv");
             return true;
-        } catch (RuntimeException | IOException e) {
+        } catch (RuntimeException e) {
             return false;
         }
     }
@@ -79,8 +81,11 @@ public class Repository
      * Deletes all bye teams from the database.
      * @since 1.0
      */
-    public void deleteAllByes()
-    {tDAO.run_mutationQuery("DELETE FROM Teams WHERE name = 'Bye'");}
+    public void deleteAllByes() {
+        Debug.write("Repository.deleteAllByes");
+        tDAO.run_mutationQuery("DELETE FROM Teams WHERE name = 'Bye'");
+    }
+
 
     /* SELECT queries - will not change database */
 
@@ -191,10 +196,13 @@ public class Repository
 
     /**
      * Gets all user players in the database.
-     * @return List of players with user strategy (99)
+     * @return List of players with user strategy
      * @since 1.1.1
      */
-    public List<Player> getAllUsers() {return pDAO.select("strategy = 99");}
+    public List<Player> getAllUsers() {
+        //mySQL stores enums as index, change if number of strategies changes
+        return pDAO.select("strategy = 5");
+    }
 
     //get full list
 
