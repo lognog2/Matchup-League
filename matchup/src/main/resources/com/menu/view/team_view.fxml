@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.view.TeamView">
+<VBox fx:id="root" alignment="TOP_CENTER" spacing="20.0" styleClass="bg-gray" stylesheets="@../../../css/colors.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.view.TeamView">
    <children>
       <HBox alignment="TOP_CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#toSeasonMenu" text="Back">
+            <Button mnemonicParsing="false" onAction="#toSeasonMenu" styleClass="button-black" text="Back">
                <font>
                   <Font size="18.0" />
                </font>
@@ -23,20 +23,20 @@
       </HBox>
       <HBox alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#prevLeague" text="&lt;">
+            <Button mnemonicParsing="false" onAction="#prevLeague" styleClass="button-black" text="&lt;">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Label fx:id="leagueLabel" alignment="CENTER" prefWidth="250.0" text="League name">
+            <Label fx:id="leagueLabel" alignment="CENTER" prefWidth="275.0" style="-fx-background-color: -white; -fx-text-fill: -black;" styleClass="team-logo" text="League name">
                <font>
-                  <Font size="36.0" />
+                  <Font size="40.0" />
                </font>
                <HBox.margin>
                   <Insets left="25.0" right="25.0" />
                </HBox.margin>
             </Label>
-            <Button mnemonicParsing="false" onAction="#nextLeague" text="&gt;">
+            <Button mnemonicParsing="false" onAction="#nextLeague" styleClass="button-black" text="&gt;">
                <font>
                   <Font size="18.0" />
                </font>
@@ -45,20 +45,20 @@
       </HBox>
       <HBox alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#prevTeam" text="&lt;">
+            <Button mnemonicParsing="false" onAction="#prevTeam" styleClass="button-black" text="&lt;">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Label fx:id="teamLabel" alignment="CENTER" prefWidth="250.0" text="Team name">
+            <Label fx:id="teamLabel" alignment="CENTER" prefWidth="275.0" styleClass="team-logo" text="Team name">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Britannic Bold" size="40.0" />
                </font>
                <HBox.margin>
                   <Insets left="25.0" right="25.0" />
                </HBox.margin>
             </Label>
-            <Button mnemonicParsing="false" onAction="#nextTeam" text="&gt;">
+            <Button mnemonicParsing="false" onAction="#nextTeam" styleClass="button-black" text="&gt;">
                <font>
                   <Font size="18.0" />
                </font>
@@ -67,12 +67,12 @@
       </HBox>
       <HBox alignment="CENTER">
          <children>
-            <Label fx:id="fansLabel" prefWidth="200.0" text="Fans: 1000">
+            <Label fx:id="fansLabel" alignment="CENTER" prefWidth="210.0" styleClass="team-logo" text="Fans: 1000" textFill="WHITE">
                <font>
                   <Font size="36.0" />
                </font>
             </Label>
-            <Label fx:id="recordLabel" prefWidth="225.0" text="Record: 10-10">
+            <Label fx:id="recordLabel" alignment="CENTER" prefWidth="260.0" styleClass="team-logo" text="Record: 10-10" textFill="WHITE">
                <font>
                   <Font size="36.0" />
                </font>

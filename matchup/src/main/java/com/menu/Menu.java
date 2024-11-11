@@ -7,8 +7,11 @@ import com.entities.*;
 import com.menu.card.FighterCard;
 import com.menu.load.Loader;
 import com.menu.load.Loader.Procedure;
+import com.util.Debug;
+import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.scene.Parent;
+import javafx.scene.control.Labeled;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 
@@ -276,13 +279,91 @@ public abstract class Menu extends App
     }
 
     /**
-     * Sets the color of a node's text.
-     * @param node
-     * @param color all lowercase color from colors.css sheet
+     * Clears style classes from a node and sets new class style(s).
+     * @param node node to set style classes
+     * @param styleClasses style classes to add
      * @since 1.2.0
      */
-    protected void setTextColor(Parent node, String color) {
-        node.setStyle("-fx-text-fill: -"+color+";");
+    protected void setStyleClass(Parent node, String... styleClasses) {
+        node.getStyleClass().clear();
+        for (String styleClass : styleClasses) {
+            node.getStyleClass().add(styleClass);
+        }
+    }
+
+    /**
+     * Sets a style for a node.
+     * @param node node t style
+     * @param styles array of styles, each a verbatim css command
+     * @since 1.2.0
+     */
+    protected void setStyle(Parent node, String... styles) {
+        StringBuilder sb = new StringBuilder();
+        for (String style : styles) {
+            sb.append(style);
+        }
+        Platform.runLater(() -> {
+            node.setStyle(sb.toString());
+        });
+    }
+
+    /**
+     * Sets both a text fill and background color.
+     * @param node node to color
+     * @param colors array of colors, if one color is provided the other will be white
+     * @since 1.2.0
+     * @see #CSS_textFill(String)
+     * @see #CSS_background(String)
+     */
+    protected void setLogo(Labeled node, Team t) {
+        node.setText(t.getName());
+        String[] colors = t.getColors();
+        setStyle(node, CSS_textFill(colors[0]), CSS_background(colors[1]));
+    }
+
+    /**
+     * Sets a node's background to a 2-color gradient.
+     * Extra colors will be ignored, and having only 1 color will set the top color to white.
+     * @param node node to color
+     * @param colors  array of colors, if one color is provided the other will be white
+     * @since 1.2.0
+     * @see #CSS_gradient(String...)
+     */
+    protected void setGradient(Parent node, String... colors) {
+        if (colors.length == 1) {CSS_gradient("white", colors[0]);}
+        setStyle(node, CSS_gradient(colors));
+    }
+
+    /**      
+     * Gets the CSS command to set the text fill color.
+     * @param node node to color
+     * @param color all lowercase color from colors.css sheet
+     * @return Verbatim string of css command to set text fill
+     * @since 1.2.0
+     */
+    protected String CSS_textFill(String color) {
+        return "-fx-text-fill: -"+color+";";
+    }
+
+    /**
+     * Gets the CSS command to set the background color.
+     * @param node node to color
+     * @param color all lowercase color from colors.css sheet
+     * @return Verbatim string of css command to set background
+     * @since 1.2.0
+     */
+    protected String CSS_background(String color) {
+        return "-fx-background-color: -"+color+";";
+    }
+
+    /**
+     * Sets a background vertical gradient with two colors.
+     * @param colors array of colors to use. First color goes on top and second goes on bottom. 
+     * @return Verbatim string of css command to set gradient
+     * @since 1.2.0
+     */
+    protected String CSS_gradient(String... colors) {
+        return "-fx-background-color: linear-gradient(from 50% 0% to 50% 100%, -"+colors[0]+", -"+colors[1]+");";
     }
 
     /**
@@ -310,7 +391,7 @@ public abstract class Menu extends App
                 teams = leagueList.get(0).getTeamList();
             break;
             default:
-                write("Invalid mode");
+                Debug.warn(0, "Invalid mode: " + mode);
         }
         return teams;
     }

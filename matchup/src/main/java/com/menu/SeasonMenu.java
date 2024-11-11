@@ -17,6 +17,7 @@ public class SeasonMenu extends Menu
     @FXML private Label teamLabel;
     @FXML private Label roundLabel;
     @FXML private Label nextLabel;
+    @FXML private Label opponentLabel;
     @FXML private Label recordLabel;
     @FXML private Button playButton;
     @FXML private ChoiceBox<String> leagueChoice;
@@ -31,24 +32,28 @@ public class SeasonMenu extends Menu
         selectedRound = round;
         setLeague(selectedLeague);
         
-        teamLabel.setText(userTeam.getName());
-        setTextColor(teamLabel, userTeam.getColor(0));
+        setLogo(teamLabel, userTeam);
         recordLabel.setText("Record: " + userTeam.getWins() + "-" + userTeam.getLosses());
+
         if (!seasonOver()) {
             roundLabel.setText("Game " + (round + 1) + "/" + userLeague.getGameAmt());
             if (userOnBye()) {
                 nextLabel.setText("On bye");
-                setTextColor(nextLabel, "black");
+                setStyle(nextLabel, CSS_textFill("black)"));
+                opponentLabel.setDisable(true);
                 playButton.setText("Sim round");
             } else {
-                nextLabel.setText("Next game: vs " + userTeam.getOpponent(round).getName());
-                setTextColor(nextLabel, userTeam.getOpponent(round).getColor(0));
+                nextLabel.setText("Next game: vs ");
+                Team opponent = userTeam.getOpponent(round);
+                setLogo(opponentLabel, opponent);
+                opponentLabel.setDisable(false);
                 playButton.setText("Play game");
             }
         } else {
             roundLabel.setText("Season over");
-            setTextColor(nextLabel, "black");
+            setStyle(nextLabel, CSS_textFill("black)"));
             nextLabel.setText("Congrats! You finished " + App.addSuffix(userRank));
+            opponentLabel.setDisable(true);
             playButton.setText("To tournament");
         }
         leagueListener();

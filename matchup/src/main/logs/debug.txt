@@ -1,8 +1,4252 @@
 Debug writer initialized
-2024-11-05T16:01:26.248447400-05:00[America/New_York]
+2024-11-11T02:56:53.974930100-05:00[America/New_York]
 File location: src\main\logs\debug.txt
 
 App.main
 Debug.init
-App.start, javafx.stage.Stage@5002e5a0
-App.getLoader, main_menu
+App.start, javafx.stage.Stage@105adf0e
+App.loadFXML, main_menu
+App.getFXMLLoader, main_menu
+FXML: MainMenu.newSeason
+Menu.startLoadData
+App.loadMenu
+App.setRoot, load\load_screen
+App.loadFXML, load\load_screen
+App.getFXMLLoader, load\load_screen
+new Loader
+new Loader, com.menu.load.LoadScreen@4458be34
+Loader.setLoadScreen, com.menu.load.LoadScreen@4458be34
+App.setLoader, com.menu.load.Loader@61b1ee7f
+App.getLineCount, false
+f_sample.csv: 286
+t_sample.csv: 334
+==========START THREAD: LOAD_DATA
+Loader.initProcedure, LOAD_DATA, 334.0
+Loader.setNextMenu, team_select
+runLater: Loader.setMessage, Connecting to database
+(This may take a moment...)
+start load data procedure
+App.initSession
+========== CONNECTION SUCCESSFUL ===========
+new Manager, SessionImpl(1970388865<open>)
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+new Repository
+Manager.getRepo
+Loader.addLoadUnits, 48.0
+new LU: 382.0
+Manager.load_data, false
+Manager.setTeamSize, 5, 7
+Manager.setFPT, 7
+Manager.setFPG, 5
+Repository.load_data, false, true
+App.getLoader
+runLater: Loader.setMessage, Loading fighters
+Loading Fighters from file f_sample.csv
+App.getLoader
+Load progress: 10%
+Load progress: 20%
+Load progress: 30%
+Load progress: 40%
+Load progress: 50%
+Load progress: 60%
+Load progress: 70%
+runLater: Loader.setMessage, Loading teams
+Loading Teams from file t_sample.csv
+App.getLoader
+Load progress: 80%
+App.getLoader
+Manager.requiredFighters
+Manager.extraFighters
+Loader.addLoadUnits, 50.0
+new LU: 779.9166666666487
+Manager.replicateGeneric
+Manager.extraFighters
+App.getLoader
+runLater: Loader.setMessage, Generating fighters
+Generating 57 fighters
+Load progress: 90%
+Manager.assignTeams_byLocation
+App.getLoader
+runLater: Loader.setMessage, Assigning teams to leagues
+Load progress: 100%
+MLEXIT 1: Success
+All data loaded successfully
+runLater: Loader.setMessage, Ready to go!
+runLater: Loader.endLoad
+Manager.createByeTeam
+Final load progress: 1.008975317875834
+==========END THREAD: LOAD_DATA
+App.setLoader, null
+App.setRoot, team_select
+App.loadFXML, team_select
+App.getFXMLLoader, team_select
+App.setByeTeam, Bye
+TeamSelect.initialize
+FXML: TeamSelect.startSeason
+Manager.addUser, asass, Team17
+Menu.setUserTeam, Duluth
+Menu.generateSchedule
+App.loadMenu
+App.setRoot, load\load_screen
+App.loadFXML, load\load_screen
+App.getFXMLLoader, load\load_screen
+new Loader
+new Loader, com.menu.load.LoadScreen@b63fd
+Loader.setLoadScreen, com.menu.load.LoadScreen@b63fd
+App.setLoader, com.menu.load.Loader@34d10e31
+Menu.getLeagueList
+Manager.maxTPL
+==========START THREAD: PREDRAFT
+Loader.initProcedure, PREDRAFT, 80.0
+Loader.setNextMenu, draft_menu
+runLater: Loader.setMessage, Loading draft menu
+App.getLoader
+Menu.generateSeason
+runLater: Loader.setMessage, Generating schedule
+Manager.maxTPL
+Manager.generateSchedule, league1
+Team9.setNewSchedule, 9
+Team8.setNewSchedule, 9
+Team6.setNewSchedule, 9
+Team7.setNewSchedule, 9
+Team4.setNewSchedule, 9
+Team5.setNewSchedule, 9
+Team2.setNewSchedule, 9
+Team3.setNewSchedule, 9
+Team1.setNewSchedule, 9
+Team10.setNewSchedule, 9
+Tallahassee vs Tampa
+St. Petersburg vs Broward
+Palm Beach vs Jacksonville
+Pensacola vs Fort Myers
+Miami vs Orlando
+Tallahassee vs Broward
+Tampa vs Jacksonville
+St. Petersburg vs Fort Myers
+Palm Beach vs Orlando
+Pensacola vs Miami
+Tallahassee vs Jacksonville
+Broward vs Fort Myers
+Tampa vs Orlando
+St. Petersburg vs Miami
+Palm Beach vs Pensacola
+Tallahassee vs Fort Myers
+Jacksonville vs Orlando
+Broward vs Miami
+Tampa vs Pensacola
+St. Petersburg vs Palm Beach
+Tallahassee vs Orlando
+Fort Myers vs Miami
+Jacksonville vs Pensacola
+Broward vs Palm Beach
+Tampa vs St. Petersburg
+Tallahassee vs Miami
+Orlando vs Pensacola
+Fort Myers vs Palm Beach
+Jacksonville vs St. Petersburg
+Broward vs Tampa
+Tallahassee vs Pensacola
+Miami vs Palm Beach
+Orlando vs St. Petersburg
+Fort Myers vs Tampa
+Jacksonville vs Broward
+Tallahassee vs Palm Beach
+Pensacola vs St. Petersburg
+Miami vs Tampa
+Orlando vs Broward
+Fort Myers vs Jacksonville
+Tallahassee vs St. Petersburg
+Palm Beach vs Tampa
+Pensacola vs Broward
+Miami vs Jacksonville
+Orlando vs Fort Myers
+Manager.generateSchedule, league2
+Load progress: 20%
+Team16.setNewSchedule, 5
+Team14.setNewSchedule, 5
+Team12.setNewSchedule, 5
+Team15.setNewSchedule, 5
+Team13.setNewSchedule, 5
+Team11.setNewSchedule, 5
+Athens vs Atlanta
+Macon vs Columbus
+Augusta vs Savannah
+Athens vs Columbus
+Atlanta vs Savannah
+Macon vs Augusta
+Athens vs Savannah
+Columbus vs Augusta
+Atlanta vs Macon
+Athens vs Augusta
+Savannah vs Macon
+Columbus vs Atlanta
+Athens vs Macon
+Augusta vs Atlanta
+Savannah vs Columbus
+Manager.generateSchedule, league3
+Load progress: 40%
+Team22.setNewSchedule, 5
+Team17.setNewSchedule, 5
+Team21.setNewSchedule, 5
+Team18.setNewSchedule, 5
+Team20.setNewSchedule, 5
+Team19.setNewSchedule, 5
+St. Paul vs Minneapolis
+Duluth vs Rochester
+St. Cloud vs Mankato
+St. Paul vs Rochester
+Minneapolis vs Mankato
+Duluth vs St. Cloud
+St. Paul vs Mankato
+Rochester vs St. Cloud
+Minneapolis vs Duluth
+St. Paul vs St. Cloud
+Mankato vs Duluth
+Rochester vs Minneapolis
+St. Paul vs Duluth
+St. Cloud vs Minneapolis
+Mankato vs Rochester
+Manager.generateSchedule, league4
+Load progress: 60%
+Team23.setNewSchedule, 9
+Team28.setNewSchedule, 9
+Team29.setNewSchedule, 9
+Team24.setNewSchedule, 9
+Team32.setNewSchedule, 9
+Team26.setNewSchedule, 9
+Team30.setNewSchedule, 9
+Team25.setNewSchedule, 9
+Team31.setNewSchedule, 9
+Team27.setNewSchedule, 9
+Albany vs Long Island
+Manhattan vs Staten Island
+Queens vs Brooklyn
+Bronx vs Rochester
+Syracuse vs Buffalo
+Albany vs Staten Island
+Long Island vs Brooklyn
+Manhattan vs Rochester
+Queens vs Buffalo
+Bronx vs Syracuse
+Albany vs Brooklyn
+Staten Island vs Rochester
+Long Island vs Buffalo
+Manhattan vs Syracuse
+Queens vs Bronx
+Albany vs Rochester
+Brooklyn vs Buffalo
+Staten Island vs Syracuse
+Long Island vs Bronx
+Manhattan vs Queens
+Albany vs Buffalo
+Rochester vs Syracuse
+Brooklyn vs Bronx
+Staten Island vs Queens
+Long Island vs Manhattan
+Albany vs Syracuse
+Buffalo vs Bronx
+Rochester vs Queens
+Brooklyn vs Manhattan
+Staten Island vs Long Island
+Albany vs Bronx
+Syracuse vs Queens
+Buffalo vs Manhattan
+Rochester vs Long Island
+Brooklyn vs Staten Island
+Albany vs Queens
+Bronx vs Manhattan
+Syracuse vs Long Island
+Buffalo vs Staten Island
+Rochester vs Brooklyn
+Albany vs Manhattan
+Queens vs Long Island
+Bronx vs Staten Island
+Syracuse vs Brooklyn
+Buffalo vs Rochester
+Manager.generateSchedule, league5
+Load progress: 80%
+Team43.setNewSchedule, 15
+Team35.setNewSchedule, 15
+Team40.setNewSchedule, 15
+Team38.setNewSchedule, 15
+Team45.setNewSchedule, 15
+Team41.setNewSchedule, 15
+Team36.setNewSchedule, 15
+Team47.setNewSchedule, 15
+Team33.setNewSchedule, 15
+Team42.setNewSchedule, 15
+Team37.setNewSchedule, 15
+Team39.setNewSchedule, 15
+Team34.setNewSchedule, 15
+Team48.setNewSchedule, 15
+Team44.setNewSchedule, 15
+Team46.setNewSchedule, 15
+Sacramento vs San Jose
+Fresno vs San Diego
+Oakland vs Santa Rosa
+Los Angeles vs Bakersfield
+San Francisco vs Modesto
+Pasadena vs Long Beach
+Inland Empire vs Redding
+Santa Barbara vs Anaheim
+Sacramento vs San Diego
+San Jose vs Santa Rosa
+Fresno vs Bakersfield
+Oakland vs Modesto
+Los Angeles vs Long Beach
+San Francisco vs Redding
+Pasadena vs Anaheim
+Inland Empire vs Santa Barbara
+Sacramento vs Santa Rosa
+San Diego vs Bakersfield
+San Jose vs Modesto
+Fresno vs Long Beach
+Oakland vs Redding
+Los Angeles vs Anaheim
+San Francisco vs Santa Barbara
+Pasadena vs Inland Empire
+Sacramento vs Bakersfield
+Santa Rosa vs Modesto
+San Diego vs Long Beach
+San Jose vs Redding
+Fresno vs Anaheim
+Oakland vs Santa Barbara
+Los Angeles vs Inland Empire
+San Francisco vs Pasadena
+Sacramento vs Modesto
+Bakersfield vs Long Beach
+Santa Rosa vs Redding
+San Diego vs Anaheim
+San Jose vs Santa Barbara
+Fresno vs Inland Empire
+Oakland vs Pasadena
+Los Angeles vs San Francisco
+Sacramento vs Long Beach
+Modesto vs Redding
+Bakersfield vs Anaheim
+Santa Rosa vs Santa Barbara
+San Diego vs Inland Empire
+San Jose vs Pasadena
+Fresno vs San Francisco
+Oakland vs Los Angeles
+Sacramento vs Redding
+Long Beach vs Anaheim
+Modesto vs Santa Barbara
+Bakersfield vs Inland Empire
+Santa Rosa vs Pasadena
+San Diego vs San Francisco
+San Jose vs Los Angeles
+Fresno vs Oakland
+Sacramento vs Anaheim
+Redding vs Santa Barbara
+Long Beach vs Inland Empire
+Modesto vs Pasadena
+Bakersfield vs San Francisco
+Santa Rosa vs Los Angeles
+San Diego vs Oakland
+San Jose vs Fresno
+Sacramento vs Santa Barbara
+Anaheim vs Inland Empire
+Redding vs Pasadena
+Long Beach vs San Francisco
+Modesto vs Los Angeles
+Bakersfield vs Oakland
+Santa Rosa vs Fresno
+San Diego vs San Jose
+Sacramento vs Inland Empire
+Santa Barbara vs Pasadena
+Anaheim vs San Francisco
+Redding vs Los Angeles
+Long Beach vs Oakland
+Modesto vs Fresno
+Bakersfield vs San Jose
+Santa Rosa vs San Diego
+Sacramento vs Pasadena
+Inland Empire vs San Francisco
+Santa Barbara vs Los Angeles
+Anaheim vs Oakland
+Redding vs Fresno
+Long Beach vs San Jose
+Modesto vs San Diego
+Bakersfield vs Santa Rosa
+Sacramento vs San Francisco
+Pasadena vs Los Angeles
+Inland Empire vs Oakland
+Santa Barbara vs Fresno
+Anaheim vs San Jose
+Redding vs San Diego
+Long Beach vs Santa Rosa
+Modesto vs Bakersfield
+Sacramento vs Los Angeles
+San Francisco vs Oakland
+Pasadena vs Fresno
+Inland Empire vs San Jose
+Santa Barbara vs San Diego
+Anaheim vs Santa Rosa
+Redding vs Bakersfield
+Long Beach vs Modesto
+Sacramento vs Oakland
+Los Angeles vs Fresno
+San Francisco vs San Jose
+Pasadena vs San Diego
+Inland Empire vs Santa Rosa
+Santa Barbara vs Bakersfield
+Anaheim vs Modesto
+Redding vs Long Beach
+Sacramento vs Fresno
+Oakland vs San Jose
+Los Angeles vs San Diego
+San Francisco vs Santa Rosa
+Pasadena vs Bakersfield
+Inland Empire vs Modesto
+Santa Barbara vs Long Beach
+Anaheim vs Redding
+runLater: Loader.setMessage, Ready to go!
+runLater: Loader.endLoad
+Load progress: 100%
+Final load progress: 1.0
+==========END THREAD: PREDRAFT
+App.setLoader, null
+App.setRoot, draft_menu
+App.loadFXML, draft_menu
+App.getFXMLLoader, draft_menu
+Manager.getFPT
+DraftMenu.initialize
+runLater: DraftMenu.display, 1
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+FXML: DraftMenu.beginDraft
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Omniman
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Thanos
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Rick Sanchez
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Satoru Gojo
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Invincible
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects DIO
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Sukuna
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Kenjaku
+runLater: DraftMenu.setTopText, San Diego
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Diego
+runLater: DraftMenu.addSelection, San Diego selects Jotaro Kujo
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects EVA 01
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Thor
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Lilith
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Cecil Stedman
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Yuta Okkotsu
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects EVA 02
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Allen the Alien
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Rick Prime
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Van Hohenheim
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Dwark in the Fl.
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Atom Eve
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Joseph Joestar
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Suguru Geto
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects The Immortal
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Kars
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Evil Morty
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Hulk
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Toji Fushiguro
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Aang
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Iron Man
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Link
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Mahito
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects DVA
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Zelda
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Captain America
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Ozai
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Planetina
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Roy Mustang
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Jonathan Joesta.
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Megumi Fushigur.
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Dio Brando
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, Duluth
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+FXML: DraftMenu.userSelection, Ganondorf
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+runLater: DraftMenu.addSelection, Duluth selects Ganondorf
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Redding
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Redding
+runLater: DraftMenu.addSelection, Redding selects Esidisi
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Dr. Strange
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Black Panther
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Mauga
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Phoenix Person
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Sozin
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Angstrom Levy
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects EVA 00
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Elder Maxson
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Yuji Itadori
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Bucky Barnes
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Spiderman
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Reinhardt
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Orisa
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Korra
+runLater: DraftMenu.setTopText, San Diego
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Diego
+runLater: DraftMenu.addSelection, San Diego selects Ramiel
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Deathclaw [315]
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Deathclaw [66]
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Rauru
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Edward Elric
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Black Samson
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Monster Girl
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Wamuu
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Mei Mei
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Ultron
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Roadhog
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Odin
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Caesar Zeppeli
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Ramattra
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Sigma
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Zeruel
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Avatar Kyoshi
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Azula
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Kento Nanami
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Paladin Danse
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Olivier Armstor.
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Winston
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Zarya
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Hammond
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Jogo
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Venom
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Sahaquiel
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Iroh
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Scar Ishvalan
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Sole Survivor
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Masamichi Yaga
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Deathclaw [325]
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, Duluth
+==========END THREAD: SimDraft
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+FXML: DraftMenu.userSelection, Avatar Roku
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+runLater: DraftMenu.addSelection, Duluth selects Avatar Roku
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Redding
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Redding
+runLater: DraftMenu.addSelection, Redding selects Avdol
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Scarlet Witch
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Doomfist
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Junker Queen
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Zuko
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects King Bradley
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Robot
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Bird Person
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Yao Guai [73]
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Toge Inumaki
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Kakyoin
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Aoi Todo
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Loki
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Hanami
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Vision
+runLater: DraftMenu.setTopText, San Diego
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Diego
+runLater: DraftMenu.addSelection, San Diego selects Toph
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Sachiel
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Alex Armstrong
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Pride
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Kellogg
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Santana
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Polnareff
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Choso
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Super Mutant [328]
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Miles Morales
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Black Widow
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Bastion
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Super Mutant [331]
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Super Mutant [65]
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Sidon
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Greed-Ling
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Will Zeppelli
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Alphonse Elric
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Bulletproof
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Envy
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Red Skull
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Appa
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Super Mutant [322]
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects EVA 03
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Super Mutant [306]
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Katara
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Preston Garvey
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Arael
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Lust
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Tenzin
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Dagon
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Hancock
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, Duluth
+==========END THREAD: SimDraft
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+FXML: DraftMenu.userSelection, Wong
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+runLater: DraftMenu.addSelection, Duluth selects Wong
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Redding
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Redding
+runLater: DraftMenu.addSelection, Redding selects Reaper
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Soldier 76
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Bigfoot
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Space Beth
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects High Sorcerer [39]
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Mass-Produced E. [54]
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Super Mutant [310]
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Synth [68]
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Greed
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Rex Splode
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Straizo
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects War Machine
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Groot
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Maki Zenin
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Torbjorn
+runLater: DraftMenu.setTopText, San Diego
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Diego
+runLater: DraftMenu.addSelection, San Diego selects Heimdall
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Spider-Gwen
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Symmetra
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Mr. Meeseeks [279]
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Sojourn
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Shamshel
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Synth [327]
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Nick Valentine
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Von Stroheim
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Sloth
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Shapesmith
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Mai Zenin
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Mechamaru
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Gamora
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Uraume
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Drax
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Cassidy
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Nebula
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Mr. Meeseeks [341]
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Ashe
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Mothman
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Gluttony
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Iggy
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Codsworth
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Starlord
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Nobara Kugisaki
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Sokka
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Pharah
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Raider [320]
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Quicksilver
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Junkrat
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Squanchy
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, Duluth
+==========END THREAD: SimDraft
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+FXML: DraftMenu.userSelection, Morty Smith
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+runLater: DraftMenu.addSelection, Duluth selects Morty Smith [323]
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Redding
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Redding
+runLater: DraftMenu.addSelection, Redding selects Raider [340]
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Raider [67]
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Ling Yao
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Hol Horse
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Donald Ferguson
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Hanzo
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Rocket Raccoon
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Widowmaker
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Mei
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Romeo Montague
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Echo
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Don Quixote
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Raider [314]
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Yeti
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Mirelurk [77]
+runLater: DraftMenu.setTopText, San Diego
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Diego
+runLater: DraftMenu.addSelection, San Diego selects Dupli-Kate
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Morty Smith [271]
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Sombra
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Genji
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Junpei Yoshino
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Venture
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Macbeth
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Lady Macbeth
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Raider [324]
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Abrodolf Lincol.
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Wyvern [42]
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Raider [311]
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Loch Ness Monst.
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Kaworu
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Hamlet
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Riza Hawkeye
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Thunderbird [269]
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Damien Darkbloo.
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Gearhead
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Night Summer
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Tracer
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Mirelurk [287]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Mirelurk [289]
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Paul Bunyan
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Dogmeat
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Zenyatta
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Moblin [300]
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Wendigo
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Moblin [342]
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Beth Smith [272]
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Beowulf
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Moblin [108]
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, Duluth
+==========END THREAD: SimDraft
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+FXML: DraftMenu.userSelection, Speedwagon
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+runLater: DraftMenu.addSelection, Duluth selects Speedwagon
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Redding
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Redding
+runLater: DraftMenu.addSelection, Redding selects Moira
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Skinwalker [264]
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Summer Smith [274]
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Maes Hughes
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Shrink Rae
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Jersey Devil
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Baptise
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Moblin [291]
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Frost Giant [295]
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Cyborg Soldier [30]
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Moblin [330]
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Magic Soldier [40]
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Bloodbug [76]
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Frost Giant [16]
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Purah
+runLater: DraftMenu.setTopText, San Diego
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Diego
+runLater: DraftMenu.addSelection, San Diego selects Darkwing
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Ryoji Kaji
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Jerry Smith [273]
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Mickey Mouse
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Ana
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Kiriko
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Flame Dragon [22]
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Smokey
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Juno
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Illari
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Lucio
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Mercutio
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Chupacabra
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Claudius
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Lightning Wizar. [23]
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Lizalfo [337]
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Brigitte
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Cyborg Soldier [319]
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Benvolio
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Grendel
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Lifeweaver
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Mr. Poopy Butth.
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Sancho Panza
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Juliet Capulet
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Lightning Wizar. [313]
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Tybalt
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Mercy
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Lizalfo [107]
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Babe the Blue O.
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Frost Dragon [304]
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Lizalfo [307]
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Frost Dragon [18]
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, Duluth
+==========END THREAD: SimDraft
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+FXML: DraftMenu.userSelection, Lizalfo
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+runLater: DraftMenu.addSelection, Duluth selects Lizalfo [312]
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Redding
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Redding
+runLater: DraftMenu.addSelection, Redding selects Cyborg Giant [29]
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Magic Giant [41]
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Misato Katsurag.
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Winry Rockbell
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Frost Dragon [296]
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Bokoblin [302]
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Flame Wizard [299]
+DraftMenu.doDraft
+runLater: DraftMenu.setTopText, Los Angeles
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Los Angeles
+runLater: DraftMenu.addSelection, Los Angeles selects Sequid [127]
+runLater: DraftMenu.setTopText, Atlanta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Atlanta
+runLater: DraftMenu.addSelection, Atlanta selects Bokoblin [339]
+runLater: DraftMenu.setTopText, Inland Empire
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Inland Empire
+runLater: DraftMenu.addSelection, Inland Empire selects Horatio
+runLater: DraftMenu.setTopText, Miami
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Miami
+runLater: DraftMenu.addSelection, Miami selects Magic Giant [329]
+runLater: DraftMenu.setTopText, San Francisco
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Francisco
+runLater: DraftMenu.addSelection, San Francisco selects Minnie Mouse
+runLater: DraftMenu.setTopText, Tampa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tampa
+runLater: DraftMenu.addSelection, Tampa selects Gendo Ikari
+runLater: DraftMenu.setTopText, Manhattan
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Manhattan
+runLater: DraftMenu.addSelection, Manhattan selects Bokoblin [106]
+runLater: DraftMenu.setTopText, Orlando
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Orlando
+runLater: DraftMenu.addSelection, Orlando selects Bokoblin [293]
+runLater: DraftMenu.setTopText, San Diego
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Diego
+runLater: DraftMenu.addSelection, San Diego selects Bokoblin [309]
+runLater: DraftMenu.setTopText, Anaheim
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Anaheim
+runLater: DraftMenu.addSelection, Anaheim selects Cyborg Dragon [318]
+runLater: DraftMenu.setTopText, Long Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Island
+runLater: DraftMenu.addSelection, Long Island selects Cyborg Dragon [28]
+runLater: DraftMenu.setTopText, Sacramento
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Sacramento
+runLater: DraftMenu.addSelection, Sacramento selects Flame Wizard [19]
+runLater: DraftMenu.setTopText, Brooklyn
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Brooklyn
+runLater: DraftMenu.addSelection, Brooklyn selects Cyborg Dragon [321]
+runLater: DraftMenu.setTopText, Jacksonville
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Jacksonville
+runLater: DraftMenu.addSelection, Jacksonville selects Lightning Drago. [305]
+runLater: DraftMenu.setTopText, Queens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Queens
+runLater: DraftMenu.addSelection, Queens selects Lightning Drago. [26]
+runLater: DraftMenu.setTopText, Minneapolis
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Minneapolis
+runLater: DraftMenu.addSelection, Minneapolis selects Sequid [333]
+runLater: DraftMenu.setTopText, San Jose
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, San Jose
+runLater: DraftMenu.addSelection, San Jose selects Bokoblin [338]
+runLater: DraftMenu.setTopText, Syracuse
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Syracuse
+runLater: DraftMenu.addSelection, Syracuse selects Sky Dragon [34]
+runLater: DraftMenu.setTopText, Modesto
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Modesto
+runLater: DraftMenu.addSelection, Modesto selects Flame Wizard [303]
+runLater: DraftMenu.setTopText, Oakland
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Oakland
+runLater: DraftMenu.addSelection, Oakland selects Frost Wizard [15]
+runLater: DraftMenu.setTopText, Pasadena
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pasadena
+runLater: DraftMenu.addSelection, Pasadena selects Frost Dragon [343]
+runLater: DraftMenu.setTopText, Santa Barbara
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Barbara
+runLater: DraftMenu.addSelection, Santa Barbara selects Frost Soldier [17]
+runLater: DraftMenu.setTopText, Buffalo
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Buffalo
+runLater: DraftMenu.addSelection, Buffalo selects Frost Soldier [298]
+runLater: DraftMenu.setTopText, St. Paul
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Paul
+runLater: DraftMenu.addSelection, St. Paul selects Bloatfly [75]
+runLater: DraftMenu.setTopText, Bronx
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bronx
+runLater: DraftMenu.addSelection, Bronx selects Aquatic Wizard [35]
+runLater: DraftMenu.setTopText, Broward
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Broward
+runLater: DraftMenu.addSelection, Broward selects Flame Soldier [21]
+runLater: DraftMenu.setTopText, Albany
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Albany
+runLater: DraftMenu.addSelection, Albany selects Frost Soldier [317]
+runLater: DraftMenu.setTopText, Fort Myers
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fort Myers
+runLater: DraftMenu.addSelection, Fort Myers selects Lightning Giant [24]
+runLater: DraftMenu.setTopText, Bakersfield
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Bakersfield
+runLater: DraftMenu.addSelection, Bakersfield selects Bloatfly [334]
+runLater: DraftMenu.setTopText, Fresno
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Fresno
+runLater: DraftMenu.addSelection, Fresno selects Sky Giant [32]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Sky Soldier [33]
+runLater: DraftMenu.setTopText, Athens
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Athens
+runLater: DraftMenu.addSelection, Athens selects Lightning Soldi. [25]
+runLater: DraftMenu.setTopText, Pensacola
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Pensacola
+runLater: DraftMenu.addSelection, Pensacola selects Bloatfly [335]
+runLater: DraftMenu.setTopText, Savannah
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Savannah
+runLater: DraftMenu.addSelection, Savannah selects Aquatic Giant [36]
+runLater: DraftMenu.setTopText, Columbus
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Columbus
+runLater: DraftMenu.addSelection, Columbus selects Aquatic Dragon [38]
+runLater: DraftMenu.setTopText, Palm Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Palm Beach
+runLater: DraftMenu.addSelection, Palm Beach selects Asuka Soryu
+runLater: DraftMenu.setTopText, St. Petersburg
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Petersburg
+runLater: DraftMenu.addSelection, St. Petersburg selects Cyborg Wizard [27]
+runLater: DraftMenu.setTopText, Long Beach
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Long Beach
+runLater: DraftMenu.addSelection, Long Beach selects Sky Wizard [326]
+runLater: DraftMenu.setTopText, Santa Rosa
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Santa Rosa
+runLater: DraftMenu.addSelection, Santa Rosa selects Shinji Ikari
+runLater: DraftMenu.setTopText, Macon
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Macon
+runLater: DraftMenu.addSelection, Macon selects Bloatfly [336]
+runLater: DraftMenu.display, 1
+runLater: DraftMenu.setTopText, Duluth
+==========END THREAD: SimDraft
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+FXML: DraftMenu.userSelection, Sky Wizard
+DraftMenu.continueDraft
+DraftMenu.selectFighter, true
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+runLater: DraftMenu.addSelection, Duluth selects Sky Wizard [31]
+==========START THREAD: SimDraft
+runLater: DraftMenu.setTopText, Redding
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Redding
+runLater: DraftMenu.addSelection, Redding selects Erina
+runLater: DraftMenu.setTopText, Tallahassee
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Tallahassee
+runLater: DraftMenu.addSelection, Tallahassee selects Radroach [288]
+runLater: DraftMenu.setTopText, Augusta
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Augusta
+runLater: DraftMenu.addSelection, Augusta selects Aquatic Soldier [290]
+runLater: DraftMenu.setTopText, St. Cloud
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, St. Cloud
+runLater: DraftMenu.addSelection, St. Cloud selects Radroach [301]
+runLater: DraftMenu.setTopText, Rochester
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Rochester
+runLater: DraftMenu.addSelection, Rochester selects Radroach [292]
+runLater: DraftMenu.setTopText, Staten Island
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Staten Island
+runLater: DraftMenu.addSelection, Staten Island selects Radroach [308]
+runLater: DraftMenu.setTopText, Mankato
+DraftMenu.selectFighter, false
+DraftMenu.selectionIndex, Mankato
+runLater: DraftMenu.addSelection, Mankato selects Rei Ayanami
+runLater: DraftMenu.endDraft
+==========END THREAD: SimDraft
+FXML: DraftMenu.nextMenu
+App.setRoot, season_menu
+App.loadFXML, season_menu
+App.getFXMLLoader, season_menu
+SeasonMenu.initialize
+SeasonMenu.setLeague, Minnesota
+SeasonMenu.setStandings, Minnesota
+SeasonMenu.setGames, 0, Minnesota
+SeasonMenu.seasonOver
+SeasonMenu.userOnBye
+Team17.onBye, 0
+Team17.getGame, 0
+, game62
+Team17.getOpponent, 0
+Team17.getGame, 0
+Team17.getOpponent, 0
+Team17.getGame, 0
+SeasonMenu.leagueListener
+SeasonMenu.gameListener
+FXML: SeasonMenu.toTeamView
+App.setRoot, view\team_view
+App.loadFXML, view\team_view
+App.getFXMLLoader, view\team_view
+Menu.displayFighters, Duluth, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game62.getGameString, Team17
+game66.getGameString, Team17
+game69.getGameString, Team17
+game71.getGameString, Team17
+game73.getGameString, Team17
+Menu.displayFighters, Mankato, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game63.getGameString, Team18
+game65.getGameString, Team18
+game67.getGameString, Team18
+game71.getGameString, Team18
+game75.getGameString, Team18
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game61.getGameString, Team19
+game65.getGameString, Team19
+game69.getGameString, Team19
+game72.getGameString, Team19
+game74.getGameString, Team19
+Menu.displayFighters, Mankato, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game63.getGameString, Team18
+game65.getGameString, Team18
+game67.getGameString, Team18
+game71.getGameString, Team18
+game75.getGameString, Team18
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game61.getGameString, Team19
+game65.getGameString, Team19
+game69.getGameString, Team19
+game72.getGameString, Team19
+game74.getGameString, Team19
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game62.getGameString, Team20
+game64.getGameString, Team20
+game68.getGameString, Team20
+game72.getGameString, Team20
+game75.getGameString, Team20
+Menu.displayFighters, St. Cloud, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game63.getGameString, Team21
+game66.getGameString, Team21
+game68.getGameString, Team21
+game70.getGameString, Team21
+game74.getGameString, Team21
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game62.getGameString, Team20
+game64.getGameString, Team20
+game68.getGameString, Team20
+game72.getGameString, Team20
+game75.getGameString, Team20
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game61.getGameString, Team19
+game65.getGameString, Team19
+game69.getGameString, Team19
+game72.getGameString, Team19
+game74.getGameString, Team19
+Menu.displayFighters, Mankato, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game63.getGameString, Team18
+game65.getGameString, Team18
+game67.getGameString, Team18
+game71.getGameString, Team18
+game75.getGameString, Team18
+Menu.displayFighters, Minneapolis, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game61.getGameString, Team19
+game65.getGameString, Team19
+game69.getGameString, Team19
+game72.getGameString, Team19
+game74.getGameString, Team19
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game62.getGameString, Team20
+game64.getGameString, Team20
+game68.getGameString, Team20
+game72.getGameString, Team20
+game75.getGameString, Team20
+Menu.displayFighters, St. Cloud, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game63.getGameString, Team21
+game66.getGameString, Team21
+game68.getGameString, Team21
+game70.getGameString, Team21
+game74.getGameString, Team21
+Menu.displayFighters, St. Paul, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game61.getGameString, Team22
+game64.getGameString, Team22
+game67.getGameString, Team22
+game70.getGameString, Team22
+game73.getGameString, Team22
+Menu.displayFighters, Duluth, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game62.getGameString, Team17
+game66.getGameString, Team17
+game69.getGameString, Team17
+game71.getGameString, Team17
+game73.getGameString, Team17
+Menu.displayFighters, St. Paul, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game61.getGameString, Team22
+game64.getGameString, Team22
+game67.getGameString, Team22
+game70.getGameString, Team22
+game73.getGameString, Team22
+Menu.displayFighters, Albany, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game76.getGameString, Team23
+game81.getGameString, Team23
+game86.getGameString, Team23
+game91.getGameString, Team23
+game96.getGameString, Team23
+game101.getGameString, Team23
+game106.getGameString, Team23
+game111.getGameString, Team23
+game116.getGameString, Team23
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game79.getGameString, Team24
+game85.getGameString, Team24
+game90.getGameString, Team24
+game94.getGameString, Team24
+game98.getGameString, Team24
+game102.getGameString, Team24
+game106.getGameString, Team24
+game112.getGameString, Team24
+game118.getGameString, Team24
+Menu.displayFighters, Brooklyn, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game78.getGameString, Team25
+game82.getGameString, Team25
+game86.getGameString, Team25
+game92.getGameString, Team25
+game98.getGameString, Team25
+game104.getGameString, Team25
+game110.getGameString, Team25
+game115.getGameString, Team25
+game119.getGameString, Team25
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game79.getGameString, Team24
+game85.getGameString, Team24
+game90.getGameString, Team24
+game94.getGameString, Team24
+game98.getGameString, Team24
+game102.getGameString, Team24
+game106.getGameString, Team24
+game112.getGameString, Team24
+game118.getGameString, Team24
+Menu.displayFighters, Brooklyn, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game78.getGameString, Team25
+game82.getGameString, Team25
+game86.getGameString, Team25
+game92.getGameString, Team25
+game98.getGameString, Team25
+game104.getGameString, Team25
+game110.getGameString, Team25
+game115.getGameString, Team25
+game119.getGameString, Team25
+Menu.displayFighters, Buffalo, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game80.getGameString, Team26
+game84.getGameString, Team26
+game88.getGameString, Team26
+game92.getGameString, Team26
+game96.getGameString, Team26
+game102.getGameString, Team26
+game108.getGameString, Team26
+game114.getGameString, Team26
+game120.getGameString, Team26
+Menu.displayFighters, Long Island, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game76.getGameString, Team27
+game82.getGameString, Team27
+game88.getGameString, Team27
+game94.getGameString, Team27
+game100.getGameString, Team27
+game105.getGameString, Team27
+game109.getGameString, Team27
+game113.getGameString, Team27
+game117.getGameString, Team27
+Menu.displayFighters, Manhattan, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game77.getGameString, Team28
+game83.getGameString, Team28
+game89.getGameString, Team28
+game95.getGameString, Team28
+game100.getGameString, Team28
+game104.getGameString, Team28
+game108.getGameString, Team28
+game112.getGameString, Team28
+game116.getGameString, Team28
+Menu.displayFighters, Queens, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game78.getGameString, Team29
+game84.getGameString, Team29
+game90.getGameString, Team29
+game95.getGameString, Team29
+game99.getGameString, Team29
+game103.getGameString, Team29
+game107.getGameString, Team29
+game111.getGameString, Team29
+game117.getGameString, Team29
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game79.getGameString, Team30
+game83.getGameString, Team30
+game87.getGameString, Team30
+game91.getGameString, Team30
+game97.getGameString, Team30
+game103.getGameString, Team30
+game109.getGameString, Team30
+game115.getGameString, Team30
+game120.getGameString, Team30
+Menu.displayFighters, Queens, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game78.getGameString, Team29
+game84.getGameString, Team29
+game90.getGameString, Team29
+game95.getGameString, Team29
+game99.getGameString, Team29
+game103.getGameString, Team29
+game107.getGameString, Team29
+game111.getGameString, Team29
+game117.getGameString, Team29
+Menu.displayFighters, Rochester, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game79.getGameString, Team30
+game83.getGameString, Team30
+game87.getGameString, Team30
+game91.getGameString, Team30
+game97.getGameString, Team30
+game103.getGameString, Team30
+game109.getGameString, Team30
+game115.getGameString, Team30
+game120.getGameString, Team30
+Menu.displayFighters, Staten Island, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game77.getGameString, Team31
+game81.getGameString, Team31
+game87.getGameString, Team31
+game93.getGameString, Team31
+game99.getGameString, Team31
+game105.getGameString, Team31
+game110.getGameString, Team31
+game114.getGameString, Team31
+game118.getGameString, Team31
+Menu.displayFighters, Syracuse, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game80.getGameString, Team32
+game85.getGameString, Team32
+game89.getGameString, Team32
+game93.getGameString, Team32
+game97.getGameString, Team32
+game101.getGameString, Team32
+game107.getGameString, Team32
+game113.getGameString, Team32
+game119.getGameString, Team32
+Menu.displayFighters, Albany, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game76.getGameString, Team23
+game81.getGameString, Team23
+game86.getGameString, Team23
+game91.getGameString, Team23
+game96.getGameString, Team23
+game101.getGameString, Team23
+game106.getGameString, Team23
+game111.getGameString, Team23
+game116.getGameString, Team23
+Menu.displayFighters, Bronx, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game79.getGameString, Team24
+game85.getGameString, Team24
+game90.getGameString, Team24
+game94.getGameString, Team24
+game98.getGameString, Team24
+game102.getGameString, Team24
+game106.getGameString, Team24
+game112.getGameString, Team24
+game118.getGameString, Team24
+Menu.displayFighters, Anaheim, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game128.getGameString, Team33
+game135.getGameString, Team33
+game142.getGameString, Team33
+game149.getGameString, Team33
+game156.getGameString, Team33
+game163.getGameString, Team33
+game170.getGameString, Team33
+game177.getGameString, Team33
+game186.getGameString, Team33
+game195.getGameString, Team33
+game204.getGameString, Team33
+game213.getGameString, Team33
+game222.getGameString, Team33
+game231.getGameString, Team33
+game240.getGameString, Team33
+Menu.displayFighters, Bakersfield, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game124.getGameString, Team34
+game131.getGameString, Team34
+game138.getGameString, Team34
+game145.getGameString, Team34
+game154.getGameString, Team34
+game163.getGameString, Team34
+game172.getGameString, Team34
+game181.getGameString, Team34
+game190.getGameString, Team34
+game199.getGameString, Team34
+game208.getGameString, Team34
+game216.getGameString, Team34
+game223.getGameString, Team34
+game230.getGameString, Team34
+game237.getGameString, Team34
+Menu.displayFighters, Fresno, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game122.getGameString, Team35
+game131.getGameString, Team35
+game140.getGameString, Team35
+game149.getGameString, Team35
+game158.getGameString, Team35
+game167.getGameString, Team35
+game176.getGameString, Team35
+game184.getGameString, Team35
+game191.getGameString, Team35
+game198.getGameString, Team35
+game205.getGameString, Team35
+game212.getGameString, Team35
+game219.getGameString, Team35
+game226.getGameString, Team35
+game233.getGameString, Team35
+Menu.displayFighters, Inland Empire, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game127.getGameString, Team36
+game136.getGameString, Team36
+game144.getGameString, Team36
+game151.getGameString, Team36
+game158.getGameString, Team36
+game165.getGameString, Team36
+game172.getGameString, Team36
+game179.getGameString, Team36
+game186.getGameString, Team36
+game193.getGameString, Team36
+game202.getGameString, Team36
+game211.getGameString, Team36
+game220.getGameString, Team36
+game229.getGameString, Team36
+game238.getGameString, Team36
+Menu.displayFighters, Long Beach, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game126.getGameString, Team37
+game133.getGameString, Team37
+game140.getGameString, Team37
+game147.getGameString, Team37
+game154.getGameString, Team37
+game161.getGameString, Team37
+game170.getGameString, Team37
+game179.getGameString, Team37
+game188.getGameString, Team37
+game197.getGameString, Team37
+game206.getGameString, Team37
+game215.getGameString, Team37
+game224.getGameString, Team37
+game232.getGameString, Team37
+game239.getGameString, Team37
+Menu.displayFighters, Los Angeles, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game124.getGameString, Team38
+game133.getGameString, Team38
+game142.getGameString, Team38
+game151.getGameString, Team38
+game160.getGameString, Team38
+game168.getGameString, Team38
+game175.getGameString, Team38
+game182.getGameString, Team38
+game189.getGameString, Team38
+game196.getGameString, Team38
+game203.getGameString, Team38
+game210.getGameString, Team38
+game217.getGameString, Team38
+game226.getGameString, Team38
+game235.getGameString, Team38
+Menu.displayFighters, Modesto, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game125.getGameString, Team39
+game132.getGameString, Team39
+game139.getGameString, Team39
+game146.getGameString, Team39
+game153.getGameString, Team39
+game162.getGameString, Team39
+game171.getGameString, Team39
+game180.getGameString, Team39
+game189.getGameString, Team39
+game198.getGameString, Team39
+game207.getGameString, Team39
+game216.getGameString, Team39
+game224.getGameString, Team39
+game231.getGameString, Team39
+game238.getGameString, Team39
+Menu.displayFighters, Oakland, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game123.getGameString, Team40
+game132.getGameString, Team40
+game141.getGameString, Team40
+game150.getGameString, Team40
+game159.getGameString, Team40
+game168.getGameString, Team40
+game176.getGameString, Team40
+game183.getGameString, Team40
+game190.getGameString, Team40
+game197.getGameString, Team40
+game204.getGameString, Team40
+game211.getGameString, Team40
+game218.getGameString, Team40
+game225.getGameString, Team40
+game234.getGameString, Team40
+Menu.displayFighters, Pasadena, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game126.getGameString, Team41
+game135.getGameString, Team41
+game144.getGameString, Team41
+game152.getGameString, Team41
+game159.getGameString, Team41
+game166.getGameString, Team41
+game173.getGameString, Team41
+game180.getGameString, Team41
+game187.getGameString, Team41
+game194.getGameString, Team41
+game201.getGameString, Team41
+game210.getGameString, Team41
+game219.getGameString, Team41
+game228.getGameString, Team41
+game237.getGameString, Team41
+Menu.displayFighters, Redding, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game127.getGameString, Team42
+game134.getGameString, Team42
+game141.getGameString, Team42
+game148.getGameString, Team42
+game155.getGameString, Team42
+game162.getGameString, Team42
+game169.getGameString, Team42
+game178.getGameString, Team42
+game187.getGameString, Team42
+game196.getGameString, Team42
+game205.getGameString, Team42
+game214.getGameString, Team42
+game223.getGameString, Team42
+game232.getGameString, Team42
+game240.getGameString, Team42
+Menu.displayFighters, Sacramento, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game121.getGameString, Team43
+game129.getGameString, Team43
+game137.getGameString, Team43
+game145.getGameString, Team43
+game153.getGameString, Team43
+game161.getGameString, Team43
+game169.getGameString, Team43
+game177.getGameString, Team43
+game185.getGameString, Team43
+game193.getGameString, Team43
+game201.getGameString, Team43
+game209.getGameString, Team43
+game217.getGameString, Team43
+game225.getGameString, Team43
+game233.getGameString, Team43
+Menu.displayFighters, San Diego, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game122.getGameString, Team44
+game129.getGameString, Team44
+game138.getGameString, Team44
+game147.getGameString, Team44
+game156.getGameString, Team44
+game165.getGameString, Team44
+game174.getGameString, Team44
+game183.getGameString, Team44
+game192.getGameString, Team44
+game200.getGameString, Team44
+game207.getGameString, Team44
+game214.getGameString, Team44
+game221.getGameString, Team44
+game228.getGameString, Team44
+game235.getGameString, Team44
+Menu.displayFighters, San Francisco, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game125.getGameString, Team45
+game134.getGameString, Team45
+game143.getGameString, Team45
+game152.getGameString, Team45
+game160.getGameString, Team45
+game167.getGameString, Team45
+game174.getGameString, Team45
+game181.getGameString, Team45
+game188.getGameString, Team45
+game195.getGameString, Team45
+game202.getGameString, Team45
+game209.getGameString, Team45
+game218.getGameString, Team45
+game227.getGameString, Team45
+game236.getGameString, Team45
+Menu.displayFighters, San Jose, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game121.getGameString, Team46
+game130.getGameString, Team46
+game139.getGameString, Team46
+game148.getGameString, Team46
+game157.getGameString, Team46
+game166.getGameString, Team46
+game175.getGameString, Team46
+game184.getGameString, Team46
+game192.getGameString, Team46
+game199.getGameString, Team46
+game206.getGameString, Team46
+game213.getGameString, Team46
+game220.getGameString, Team46
+game227.getGameString, Team46
+game234.getGameString, Team46
+Menu.displayFighters, Santa Barbara, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game128.getGameString, Team47
+game136.getGameString, Team47
+game143.getGameString, Team47
+game150.getGameString, Team47
+game157.getGameString, Team47
+game164.getGameString, Team47
+game171.getGameString, Team47
+game178.getGameString, Team47
+game185.getGameString, Team47
+game194.getGameString, Team47
+game203.getGameString, Team47
+game212.getGameString, Team47
+game221.getGameString, Team47
+game230.getGameString, Team47
+game239.getGameString, Team47
+Menu.displayFighters, Santa Rosa, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game123.getGameString, Team48
+game130.getGameString, Team48
+game137.getGameString, Team48
+game146.getGameString, Team48
+game155.getGameString, Team48
+game164.getGameString, Team48
+game173.getGameString, Team48
+game182.getGameString, Team48
+game191.getGameString, Team48
+game200.getGameString, Team48
+game208.getGameString, Team48
+game215.getGameString, Team48
+game222.getGameString, Team48
+game229.getGameString, Team48
+game236.getGameString, Team48
+Menu.displayFighters, Broward, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game2.getGameString, Team1
+game6.getGameString, Team1
+game12.getGameString, Team1
+game18.getGameString, Team1
+game24.getGameString, Team1
+game30.getGameString, Team1
+game35.getGameString, Team1
+game39.getGameString, Team1
+game43.getGameString, Team1
+Menu.displayFighters, Atlanta, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game46.getGameString, Team11
+game50.getGameString, Team11
+game54.getGameString, Team11
+game57.getGameString, Team11
+game59.getGameString, Team11
+Menu.displayFighters, Duluth, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game62.getGameString, Team17
+game66.getGameString, Team17
+game69.getGameString, Team17
+game71.getGameString, Team17
+game73.getGameString, Team17
+Menu.displayFighters, Albany, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game76.getGameString, Team23
+game81.getGameString, Team23
+game86.getGameString, Team23
+game91.getGameString, Team23
+game96.getGameString, Team23
+game101.getGameString, Team23
+game106.getGameString, Team23
+game111.getGameString, Team23
+game116.getGameString, Team23
+App.goBack
+App.setRoot, season_menu
+App.loadFXML, season_menu
+App.getFXMLLoader, season_menu
+SeasonMenu.initialize
+SeasonMenu.setLeague, Minnesota
+SeasonMenu.setStandings, Minnesota
+SeasonMenu.setGames, 0, Minnesota
+SeasonMenu.seasonOver
+SeasonMenu.userOnBye
+Team17.onBye, 0
+Team17.getGame, 0
+, game62
+Team17.getOpponent, 0
+Team17.getGame, 0
+Team17.getOpponent, 0
+Team17.getGame, 0
+SeasonMenu.leagueListener
+SeasonMenu.gameListener
+FXML: SeasonMenu.startGame
+SeasonMenu.seasonOver
+SeasonMenu.userOnBye
+Team17.onBye, 0
+Team17.getGame, 0
+, game62
+Team17.getOpponent, 0
+Team17.getGame, 0
+App.setRoot, game_menu
+App.loadFXML, game_menu
+App.getFXMLLoader, game_menu
+GameMenu.initialize
+Team17.getOpponent, 0
+Team17.getGame, 0
+Team17.getGame, 0
+Manager.getFPT
+Manager.getFPG
+GameMenu.setGrids
+GameMenu.setFighterList, Duluth, [], Grid hgap=0.0, vgap=0.0, alignment=CENTER, true
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+Menu.displayFighters, [FighterCard@67cfac20, FighterCard@4154e99b, FighterCard@3cf60b5a, FighterCard@462a2ab7, FighterCard@5c1e30fe, FighterCard@3a6012d7, FighterCard@3640621a], Grid hgap=0.0, vgap=0.0, alignment=CENTER
+GameMenu.setFighterList, Rochester, [], Grid hgap=0.0, vgap=0.0, alignment=CENTER, false
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+Menu.displayFighters, [FighterCard@76a8b42f, FighterCard@4dc709d1, FighterCard@29f1de32, FighterCard@6882cfa9, FighterCard@5bb8175a, FighterCard@2ec4047d, FighterCard@9634fd9], Grid hgap=0.0, vgap=0.0, alignment=CENTER
+GameMenu.setPlayField
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Speedwagon
+GameMenu.resetOpponents
+GameMenu.matchup, Speedwagon, Phoenix Person
+GameMenu.matchup, Speedwagon, Zuko
+GameMenu.matchup, Speedwagon, High Sorcerer
+GameMenu.matchup, Speedwagon, Donald Ferguson
+GameMenu.matchup, Speedwagon, Shrink Rae
+GameMenu.matchup, Speedwagon, Frost Dragon
+GameMenu.matchup, Speedwagon, Radroach
+GameMenu.selectFighter, Morty Smith
+GameMenu.resetOpponents
+GameMenu.matchup, Morty Smith, Phoenix Person
+GameMenu.matchup, Morty Smith, Zuko
+GameMenu.matchup, Morty Smith, High Sorcerer
+GameMenu.matchup, Morty Smith, Donald Ferguson
+GameMenu.matchup, Morty Smith, Shrink Rae
+GameMenu.matchup, Morty Smith, Frost Dragon
+GameMenu.matchup, Morty Smith, Radroach
+GameMenu.selectFighter, Wong
+GameMenu.resetOpponents
+GameMenu.matchup, Wong, Phoenix Person
+GameMenu.matchup, Wong, Zuko
+GameMenu.matchup, Wong, High Sorcerer
+GameMenu.matchup, Wong, Donald Ferguson
+GameMenu.matchup, Wong, Shrink Rae
+GameMenu.matchup, Wong, Frost Dragon
+GameMenu.matchup, Wong, Radroach
+GameMenu.selectFighter, Avatar Roku
+GameMenu.resetOpponents
+GameMenu.matchup, Avatar Roku, Phoenix Person
+GameMenu.matchup, Avatar Roku, Zuko
+GameMenu.matchup, Avatar Roku, High Sorcerer
+GameMenu.matchup, Avatar Roku, Donald Ferguson
+GameMenu.matchup, Avatar Roku, Shrink Rae
+GameMenu.matchup, Avatar Roku, Frost Dragon
+GameMenu.matchup, Avatar Roku, Radroach
+GameMenu.selectFighter, Ganondorf
+GameMenu.resetOpponents
+GameMenu.matchup, Ganondorf, Phoenix Person
+GameMenu.matchup, Ganondorf, Zuko
+GameMenu.matchup, Ganondorf, High Sorcerer
+GameMenu.matchup, Ganondorf, Donald Ferguson
+GameMenu.matchup, Ganondorf, Shrink Rae
+GameMenu.matchup, Ganondorf, Frost Dragon
+GameMenu.matchup, Ganondorf, Radroach
+GameMenu.selectFighter, Morty Smith
+GameMenu.resetOpponents
+GameMenu.matchup, Morty Smith, Phoenix Person
+GameMenu.matchup, Morty Smith, Zuko
+GameMenu.matchup, Morty Smith, High Sorcerer
+GameMenu.matchup, Morty Smith, Donald Ferguson
+GameMenu.matchup, Morty Smith, Shrink Rae
+GameMenu.matchup, Morty Smith, Frost Dragon
+GameMenu.matchup, Morty Smith, Radroach
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Speedwagon
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Speedwagon, Phoenix Person
+Manager.mergeSoloMatch, fighter129, fighter286, -1
+Manager.mergeMatch, fighter129, fighter286, -1
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Morty Smith
+GameMenu.resetOpponents
+GameMenu.matchup, Morty Smith, Zuko
+GameMenu.matchup, Morty Smith, High Sorcerer
+GameMenu.matchup, Morty Smith, Donald Ferguson
+GameMenu.matchup, Morty Smith, Shrink Rae
+GameMenu.matchup, Morty Smith, Frost Dragon
+GameMenu.matchup, Morty Smith, Radroach
+GameMenu.selectFighter, Wong
+GameMenu.resetOpponents
+GameMenu.matchup, Wong, Zuko
+GameMenu.matchup, Wong, High Sorcerer
+GameMenu.matchup, Wong, Donald Ferguson
+GameMenu.matchup, Wong, Shrink Rae
+GameMenu.matchup, Wong, Frost Dragon
+GameMenu.matchup, Wong, Radroach
+GameMenu.selectFighter, Avatar Roku
+GameMenu.resetOpponents
+GameMenu.matchup, Avatar Roku, Zuko
+GameMenu.matchup, Avatar Roku, High Sorcerer
+GameMenu.matchup, Avatar Roku, Donald Ferguson
+GameMenu.matchup, Avatar Roku, Shrink Rae
+GameMenu.matchup, Avatar Roku, Frost Dragon
+GameMenu.matchup, Avatar Roku, Radroach
+GameMenu.selectFighter, Ganondorf
+GameMenu.resetOpponents
+GameMenu.matchup, Ganondorf, Zuko
+GameMenu.matchup, Ganondorf, High Sorcerer
+GameMenu.matchup, Ganondorf, Donald Ferguson
+GameMenu.matchup, Ganondorf, Shrink Rae
+GameMenu.matchup, Ganondorf, Frost Dragon
+GameMenu.matchup, Ganondorf, Radroach
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Ganondorf
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Ganondorf, Zuko
+Manager.mergeSoloMatch, fighter102, fighter5, 1
+Manager.mergeMatch, fighter102, fighter5, 1
+GameMenu.selectFighter, Avatar Roku
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Avatar Roku, High Sorcerer
+Manager.mergeSoloMatch, fighter11, fighter39, 1
+Manager.mergeMatch, fighter11, fighter39, 1
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Wong
+GameMenu.resetOpponents
+GameMenu.matchup, Wong, Donald Ferguson
+GameMenu.matchup, Wong, Shrink Rae
+GameMenu.matchup, Wong, Frost Dragon
+GameMenu.matchup, Wong, Radroach
+GameMenu.selectFighter, Morty Smith
+GameMenu.resetOpponents
+GameMenu.matchup, Morty Smith, Donald Ferguson
+GameMenu.matchup, Morty Smith, Shrink Rae
+GameMenu.matchup, Morty Smith, Frost Dragon
+GameMenu.matchup, Morty Smith, Radroach
+GameMenu.selectFighter, Lizalfo
+GameMenu.resetOpponents
+GameMenu.matchup, Lizalfo, Donald Ferguson
+GameMenu.matchup, Lizalfo, Shrink Rae
+GameMenu.matchup, Lizalfo, Frost Dragon
+GameMenu.matchup, Lizalfo, Radroach
+GameMenu.selectFighter, Morty Smith
+GameMenu.resetOpponents
+GameMenu.matchup, Morty Smith, Donald Ferguson
+GameMenu.matchup, Morty Smith, Shrink Rae
+GameMenu.matchup, Morty Smith, Frost Dragon
+GameMenu.matchup, Morty Smith, Radroach
+GameMenu.selectFighter, Wong
+GameMenu.resetOpponents
+GameMenu.matchup, Wong, Donald Ferguson
+GameMenu.matchup, Wong, Shrink Rae
+GameMenu.matchup, Wong, Frost Dragon
+GameMenu.matchup, Wong, Radroach
+GameMenu.selectFighter, Morty Smith
+GameMenu.resetOpponents
+GameMenu.matchup, Morty Smith, Donald Ferguson
+GameMenu.matchup, Morty Smith, Shrink Rae
+GameMenu.matchup, Morty Smith, Frost Dragon
+GameMenu.matchup, Morty Smith, Radroach
+FXML: GameMenu.setTest
+GameMenu.resetOpponents
+GameMenu.selectFighter, Morty Smith
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Morty Smith, Donald Ferguson
+Manager.mergeSoloMatch, fighter323, fighter125, 1
+Manager.mergeMatch, fighter323, fighter125, 1
+GameMenu.selectFighter, Wong
+GameMenu.resetOpponents
+GameMenu.getCPUChoice
+GameMenu.matchup, Wong, Shrink Rae
+Manager.mergeSoloMatch, fighter192, fighter115, 1
+Manager.mergeMatch, fighter192, fighter115, 1
+GameMenu.disableButtons
+Manager.mergeSoloGame, game62, Duluth, 4, 1
+Manager.mergeGame, game62, Duluth, 4, 1
+FXML: GameMenu.exitGame
+Manager.simRound, 0
+Manager.playGame, game1
+Manager.mergeMatch, fighter187, fighter206, -1
+Manager.mergeMatch, fighter189, fighter178, 1
+Manager.mergeMatch, fighter264, fighter184, -1
+Manager.mergeMatch, fighter216, fighter314, 1
+Manager.mergeMatch, fighter67, fighter147, -1
+Manager.mergeGame, game1, Tampa, 2, 3
+Manager.playGame, game2
+Manager.mergeMatch, fighter97, fighter176, 1
+Manager.mergeMatch, fighter83, fighter120, 1
+Manager.mergeMatch, fighter320, fighter81, -1
+Manager.mergeMatch, fighter342, fighter7, -1
+Manager.mergeMatch, fighter93, fighter201, 1
+Manager.mergeGame, game2, St. Petersburg, 3, 2
+Manager.playGame, game3
+Manager.mergeMatch, fighter278, fighter155, 1
+Manager.mergeMatch, fighter6, fighter119, 1
+Manager.mergeMatch, fighter51, fighter135, -1
+Manager.mergeMatch, fighter205, fighter48, -1
+Manager.mergeMatch, fighter265, fighter241, 1
+Manager.mergeGame, game3, Palm Beach, 3, 2
+Manager.playGame, game4
+Manager.mergeMatch, fighter64, fighter1, -1
+Manager.mergeMatch, fighter182, fighter70, 1
+Manager.mergeMatch, fighter306, fighter88, 1
+Manager.mergeMatch, fighter167, fighter230, 1
+Manager.mergeMatch, fighter101, fighter277, 1
+Manager.mergeGame, game4, Pensacola, 4, 1
+Manager.playGame, game5
+Manager.mergeMatch, fighter144, fighter77, 1
+Manager.mergeMatch, fighter191, fighter208, 1
+Manager.mergeMatch, fighter152, fighter196, 1
+Manager.mergeMatch, fighter141, fighter9, -1
+Manager.mergeMatch, fighter233, fighter156, -1
+Manager.mergeGame, game5, Miami, 3, 2
+Manager.playGame, game46
+Manager.mergeMatch, fighter229, fighter193, -1
+Manager.mergeMatch, fighter46, fighter71, -1
+Manager.mergeMatch, fighter74, fighter73, -1
+Manager.mergeMatch, fighter259, fighter87, -1
+Manager.mergeMatch, fighter220, fighter221, 1
+Manager.mergeGame, game46, Atlanta, 1, 4
+Manager.playGame, game47
+Manager.mergeMatch, fighter131, fighter50, 1
+Manager.mergeMatch, fighter325, fighter79, 1
+Manager.mergeMatch, fighter69, fighter3, -1
+Manager.mergeMatch, fighter282, fighter300, 1
+Manager.mergeMatch, fighter108, fighter8, -1
+Manager.mergeGame, game47, Macon, 3, 2
+Manager.playGame, game48
+Manager.mergeMatch, fighter94, fighter174, -1
+Manager.mergeMatch, fighter274, fighter198, -1
+Manager.mergeMatch, fighter194, fighter2, 1
+Manager.mergeMatch, fighter261, fighter151, -1
+Manager.mergeMatch, fighter226, fighter211, -1
+Manager.mergeGame, game48, Savannah, 1, 4
+Manager.playGame, game61
+Manager.mergeMatch, fighter95, fighter63, 1
+Manager.mergeMatch, fighter195, fighter136, 0
+Manager.mergeMatch, fighter90, fighter112, 1
+Manager.mergeMatch, fighter52, fighter253, 1
+Manager.mergeMatch, fighter138, fighter172, 1
+Manager.mergeGame, game61, St. Paul, 4, 0
+Manager.playGame, game63
+Manager.mergeMatch, fighter240, fighter124, -1
+Manager.mergeMatch, fighter235, fighter310, 1
+Manager.mergeMatch, fighter281, fighter183, 1
+Manager.mergeMatch, fighter148, fighter231, 1
+Manager.mergeMatch, fighter99, fighter117, -1
+Manager.mergeGame, game63, St. Cloud, 3, 2
+Manager.playGame, game76
+Manager.mergeMatch, fighter284, fighter66, -1
+Manager.mergeMatch, fighter341, fighter91, -1
+Manager.mergeMatch, fighter122, fighter213, 1
+Manager.mergeMatch, fighter165, fighter224, 1
+Manager.mergeMatch, fighter157, fighter175, 1
+Manager.mergeGame, game76, Albany, 3, 2
+Manager.playGame, game77
+Manager.mergeMatch, fighter268, fighter263, -1
+Manager.mergeMatch, fighter162, fighter209, -1
+Manager.mergeMatch, fighter153, fighter54, 1
+Manager.mergeMatch, fighter225, fighter96, 1
+Manager.mergeMatch, fighter168, fighter12, -1
+Manager.mergeGame, game77, Staten Island, 2, 3
+Manager.playGame, game78
+Manager.mergeMatch, fighter126, fighter170, 1
+Manager.mergeMatch, fighter45, fighter234, 1
+Manager.mergeMatch, fighter327, fighter78, -1
+Manager.mergeMatch, fighter252, fighter80, -1
+Manager.mergeMatch, fighter145, fighter118, 0
+Manager.mergeGame, game78, Brooklyn, 2, 2
+Manager.playGame, game79
+Manager.mergeMatch, fighter13, fighter289, 1
+Manager.mergeMatch, fighter130, fighter146, 1
+Manager.mergeMatch, fighter215, fighter322, -1
+Manager.mergeMatch, fighter269, fighter214, -1
+Manager.mergeMatch, fighter283, fighter166, -1
+Manager.mergeGame, game79, Rochester, 2, 3
+Manager.playGame, game80
+Manager.mergeMatch, fighter82, fighter232, -1
+Manager.mergeMatch, fighter186, fighter105, 1
+Manager.mergeMatch, fighter199, fighter171, 1
+Manager.mergeMatch, fighter86, fighter254, -1
+Manager.mergeMatch, fighter285, fighter113, -1
+Manager.mergeGame, game80, Buffalo, 2, 3
+Manager.playGame, game121
+Manager.mergeMatch, fighter104, fighter160, 0
+Manager.mergeMatch, fighter85, fighter328, -1
+Manager.mergeMatch, fighter279, fighter139, 1
+Manager.mergeMatch, fighter222, fighter324, 1
+Manager.mergeMatch, fighter53, fighter280, 1
+Manager.mergeGame, game121, Sacramento, 3, 1
+Manager.playGame, game122
+Manager.mergeMatch, fighter287, fighter114, -1
+Manager.mergeMatch, fighter84, fighter179, 1
+Manager.mergeMatch, fighter14, fighter4, 1
+Manager.mergeMatch, fighter210, fighter49, -1
+Manager.mergeMatch, fighter100, fighter142, 1
+Manager.mergeGame, game122, Fresno, 3, 2
+Manager.playGame, game123
+Manager.mergeMatch, fighter111, fighter159, 1
+Manager.mergeMatch, fighter190, fighter169, 0
+Manager.mergeMatch, fighter212, fighter219, 1
+Manager.mergeMatch, fighter163, fighter243, 1
+Manager.mergeMatch, fighter311, fighter150, -1
+Manager.mergeGame, game123, Oakland, 3, 1
+Manager.playGame, game124
+Manager.mergeMatch, fighter68, fighter92, -1
+Manager.mergeMatch, fighter43, fighter173, -1
+Manager.mergeMatch, fighter275, fighter177, 1
+Manager.mergeMatch, fighter110, fighter262, 1
+Manager.mergeMatch, fighter204, fighter202, 1
+Manager.mergeGame, game124, Los Angeles, 3, 2
+Manager.playGame, game125
+Manager.mergeMatch, fighter245, fighter42, -1
+Manager.mergeMatch, fighter180, fighter121, -1
+Manager.mergeMatch, fighter164, fighter181, 1
+Manager.mergeMatch, fighter197, fighter218, 1
+Manager.mergeMatch, fighter109, fighter89, 1
+Manager.mergeGame, game125, San Francisco, 3, 2
+Manager.playGame, game126
+Manager.mergeMatch, fighter133, fighter272, 1
+Manager.mergeMatch, fighter140, fighter188, 1
+Manager.mergeMatch, fighter331, fighter10, -1
+Manager.mergeMatch, fighter158, fighter62, -1
+Manager.mergeMatch, fighter267, fighter128, -1
+Manager.mergeGame, game126, Long Beach, 2, 3
+Manager.playGame, game127
+Manager.mergeMatch, fighter149, fighter340, 1
+Manager.mergeMatch, fighter161, fighter203, 1
+Manager.mergeMatch, fighter116, fighter143, -1
+Manager.mergeMatch, fighter248, fighter137, 0
+Manager.mergeMatch, fighter270, fighter227, 1
+Manager.mergeGame, game127, Inland Empire, 3, 1
+Manager.playGame, game128
+Manager.mergeMatch, fighter154, fighter47, 0
+Manager.mergeMatch, fighter237, fighter200, 1
+Manager.mergeMatch, fighter65, fighter44, -1
+Manager.mergeMatch, fighter185, fighter315, -1
+Manager.mergeMatch, fighter61, fighter271, -1
+Manager.mergeGame, game128, Anaheim, 1, 3
+App.goBack
+App.setRoot, season_menu
+App.loadFXML, season_menu
+App.getFXMLLoader, season_menu
+SeasonMenu.initialize
+SeasonMenu.setLeague, Minnesota
+SeasonMenu.setStandings, Minnesota
+SeasonMenu.setGames, 1, Minnesota
+SeasonMenu.seasonOver
+SeasonMenu.userOnBye
+Team17.onBye, 1
+Team17.getGame, 1
+, game66
+Team17.getOpponent, 1
+Team17.getGame, 1
+Team17.getOpponent, 1
+Team17.getGame, 1
+SeasonMenu.leagueListener
+SeasonMenu.gameListener
+FXML: SeasonMenu.toTeamView
+App.setRoot, view\team_view
+App.loadFXML, view\team_view
+App.getFXMLLoader, view\team_view
+Menu.displayFighters, Duluth, Grid hgap=0.0, vgap=0.0, alignment=CENTER
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+App.getController, card\fighter_card, null
+App.getFXMLLoader, card\fighter_card
+App.loadFXML, javafx.fxml.FXMLLoader@2e6b2a3f
+game62.getGameString, Team17
+App.flip, 0
+game66.getGameString, Team17
+game69.getGameString, Team17
+game71.getGameString, Team17
+game73.getGameString, Team17
+App.goBack
+App.setRoot, season_menu
+App.loadFXML, season_menu
+App.getFXMLLoader, season_menu
+SeasonMenu.initialize
+SeasonMenu.setLeague, Minnesota
+SeasonMenu.setStandings, Minnesota
+SeasonMenu.setGames, 1, Minnesota
+SeasonMenu.seasonOver
+SeasonMenu.userOnBye
+Team17.onBye, 1
+Team17.getGame, 1
+, game66
+Team17.getOpponent, 1
+Team17.getGame, 1
+Team17.getOpponent, 1
+Team17.getGame, 1
+SeasonMenu.leagueListener
+SeasonMenu.gameListener

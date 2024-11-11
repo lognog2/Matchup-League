@@ -6,18 +6,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="parent" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.load.LoadScreen">
+<VBox id="bg-main" fx:id="parent" alignment="CENTER" spacing="20.0" styleClass="bg-main" stylesheets="@../../../css/colors.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.load.LoadScreen">
    <children>
-      <Label fx:id="loadingLabel" text="Loading">
+      <Label fx:id="loadingLabel" text="Loading" textFill="WHITE">
          <font>
-            <Font size="18.0" />
+            <Font name="Agency FB" size="24.0" />
          </font></Label>
       <ProgressBar fx:id="pb" prefHeight="30.0" prefWidth="500.0" progress="0.0">
          <VBox.margin>
             <Insets top="10.0" />
          </VBox.margin>
       </ProgressBar>
-      <Label fx:id="hintLabel" alignment="CENTER" maxWidth="750.0" text="hint label" VBox.vgrow="ALWAYS">
+      <Label fx:id="hintLabel" alignment="CENTER" maxWidth="750.0" text="hint label" textFill="WHITE" VBox.vgrow="ALWAYS">
          <font>
             <Font size="18.0" />
          </font>

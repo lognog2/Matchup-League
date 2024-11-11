@@ -8,13 +8,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox id="bg-main" alignment="CENTER" spacing="20.0" stylesheets="@../../css/colors.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.MainMenu">
+<VBox alignment="CENTER" spacing="20.0" styleClass="bg-main" stylesheets="@../../css/colors.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.MainMenu">
    <children>
       <Label alignment="BOTTOM_CENTER" text="Matchup League" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Agency FB" size="70.0" />
          </font></Label>
-      <Button mnemonicParsing="false" onAction="#newSeason" prefWidth="250.0" text="New Season" textFill="#5367fd">
+      <Button mnemonicParsing="false" onAction="#newSeason" prefWidth="250.0" style="-fx-background-color: -white;" stylesheets="@../../css/colors.css" text="New Season" textFill="#5367fd">
          <font>
             <Font name="Agency FB" size="36.0" />
          </font>
@@ -22,7 +22,7 @@
             <Insets top="100.0" />
          </VBox.margin>
       </Button>
-      <Button mnemonicParsing="false" onAction="#newTournament" prefWidth="250.0" text="New Tournament" textFill="#5367fd">
+      <Button mnemonicParsing="false" onAction="#newTournament" prefWidth="250.0" style="-fx-background-color: -white;" text="New Tournament" textFill="#5367fd">
          <font>
             <Font name="Agency FB" size="36.0" />
          </font>

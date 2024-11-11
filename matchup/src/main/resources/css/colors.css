@@ -28,34 +28,37 @@
 
     /* Orange colors */
     -orange: rgb(253, 104, 11);
+    -light-orange: rgb(255, 148, 82);
     -dark-orange: rgb(135, 65, 19);
     -burnt-orange: rgb(135, 65, 19);
     -rust: rgb(186, 63, 29);
+    -orange-yellow: rgb(218, 153, 13);
 
     /* Yellow colors */
-    -yellow: rgb(223, 203, 22);
-    -gold: rgb(191, 174, 23);
+    -yellow: rgb(214, 195, 18);
+    -light-yellow: rgb(235, 222, 111);
     -dark-yellow: rgb(149, 135, 9);
+    -gold: rgb(191, 174, 23);
     -yellow-green: rgb(130, 161, 19);
 
     /* Green colors */
     -green: rgb(15, 150, 55);
     -light-green:  rgb(85, 232, 87);
+    -dark-green: rgb(10, 77, 11);
     -lime-green:  rgb(48, 190, 51);
     -emerald: rgb(25, 120, 18);
-    -dark-green: rgb(10, 77, 11);
+    -teal: rgb(26, 122, 112);
 
     /* Blue colors */
     -blue: rgb(30, 36, 195);
     -light-blue: rgb(33, 145, 237);
-    -sky-blue: rgb(89, 178, 250);
     -dark-blue: rgb(25, 24, 111);
+    -sky-blue: rgb(89, 178, 250);
     -navy-blue: rgb(9, 8, 71);
     -baby-blue: rgb(74,122,232);
     -aqua: rgb(30, 211, 224);
-    -teal: rgb(26, 122, 112);
     -turquoise: rgb(17, 91, 137);
-    -indigo: rgb(65, 15, 172);
+    -indigo: rgb(49, 15, 172);
 
     /* Purple colors */
     -purple: rgb(129, 22, 211);
@@ -75,7 +78,100 @@
     -dark-pink: rgb(87, 31, 78);
 }
 
-#bg-main {
+.default {
+    background-color: -blue;
+    -fx-background-color: -blue;
+    -fx-text-fill: -white;
+}
+
+.bg-main {
     background-color: -white;
     -fx-background-color: linear-gradient(from 50% 0% to 50% 100%, -light-blue, -navy-blue);
 }
+
+.bg-gray {
+    background-color: -gray;
+    -fx-background-color: linear-gradient(from 50% 0% to 50% 90%, -light-gray, -black);
+}
+
+.team-logo {
+    background-color: -white;
+    -fx-background-color: -white;
+    -fx-background-radius: 100;
+
+    border-radius: 100;
+    -fx-border-radius: 100;
+    border-color: -black;
+    -fx-border-color: -black;
+
+    font-family: 'Britannic Bold';
+    -fx-font-family: 'Britannic Bold';
+    -fx-text-fill: -black;
+    -fx-alignment: center;
+}
+
+.button-confirm {
+    background-color: -green;
+    -fx-background-color: -green;
+    border-radius: 100;
+    -fx-border-radius: 100;
+}
+
+.button-blue {
+    background-color: -blue;
+    -fx-background-color: -blue;
+    -fx-text-fill: -white;
+    border-radius: 100;
+    -fx-border-radius: 100;
+}
+
+.button-black {
+    background-color: -black;
+    -fx-background-color: -black;
+    -fx-text-fill: -white;
+    border-radius: 100;
+    -fx-border-radius: 100;
+}
+
+.label-error {
+    background-color: -red;
+    -fx-background-color: -red;
+    -fx-text-fill: -white;
+    font-family: sans-serif;
+    -fx-font-family: sans-serif;
+    font-weight: bold;
+    -fx-font-weight: bold;
+}
+
+.label-warning {
+    background-color: -orange-yellow;
+    -fx-background-color: -orange-yellow;
+    -fx-text-fill: -white;
+    font-family: sans-serif;
+    -fx-font-family: sans-serif;
+    font-weight: bold;
+    -fx-font-weight: bold;
+}
+
+.label-debug {
+    background-color: -blue;
+    -fx-background-color: -blue;
+    -fx-text-fill: -white;
+    font-family: sans-serif;
+    -fx-font-family: sans-serif;
+    font-weight: bold;
+    -fx-font-weight: bold;
+}
+
+.label-success {
+    background-color: -green;
+    -fx-background-color: -green;
+    -fx-text-fill: -white;
+    font-family: sans-serif;
+    -fx-font-family: sans-serif;
+    font-weight: bold;
+    -fx-font-weight: bold;
+}
+
+
+

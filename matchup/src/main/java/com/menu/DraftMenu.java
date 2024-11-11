@@ -254,6 +254,6 @@ public class DraftMenu extends Menu {
         String next = (getMode() == Mode.SEASON) ? "season_menu" : "tournament_menu";
         App.setRoot(next);
     }
-    @FXML private void toMenu() throws IOException {write("FXML: DraftMenu.toMainMenu"); super.toMainMenu();}
+    @FXML private void toMenu() {write("FXML: DraftMenu.toMainMenu"); super.toMainMenu();}
 }
 

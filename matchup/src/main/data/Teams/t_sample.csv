@@ -4,15 +4,15 @@ Fort Myers,138,Florida,lavender,teal
 Jacksonville,249,Florida,dark-gray,yellow
 Miami,431,Florida,pink,green
 Orlando,396,Florida,orange,blue
-Palm Beach,99,Florida,sky-blue,green
-Pensacola,109,Florida,red-orange,gray-blue
+Palm Beach,99,Florida,sky-blue,dark-green
+Pensacola,109,Florida,red-orange,blue-gray
 St. Petersburg,96,Florida,aqua,light-red
-Tallahassee,66,Florida,green,light-gray
+Tallahassee,66,Florida,green,gray
 Tampa,409,Florida,black,orange
 Atlanta,625,Georgia,dark-blue,light-gray
 Augusta,53,Georgia,emerald,yellow
 Columbus,101,Georgia,salmon,blue
-Macon,76,Georgia,maroon,white
+Macon,76,Georgia,white,maroon
 Savannah,106,Georgia,orange,dark-gray
 Athens,110,Georgia,dark-pink,light-blue
 Duluth,74,Minnesota,red-orange,black
@@ -23,27 +23,27 @@ St. Cloud,51,Minnesota,sky-blue,gray
 St. Paul,150,Minnesota,green,navy-blue
 Albany,141,New York,,
 Bronx,147,New York,pale-green,dark-blue-gray
-Brooklyn,274,New York,,
+Brooklyn,274,New York,emerald,red
 Buffalo,156,New York,,
 Long Island,292,New York,,
-Manhattan,409,New York,,
-Queens,241,New York,,
+Manhattan,409,New York,gold,black
+Queens,241,New York,purple,light-blue
 Rochester,128,New York,baby-blue,raisin
 Staten Island,50,New York,,
 Syracuse,183,New York,,
-Anaheim,319,California,,
+Anaheim,319,California,salmon,indigo
 Bakersfield,137,California,,
 Fresno,133,California,,
-Inland Empire,460,California,,
+Inland Empire,460,California,yellow,tan
 Long Beach,90,California,green,yellow
 Los Angeles,758,California,baby-blue,black
-Modesto,173,California,dark-yellow,
+Modesto,173,California,black,dark-yellow
 Oakland,168,California,,
-Pasadena,157,California,,
+Pasadena,157,California,indigo,lavender
 Redding,74,California,dark-red,dark-green
 Sacramento,284,California,,
 San Diego,348,California,,
-San Francisco,410,California,,
+San Francisco,410,California,red,white
 San Jose,200,California,pale-blue,salmon
 Santa Barbara,157,California,,
 Santa Rosa,84,California,wine-red,black

@@ -1,77 +1,89 @@
 package com.menu;
 
-import java.io.IOException;
 import com.entities.*;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
 
-public class TeamSelect extends Menu
-{
-    private League selectedLeague;
-    private Team selectedTeam;
-    @FXML private ChoiceBox<String> leagues;
-    @FXML private ChoiceBox<String> teams;
-    @FXML private Label teamLabel, fansLabel, errorLabel, debug;
+public class TeamSelect extends Menu {
+    private int lgIndex, tmIndex;
+    @FXML private Label leagueLabel, teamLabel, teamLogo, fansLabel, errorLabel, debug;
     @FXML private TextField name;
+    @FXML private VBox root;
      
     @FXML
     public void initialize() {
         write("TeamSelect.initialize");
-        for (League lg : leagueList) {
-            leagues.getItems().add(lg.getName()); 
+        errorLabel.setDisable(true);
+        debug.setDisable(true);
+        tmIndex = 0;
+        lgIndex = 0;
+        displayTeam(currentTeam());
+    }
+
+    private void displayTeam(Team t) {
+        leagueLabel.setText(t.getLeague().getName());
+        teamLabel.setText(t.getName());
+        setLogo(teamLogo, t);
+        fansLabel.setText("Fans: " + t.getFans());
+    }
+
+    private League currentLeague() {return leagueList.get(lgIndex);}
+    private Team currentTeam() {return currentLeague().getTeam(tmIndex);}
+
+    @FXML private void nextLeague() {
+        tmIndex = 0;
+        if (++lgIndex >= leagueList.size())
+            lgIndex = 0;
+        displayTeam(currentTeam());
+    }
+
+    @FXML private void prevLeague() {
+        tmIndex = 0;
+        if (--lgIndex < 0)
+            lgIndex = leagueList.size() - 1;
+        displayTeam(currentTeam());
+    }
+
+    @FXML private void nextTeam() {
+        if (++tmIndex >= currentLeague().getTeamListSize())
+            tmIndex = 0;
+        if (currentTeam().isBye()) {
+            nextTeam();
+        } else {
+            displayTeam(currentTeam());
         }
-        leagueListener();
-        teamListener();
     }
 
-    private void leagueListener() {
-        write("TeamSelect.leagueListener");
-        leagues.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-            public void changed(ObservableValue<? extends Number> ov, Number oldVal, Number newVal) {
-                if (newVal.intValue() >= 0) {
-                    selectedLeague = leagueList.get(newVal.intValue());
-                    teamLabel.setText("");
-                    fansLabel.setText("");
-                    teams.getItems().clear();
-                    for (Team t : selectedLeague.getTeamList())
-                        teams.getItems().add(t.getName()); 
-                }
-                else write("league choice bar index is less than 0");
-            }
-        });
-    }
-
-    private void teamListener() {
-        write("TeamSelect.teamListener");
-        teams.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-            public void changed(ObservableValue<? extends Number> ov, Number oldVal, Number newVal) {
-                if (newVal.intValue() >= 0) {
-                    selectedTeam = selectedLeague.getTeamList().get(newVal.intValue());
-                    setTextColor(teamLabel, selectedTeam.getColor(0));
-                    teamLabel.setText(selectedTeam.getName());
-                    fansLabel.setText("Fans: " + selectedTeam.getFans());
-                }  
-                else write("team choice bar index is less than 0");
-            }
-        });
+    @FXML private void prevTeam() {
+        if (--tmIndex < 0)
+            tmIndex = currentLeague().getTeamListSize() - 1;
+        
+        if (currentTeam().isBye()) {
+            prevTeam();
+        } else {
+            displayTeam(currentTeam());
+        }
     }
 
     @FXML
-    private void startSeason() throws IOException {
+    private void startSeason() {
         write("FXML: TeamSelect.startSeason");
-        if (name.getText().isEmpty() || selectedTeam == null) {
+        if (name.getText().isEmpty() || currentTeam() == null) {
+            setStyleClass(errorLabel, "label.warning");
+            errorLabel.setDisable(false);
             errorLabel.setText("Enter a name and select a team before continuing");
-        } else if (manager.addUser(name.getText(), selectedTeam)) {
-            setUserTeam(selectedTeam);
+        } else if (manager.addUser(name.getText(), currentTeam())) {
+            setUserTeam(currentTeam());
             generateSchedule();
-        }
-        else {
-            errorLabel.setText("An error occured, try again");
-            //initialize();
+        } else {
+            setStyleClass(errorLabel, "label.error");
+            errorLabel.setDisable(false);
+            errorLabel.setText("(-2) An error occured, try again");
         }
     }
 
-    @FXML private void toMenu() throws IOException {write("FXML: TeamSelect.toMenu"); super.toMainMenu();}
+    @FXML private void toMenu() {
+        write("FXML: TeamSelect.toMenu"); super.toMainMenu();
+    }
 }

@@ -187,8 +187,10 @@ public abstract class Debug {
      * @see #error(Object)
      */
     public static void error(Object obj, StackTraceElement[] ste) {
-        write(">:(\n" + obj.toString());
-        error(ste);
+        write(obj.toString());
+        error(obj.toString());
+        for (StackTraceElement trace : ste)
+            error(trace);
     }
 
     /**
@@ -246,7 +248,8 @@ public abstract class Debug {
         APIERROR (-2, "SQL/Hibernate error"),
         INSUFFDATA(-3, "Insufficient data"),
         LOGERROR(-4, "Log error"),
-        CONFLICT(-5, "Conflict error");
+        CONFLICT(-5, "Conflict error"),
+        DEFAULTMESSAGE(-11, "Default message"),;
         
         private final int code;
         private final String message;

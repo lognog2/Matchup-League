@@ -211,29 +211,35 @@ public class App extends Application {
     }
 
     private static Parent loadFXML(String fxml) {  
-        //Debug.write("App.loadFXML", fxml);
+        Debug.write("App.loadFXML", fxml);
         try {
             return getFXMLLoader(fxml).load();
         } catch (IOException e) {
-            Debug.error(-2, e);
+            Debug.error(-1, e);
             return null;
         }
     }
     public static Parent loadFXML(FXMLLoader loader) {  
-        //Debug.write("App.loadFXML", loader.toString());
+        Debug.write("App.loadFXML", loader.toString());
         try {
             return loader.load();
         } catch (IOException e) {
-            Debug.error(-2, e);
+            Debug.error(-1, e);
             return null;
         }
     }
 
     public static FXMLLoader getFXMLLoader(String fxml) {
-        Debug.write("App.getLoader", fxml);
-        URL fxmlLocation = App.class.getResource(fxml + ".fxml");
-        FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocation);
-        return fxmlLoader;
+        Debug.write("App.getFXMLLoader", fxml);
+        try {
+            URL fxmlLocation = App.class.getResource(fxml + ".fxml");
+            FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocation);
+            return fxmlLoader;
+        } catch (RuntimeException e) {
+            Debug.error(-1, e);
+            return null;
+        }
+        
     }
 
     /**

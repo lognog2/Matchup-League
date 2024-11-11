@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.SeasonMenu">
+<VBox alignment="CENTER" spacing="20.0" styleClass="bg-gray" stylesheets="@../../css/colors.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.SeasonMenu">
    <children>
-      <Button mnemonicParsing="false" onAction="#toMenu" text="Main Menu">
+      <Button mnemonicParsing="false" onAction="#toMenu" styleClass="button-black" text="Main Menu">
          <VBox.margin>
             <Insets bottom="25.0" />
          </VBox.margin>
@@ -20,15 +20,15 @@
          </font></Button>
       <HBox alignment="CENTER">
          <children>
-            <Label fx:id="teamLabel" text="Team Name">
+            <Label fx:id="teamLabel" alignment="CENTER" prefHeight="55.0" prefWidth="300.0" styleClass="team-logo" text=" Team Name " textFill="WHITE">
                <font>
-                  <Font size="36.0" />
+                  <Font name="System Bold" size="36.0" />
                </font>
                <HBox.margin>
                   <Insets />
                </HBox.margin>
             </Label>
-            <Button mnemonicParsing="false" onAction="#toTeamView" text="View Team">
+            <Button mnemonicParsing="false" onAction="#toTeamView" styleClass="button-black" text="View Team">
                <font>
                   <Font size="20.0" />
                </font>
@@ -43,14 +43,14 @@
       </HBox>
       <HBox alignment="CENTER">
          <children>
-            <Label fx:id="recordLabel" text="Record: 0-0">
+            <Label fx:id="recordLabel" alignment="CENTER" prefHeight="40.0" prefWidth="230.0" styleClass="team-logo" text="Record: 10-10" textFill="WHITE">
                <font>
-                  <Font size="32.0" />
+                  <Font name="System Bold" size="32.0" />
                </font>
             </Label>
-            <Label fx:id="roundLabel" text="Game 1/10">
+            <Label fx:id="roundLabel" alignment="CENTER" prefHeight="40.0" prefWidth="180.0" styleClass="team-logo" text="Game 1/10" textFill="WHITE">
                <font>
-                  <Font size="32.0" />
+                  <Font name="System Bold" size="32.0" />
                </font>
                <HBox.margin>
                   <Insets left="25.0" />
@@ -63,17 +63,29 @@
       </HBox>
       <HBox alignment="CENTER">
          <children>
-            <Label fx:id="nextLabel" text="Next game: vs Team">
-               <font>
-                  <Font size="24.0" />
-               </font>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label fx:id="nextLabel" alignment="CENTER" contentDisplay="CENTER" prefWidth="175.0" styleClass="team-logo" text="Next game:" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="opponentLabel" alignment="CENTER" prefHeight="38.0" prefWidth="175.0" styleClass="team-logo" text="Opponent" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
                <HBox.margin>
-                  <Insets right="25.0" />
+                  <Insets right="40.0" />
                </HBox.margin>
-            </Label>
-            <Button fx:id="playButton" mnemonicParsing="false" onAction="#startGame" text="Play Game">
+            </VBox>
+            <Button fx:id="playButton" mnemonicParsing="false" onAction="#startGame" style="-fx-background-color: -green;" styleClass="button-confirm" text="Play Game">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold Italic" size="22.0" />
                </font>
             </Button>
          </children>

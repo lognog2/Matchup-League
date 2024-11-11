@@ -120,7 +120,7 @@ public class Team extends DataEntity
         if (line.length <= 3) {
             setColors();
         } else if (line.length == 4) {
-            setColors(line[3], line[3]);
+            setColors(line[3], "black");
         } else {
             setColors(line[3], line[4]);
         }
@@ -453,7 +453,7 @@ public class Team extends DataEntity
      * @since 1.2.0
      */
     public void setColors() {
-        setColors("black", "black");
+        setColors("white", "black");
     }
 
     /**

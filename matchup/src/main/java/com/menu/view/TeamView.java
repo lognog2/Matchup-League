@@ -17,6 +17,7 @@ public class TeamView extends Menu {
     @FXML private Label recordLabel;
     @FXML private GridPane fightersGrid;
     @FXML private VBox scheduleBox;
+    @FXML private VBox root;
     
     @FXML
     public void initialize() {
@@ -28,7 +29,8 @@ public class TeamView extends Menu {
     private void displayTeam(Team t) {
         leagueLabel.setText(t.getLeague().getName());
         teamLabel.setText(t.getName());
-        setTextColor(teamLabel, t.getColor(0));
+        setGradient(root, t.getColors());
+        setLogo(teamLabel, t);
         fansLabel.setText("Fans: " + t.getFans());
         recordLabel.setText("Record: " + t.getWins() + "-" + t.getLosses());
         displayFighters(t);
