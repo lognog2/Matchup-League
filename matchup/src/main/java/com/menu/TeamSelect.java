@@ -14,10 +14,10 @@ public class TeamSelect extends Menu {
     @FXML
     public void initialize() {
         write("TeamSelect.initialize");
-        errorLabel.setDisable(true);
-        debug.setDisable(true);
         tmIndex = 0;
         lgIndex = 0;
+        errorLabel.setVisible(true);
+        debug.setVisible(true);
         displayTeam(currentTeam());
     }
 
@@ -71,14 +71,14 @@ public class TeamSelect extends Menu {
         write("FXML: TeamSelect.startSeason");
         if (name.getText().isEmpty() || currentTeam() == null) {
             setStyleClass(errorLabel, "label.warning");
-            errorLabel.setDisable(false);
+            errorLabel.setVisible(false);
             errorLabel.setText("Enter a name and select a team before continuing");
         } else if (manager.addUser(name.getText(), currentTeam())) {
             setUserTeam(currentTeam());
             generateSchedule();
         } else {
             setStyleClass(errorLabel, "label.error");
-            errorLabel.setDisable(false);
+            errorLabel.setVisible(false);
             errorLabel.setText("(-2) An error occured, try again");
         }
     }

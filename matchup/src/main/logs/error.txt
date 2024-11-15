@@ -1,4 +1,4 @@
 Debug writer initialized
-2024-11-11T02:56:53.981929200-05:00[America/New_York]
+2024-11-15T13:59:40.937279500-05:00[America/New_York]
 File location: src\main\logs\error.txt
 

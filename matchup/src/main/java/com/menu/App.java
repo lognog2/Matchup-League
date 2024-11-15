@@ -86,7 +86,7 @@ public class App extends Application {
     /* INITIALIZING METHODS */
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) {
         Debug.write("App.start", stage);
         navStack = new Stack<>();
         strategyMap = new HashMap<>();
@@ -118,12 +118,21 @@ public class App extends Application {
      * @since 1.2.0
      */
     public static void initSession() {
-        write("App.initSession");
-        sf = new Configuration().configure().buildSessionFactory();
-        ses = sf.openSession();
-        final String success = "========== CONNECTION SUCCESSFUL ===========";
-        write(success);
-        System.out.println("\n" + success + "\n");
+        try {
+            write("App.initSession");
+            Configuration config = new Configuration().configure();
+            write("configured hibernate file");
+            sf = config.buildSessionFactory();
+            write("built session factory");
+            ses = sf.openSession();
+            final String success = "========== CONNECTION SUCCESSFUL ===========";
+            write(success);
+            System.out.println("\n" + success + "\n");
+        } catch (Exception e) {
+            Debug.error(-2, e);
+        }
+        
+        
         manager =  new Manager(ses);
         repo = manager.getRepo();
     }
