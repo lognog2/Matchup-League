@@ -24,6 +24,7 @@ import javafx.scene.layout.GridPane;
 public abstract class Menu extends App
 {
     protected static List<League> leagueList;
+    protected static List<Team> teamList;
     protected static Team userTeam;
     protected static League userLeague;
     protected static Tournament tourney;
@@ -82,16 +83,21 @@ public abstract class Menu extends App
         return mode == Mode.WORLDCUP;
     }
 
-    public static List<League> getLeagueList() {
-        write("Menu.getLeagueList");
-        return leagueList;
+    /**
+     * 
+     * @return {@link #teamList}
+     * @since 1.2.0
+     */
+    public static List<Team> getTeamList() {
+        write("Menu.getTeamList");
+        return teamList;
     }
 
     /* SET METHODS */
 
     /**
      * Sets user team
-     * @param t
+     * @param t team to set as user team
      * @since 1.1.0
      */
     protected static void setUserTeam(Team t) {
@@ -100,12 +106,30 @@ public abstract class Menu extends App
         userLeague = t.getLeague();
     }
 
+    /**
+     * Sets {@link #mode}
+     * @param mode
+     */
     protected static void setMode(Mode mode) {
         Menu.mode = mode;
     }
 
+    /**
+     * Updates list of all leagues
+     * @see Repository#allLeagues
+     * @since 1.0
+     */
     protected static void setLeagueList() {
         leagueList = repo.allLeagues();
+    }
+
+    /**
+     * Updates list of all leagues
+     * @see Repository#allTeams
+     * @since 1.2.0
+     */
+    protected static void setTeamList() {
+        teamList = repo.allTeams();
     }
 
     /**
@@ -233,7 +257,7 @@ public abstract class Menu extends App
         }
         //otherwise generates games and goes to draft menu
         else {
-            loadUnits += (double)(getLeagueList().size() * manager.maxTPL());
+            loadUnits += (double)(leagueList.size() * manager.maxTPL());
             loader.initProcedure(Procedure.PREDRAFT, loadUnits);
         }
         Task<Void> task = new Task<Void>() {

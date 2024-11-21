@@ -124,10 +124,7 @@ public class Loader {
         Platform.runLater(() -> {
                 double finalProgress = loadScreen.getProgress();
                 write("Final load progress: " + finalProgress);
-                int finalPercent = (int)(finalProgress * 100);
-                if (finalPercent < 99 || finalPercent > 100) {
-                    Debug.warn(5, "Load progress did not finish at 100%");
-                }
+                App.verifyProgress(finalProgress);
                 Debug.endThread(proc.toString());
                 proc = null;
                 App.setLoader(null);

@@ -4,6 +4,9 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.time.ZonedDateTime;
 import java.util.Map;
+
+import com.menu.App;
+
 import java.util.HashMap;
 import javafx.application.Platform;
 
@@ -124,7 +127,7 @@ public abstract class Debug {
     }
 
     /**
-     * Writes a warning message to the debug log.
+     * Writes a warning message to the debug and error logs.
      * @param obj object to include with warning message
      * @since 1.2.0
      * @see #write(Object)
@@ -133,16 +136,18 @@ public abstract class Debug {
         StringBuilder sb = new StringBuilder("MLWARN " + code + ": " + codeMap.get(code));
         if (obj != null) sb.append("\n" + obj.toString());
         write(sb);
+        error(sb);
     }
 
     /**
-     * Writes a warning message with the passed exit code and a null object.
+     * Writes a warning message with the passed {@link ExitCode} 
+     * and the message "no message provided"
      * @param code exit code
      * @since 1.2.0
      * @see #warn(int, Object)
      */
     public static void warn(int code) {
-        warn(code, null);
+        warn(code, "no message provided");
     }
 
     /* DEBUG SPECIAL PHRASES */
@@ -245,11 +250,12 @@ public abstract class Debug {
         NOTASK (0, "No actions taken"),
         SUCCESS (1, "Success"),
         JAVAERROR (-1, "Java error"),
-        APIERROR (-2, "SQL/Hibernate error"),
+        BACKERROR (-2, "Hibernate/SQL error"),
         INSUFFDATA(-3, "Insufficient data"),
         LOGERROR(-4, "Log error"),
         CONFLICT(-5, "Conflict error"),
-        DEFAULTMESSAGE(-11, "Default message"),;
+        FRONTERROR(-6, "JavaFX Error"),
+        DEFAULTMESSAGE(-11, "Default message");
         
         private final int code;
         private final String message;
@@ -290,6 +296,7 @@ class Log {
             writer = new BufferedWriter(new FileWriter(filePath));
             write("Debug writer initialized");
             write(String.valueOf(ZonedDateTime.now()));
+            write("Version: " + App.VERSION);
             write("File location: " + filePath + "\n");
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,12 +1,12 @@
 package com.menu;
 
-import java.io.IOException;
 import java.util.List;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -23,27 +23,26 @@ public class DraftMenu extends Menu {
     private List<Fighter> fighterPool;
     private List<Team> draftOrder;
     private Fighter selectedFighter;
-    private int currentPage = 1;
-    private int totalPages;
-    private int draftIndex;
-    private int round = 1;
-    private final int displaySize = 12;
-    private final int displayColumns = displaySize / 2;
+    private int currentPage = 1, round = 1;
+    private int totalPages, draftIndex;
+    private final int displaySize = 12, displayColumns = displaySize / 2;
     private final int totalRounds = manager.getFPT();
-    @FXML private GridPane selectedFighters;
-    @FXML private GridPane availableFighters;
+    @FXML private GridPane selectedFighters, availableFighters;
     @FXML private HBox topBar;
     @FXML private VBox draftList;
-    @FXML private Label pageLabel;
-    @FXML private Label roundLabel;
+    @FXML private Label pageLabel, roundLabel, turnLabel;
     @FXML private Button draftButton;
+    @FXML private ProgressBar roundProgress;
     
     @FXML
     public void initialize() {
         write("DraftMenu.initialize");
+        selectedFighters.setGridLinesVisible(false);
+        availableFighters.setGridLinesVisible(false);
         fighterPool = repo.getFighterPool();
         draftOrder = repo.allTeams_byFans();
-        display(currentPage);
+        roundLabel.setText("Round 1/" + totalRounds);
+        display(currentPage);       
     }
  
     /**
@@ -83,10 +82,14 @@ public class DraftMenu extends Menu {
      */
     private void doDraft() {
         write("DraftMenu.doDraft");
+        Platform.runLater(() -> {
+            roundLabel.setText("Round " + ++round + "/" + totalRounds);
+        });
+
         //System.out.println("doDraft");
         draftIndex = 0;
+        roundProgress.setProgress(0.0);
         while (!currentTeam().isUserTeam()) {
-            setTopText(currentTeam());
             selectFighter(false);
         }
         //continueDraft();
@@ -104,21 +107,20 @@ public class DraftMenu extends Menu {
      */
     private void continueDraft() {
         write("DraftMenu.continueDraft");
-        //System.out.println("continueDraft");
         selectFighter(true);
+        setTopText();
         //not a loading thread, so explicitly call startThread and endThread
         Task<Void> task = new Task<Void>() {
             @Override
             protected Void call() throws Exception {
                 startThread("SimDraft");
                 while (draftIndex < draftOrder.size()) {
-                    setTopText(currentTeam());
                     selectFighter(false);
                 }
+                verifyProgress(roundProgress.getProgress());
                 if (round == totalRounds) {
                     endDraft();
                 } else {
-                    round++;
                     doDraft();
                 }
                 endThread("SimDraft");
@@ -152,6 +154,7 @@ public class DraftMenu extends Menu {
                 }
             }
             draftIndex++;
+            roundProgress.setProgress(roundProgress.getProgress() + (1.0 / draftOrder.size()));
     }
 
     /**
@@ -179,17 +182,33 @@ public class DraftMenu extends Menu {
     }
 
     /**
+     * Sets text for {@link #turnLabel} at the top of draft menu.
+     * @since 1.1.2
+     */
+    private void setTopText(String text) {
+        write("runLater: DraftMenu.setTopText", text);
+        Platform.runLater(() -> {
+            turnLabel.setText(text);
+        });
+    }
+    /**
      * Sets text at top of draft menu to indicate which team is making their selection.
      * Says the team name if a CPU, says "your" if a user team. This method is placed in the runLater queue.
      * @since 1.1.2
+     * @see #setTopText(String)
      */
     private void setTopText(Team t) {
-        write("runLater: DraftMenu.setTopText", t.getName());
-        Platform.runLater(() -> {
-            //write("execute: DraftMenu.setTopText", t.getName());
-            String teamName = (t.isUserTeam()) ? "Your" : t.getName() + "'s";
-            roundLabel.setText(teamName + " turn to choose");
-        });
+        write("DraftMenu.setTopText", t.getName());
+        String teamName = (t.isUserTeam()) ? "Your" : t.getName() + "'s";
+        setTopText(teamName + " turn to choose");
+    }
+
+    /**
+     * Calls {@link #setTopText(String)} with the text "Waiting for CPU..."
+     * @since 1.2.0
+     */
+    private void setTopText() {
+        setTopText("Waiting for CPU...");
     }
 
     private void addSelection (String text) {
@@ -200,24 +219,24 @@ public class DraftMenu extends Menu {
         });
     }
 
-    private void endDraft() {
+    private void        endDraft() {
         write("runLater: DraftMenu.endDraft");
         Platform.runLater(() -> {
             //write("execute: DraftMenu.endDraft");
             draftButton.setText("End draft");
             draftButton.setOnAction
-                (event -> {try {nextMenu();} catch (IOException e) {Debug.error(-1, e);}});
-            int index = topBar.getChildren().indexOf(roundLabel);
+                (event -> {try {nextMenu();} catch (Exception e) {Debug.error(-6, e);}});
+            int index = topBar.getChildren().indexOf(turnLabel);
             topBar.getChildren().set(index, draftButton);
         });
     }
 
     @FXML private void beginDraft() {
         write("FXML: DraftMenu.beginDraft");
-        roundLabel = new Label();
-        roundLabel.setStyle("-fx-font-size: 36px;");
+        turnLabel = new Label();
+        turnLabel.setStyle("-fx-font-size: 36px;");
         int index = topBar.getChildren().indexOf(draftButton);
-        topBar.getChildren().set(index, roundLabel);
+        topBar.getChildren().set(index, turnLabel);
         Task<Void> task = new Task<Void>() {
             @Override
             protected Void call() throws Exception {
@@ -245,15 +264,15 @@ public class DraftMenu extends Menu {
     @FXML public void userSelection(FighterCard fc) {
         write("FXML: DraftMenu.userSelection", fc.getFighter().getName());
         selectedFighter = fc.getFighter();
-        //System.out.println("user selected " + selectedFighter.getName());
         continueDraft();
     }
 
-    @FXML private void nextMenu() throws IOException {
+    @FXML private void nextMenu() {
         write("FXML: DraftMenu.nextMenu");
         String next = (getMode() == Mode.SEASON) ? "season_menu" : "tournament_menu";
         App.setRoot(next);
     }
+
     @FXML private void toMenu() {write("FXML: DraftMenu.toMainMenu"); super.toMainMenu();}
 }
 

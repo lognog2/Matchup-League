@@ -31,12 +31,10 @@ public class LoadScreen extends Loader {
     public double getProgress() {return pb.getProgress();}
 
     public void setLoadLabel(String message) {
-        //System.out.println(message);
         loadingLabel.setText(message);
     }    
 
     public void addProgress(double update) {
-        //System.out.print(update + " ");
         pb.setProgress(pb.getProgress() + update);
         int percent = ((int)(pb.getProgress()*100.0));
         if (percent % interval == 0 && percent > benchmark) {

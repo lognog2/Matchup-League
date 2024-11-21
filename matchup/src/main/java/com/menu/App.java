@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -32,6 +33,8 @@ import com.util.Debug;
  * @since 1.1.0
  */
 public class App extends Application {
+
+    public final static String VERSION = "1.2.0 Development";
 
     private final int window_width = 900;
     private final int window_height = 750;
@@ -68,7 +71,7 @@ public class App extends Application {
      */
     protected static Manager manager;
     /**
-     * App repo; static reference to the {@link Repository} located {@link App#manager}.
+     * App repo; static reference to the {@link Repository} located in {@link App#manager}.
      * @since 1.2.0
      * @see App
      */
@@ -90,11 +93,18 @@ public class App extends Application {
         Debug.write("App.start", stage);
         navStack = new Stack<>();
         strategyMap = new HashMap<>();
+        loadFonts(); 
         scene = new Scene(loadFXML("main_menu"), window_width, window_height);
         scene.getStylesheets().add(getClass().getResource("/css/colors.css").toExternalForm());
         stage.setScene(scene);
         stage.setMaximized(true);
         stage.show();
+    }
+
+    public boolean loadFonts() {
+        Font agency = Font.loadFont(App.class.getResourceAsStream("/css/fonts/agency_fb.ttf"), 40);
+        Font brit = Font.loadFont(App.class.getResourceAsStream("/css/fonts/britannic_bold.ttf"), 40);
+        return (agency != null && brit != null) ? true : false;
     }
 
     /**
@@ -403,6 +413,21 @@ public class App extends Application {
     }
 
     /* UTILITY METHODS */
+
+    /**
+     * Checks if progress bar is between 0.95 and 1.05 (95% and 105%).
+     * Throws Exit Code 5 if not within parameters.
+     * @param progress amount of progress on bar, in decimal form
+     * @return true if within parameters, false if not
+     * @since 1.2.0
+     */
+    public static boolean verifyProgress(double progress) {
+        if (progress < 0.95 || progress > 1.05) {
+            Debug.warn(5, "Progress bar finished at" + progress);
+            return false;
+        }
+        else return true;
+    }
 
     //debug writer shortcuts
     public static void write(String line) {

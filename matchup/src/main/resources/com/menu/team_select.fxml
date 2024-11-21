@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="root" alignment="CENTER" spacing="20.0" styleClass="bg-gray" stylesheets="@../../css/colors.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.TeamSelect">
+<VBox fx:id="root" alignment="CENTER" spacing="20.0" styleClass="bg-gray" stylesheets="@../../css/colors.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.TeamSelect">
    <children>
       <Button mnemonicParsing="false" onAction="#toMenu" styleClass="button-black" stylesheets="@../../css/colors.css" text="Main Menu" textFill="WHITE">
          <font>
@@ -17,7 +17,7 @@
          <VBox.margin>
             <Insets bottom="30.0" />
          </VBox.margin></Button>
-      <Label text="Team Select" textFill="WHITE">
+      <Label style="-fx-font-size: 64px;" styleClass="label-main" text="Team Select" textFill="WHITE">
          <font>
             <Font name="Agency FB Bold" size="64.0" />
          </font>
@@ -39,7 +39,7 @@
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Label fx:id="leagueLabel" alignment="CENTER" prefWidth="200.0" styleClass="team-logo" text="League name" textFill="WHITE">
+                  <Label fx:id="leagueLabel" alignment="CENTER" prefWidth="200.0" style="-fx-font-size: 28px;" styleClass="team-logo" text="League name" textFill="WHITE">
                      <font>
                         <Font name="Corbel Bold" size="28.0" />
                      </font>
@@ -61,7 +61,7 @@
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Label fx:id="teamLabel" alignment="CENTER" prefWidth="200.0" styleClass="team-logo" text="Team name" textFill="WHITE">
+                  <Label fx:id="teamLabel" alignment="CENTER" prefWidth="200.0" style="-fx-font-size: 28px;" styleClass="team-logo" text="Team name" textFill="WHITE">
                      <font>
                         <Font name="Corbel Bold" size="28.0" />
                      </font>
@@ -85,12 +85,12 @@
             <Insets bottom="15.0" />
          </VBox.margin>
       </VBox>
-      <Label fx:id="teamLogo" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="461.0" prefHeight="75.0" prefWidth="450.0" style="-fx-background-color: red; -fx-background-radius: 100;" styleClass="team-logo" stylesheets="@../../css/colors.css" text="Team Name Here">
+      <Label fx:id="teamLogo" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="461.0" prefHeight="75.0" prefWidth="450.0" style="-fx-font-size: 48px;" styleClass="team-logo" stylesheets="@../../css/colors.css" text="Team Name Here">
          <font>
             <Font name="Britannic Bold" size="48.0" />
          </font>
       </Label>
-      <Label fx:id="fansLabel" alignment="CENTER" contentDisplay="CENTER" prefWidth="210.0" styleClass="team-logo" text="Fans: 1000" textFill="WHITE">
+      <Label fx:id="fansLabel" alignment="CENTER" contentDisplay="CENTER" prefWidth="210.0" style="-fx-font-size: 36px;" styleClass="team-logo" text="Fans: 1000" textFill="WHITE">
          <font>
             <Font name="Ebrima Bold" size="36.0" />
          </font>
@@ -108,7 +108,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button mnemonicParsing="false" onAction="#startSeason" prefHeight="59.0" prefWidth="261.0" style="-fx-background-color: -green;" styleClass="button-confirm" stylesheets="@../../css/colors.css" text="Continue to Draft">
+      <Button mnemonicParsing="false" onAction="#startSeason" prefHeight="59.0" prefWidth="261.0" style="-fx-font-size: 30px;" styleClass="button-confirm" stylesheets="@../../css/colors.css" text="Continue to Draft">
          <font>
             <Font name="System Bold Italic" size="26.0" />
          </font>

@@ -3,11 +3,19 @@ package com.menu;
 import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 
 public class MainMenu extends Menu
 {
     @FXML private CheckBox debugCheckBox;
+    @FXML private Label versionLabel;
     
+
+    @FXML
+    private void initialize() {
+        versionLabel.setText(App.VERSION);
+    }
+
     @FXML
     private void newSeason() throws IOException {
         write("FXML: MainMenu.newSeason");

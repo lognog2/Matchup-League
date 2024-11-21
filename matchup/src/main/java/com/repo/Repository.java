@@ -234,7 +234,7 @@ public class Repository
      */
     public List<Fighter> getFighterPool() {return fDAO.orderByDesc("base", "team IS NULL");}
     /**
-     * @return List of all teams ordered by number of fans
+     * @return List of all teams ordered by number of fans, exlcuding byes
      * @since 1.0
      */
     public List<Team> allTeams_byFans() {return tDAO.orderByDesc("fans", "fans >= 0");}
