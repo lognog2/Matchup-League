@@ -2,6 +2,7 @@
 
 ## New in 1.2.0
 - Colors!
+- Bug fixes
   
 ## Coming soon in 1.2.1:
 - idk
