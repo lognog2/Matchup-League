@@ -1,5 +1,7 @@
 # Matchup League version 1.1.2
 
+To run the program: `& mvn javafx:run -f "c:\Users\logan\github\Matchup-League\matchup\pom.xml"`
+
 ## New in 1.2.0
 - Colors!
 - Bug fixes
