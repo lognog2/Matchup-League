@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="bg-main" fx:id="parent" alignment="CENTER" spacing="20.0" styleClass="bg-main" stylesheets="@../../../css/colors.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.load.LoadScreen">
+   <children>
+      <Label fx:id="loadingLabel" text="Loading" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font></Label>
+      <ProgressBar fx:id="pb" prefHeight="30.0" prefWidth="500.0" progress="0.0">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </ProgressBar>
+      <Label fx:id="hintLabel" alignment="CENTER" maxWidth="750.0" text="hint label" textFill="WHITE" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

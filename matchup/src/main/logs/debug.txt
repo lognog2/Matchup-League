@@ -1,0 +1,91 @@
+Debug writer initialized
+2024-11-25T20:13:49.946077400-05:00[America/New_York]
+Version: 1.2.0 Development
+File location: src\main\logs\debug.txt
+
+App.main
+Debug.init
+App.start, javafx.stage.Stage@2454356a
+App.loadFXML, main_menu
+App.getFXMLLoader, main_menu
+FXML: MainMenu.newSeason
+Menu.startLoadData
+App.loadMenu
+App.setRoot, load\load_screen
+App.loadFXML, load\load_screen
+App.getFXMLLoader, load\load_screen
+new Loader
+new Loader, com.menu.load.LoadScreen@7decd894
+Loader.setLoadScreen, com.menu.load.LoadScreen@7decd894
+App.setLoader, com.menu.load.Loader@cce16ea
+App.getLineCount, false
+f_sample.csv: 286
+t_sample.csv: 334
+==========START THREAD: LOAD_DATA
+Loader.initProcedure, LOAD_DATA, 334.0
+Loader.setNextMenu, team_select
+runLater: Loader.setMessage, Connecting to database
+(This may take a moment...)
+start load data procedure
+App.initSession
+configured hibernate file
+built session factory
+========== CONNECTION SUCCESSFUL ===========
+new Manager, SessionImpl(1927789770<open>)
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+App.getSession
+new Repository
+Manager.getRepo
+Loader.addLoadUnits, 48.0
+new LU: 382.0
+Manager.load_data, false
+Manager.setTeamSize, 5, 7
+Manager.setFPT, 7
+Manager.setFPG, 5
+Repository.load_data, false, true
+App.getLoader
+runLater: Loader.setMessage, Loading fighters
+Loading Fighters from file f_sample.csv
+App.getLoader
+Load progress: 10%
+Load progress: 20%
+Load progress: 30%
+Load progress: 40%
+Load progress: 50%
+Load progress: 60%
+Load progress: 70%
+runLater: Loader.setMessage, Loading teams
+Loading Teams from file t_sample.csv
+App.getLoader
+Load progress: 80%
+App.getLoader
+Manager.requiredFighters
+Manager.extraFighters
+Loader.addLoadUnits, 50.0
+new LU: 779.9166666666487
+Manager.replicateGeneric
+Manager.extraFighters
+App.getLoader
+runLater: Loader.setMessage, Generating fighters
+Generating 57 fighters
+Load progress: 90%
+Manager.assignTeams_byLocation
+App.getLoader
+runLater: Loader.setMessage, Assigning teams to leagues
+Load progress: 100%
+MLEXIT 1: Success
+All data loaded successfully
+runLater: Loader.setMessage, Ready to go!
+runLater: Loader.endLoad
+Manager.createByeTeam
+Final load progress: 1.008975317875834
+==========END THREAD: LOAD_DATA
+App.setLoader, null
+App.setRoot, team_select
+App.loadFXML, team_select
+App.getFXMLLoader, team_select
+App.setByeTeam, Bye
+TeamSelect.initialize
