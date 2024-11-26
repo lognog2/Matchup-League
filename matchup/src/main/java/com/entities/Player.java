@@ -48,7 +48,7 @@ public class Player extends DataEntity
      */
     public Player(String name) {
         setName(name);
-        setStrategy((int)(Math.random() * cpuStrategies()));
+        setStrategy();
     }
     /**
      * Constructs a user or CPU player with specified name and strategy.
@@ -71,7 +71,7 @@ public class Player extends DataEntity
     public Player(String[] line) {
         setName(line[0]);
         if (line.length <= 1)
-            setStrategy((int)(Math.random() * cpuStrategies()));
+            setStrategy();
         else
             setStrategy(Integer.parseInt(line[1]));
     }
@@ -83,7 +83,7 @@ public class Player extends DataEntity
     public Player(boolean autogen) {
         if (autogen) {
             setName(randomName());
-            setStrategy((int)(Math.random() * cpuStrategies()));
+            setStrategy();
         }
         else {
             setName("Bye");
@@ -175,10 +175,19 @@ public class Player extends DataEntity
     public void setStrategy(int id) {
         Strategy strat = strategyMap.get(id);
         if (strat == null) { 
-            Debug.warn("Strategy with ID " + id + " not recognized, given the random strat");
+            Debug.warn(5, "Strategy with ID " + id + " not recognized, given the random strat");
             strat = Strategy.RANDOM; 
         }
         setStrategy(strat);
+    }
+
+    /**
+     * Sets this player's {@link #strategy} to a random {@link Strategy}
+     * @since 1.2.0
+     * @see #setStrategy(int)
+     */
+    public void setStrategy() {
+        setStrategy((int)(Math.random() * cpuStrategies()));
     }
 
     /**
@@ -238,9 +247,10 @@ public class Player extends DataEntity
             this.ID = ID;
             this.choice = choice;
             if (strategyMap == null) {
-                Debug.write("strategy got here before map");
+                Debug.error(-5, "strategy got here before map");
+            } else {
+                strategyMap.put(ID, this);
             }
-            strategyMap.put(ID, this);
         }
 
         public int getID() {

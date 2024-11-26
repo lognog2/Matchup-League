@@ -192,7 +192,6 @@ public class App extends Application {
 
     /**
      * Sets scene to main menu.
-     * @throws IOException
      * @since 1.1.0
      */
     protected static void toMainMenu() {
@@ -215,8 +214,7 @@ public class App extends Application {
 
     /**
      * Adds new menu to the nav stack and sets scene 
-     * @param fxml Name of the .fxml file to set
-     * @throws IOException
+     * @param fxml Name of the .fxml file to set  
      * @since 1.1.0
      */
     public static void setRoot(String fxml) {
@@ -224,7 +222,7 @@ public class App extends Application {
         try {
             navStack.add(fxml);
             scene.setRoot(loadFXML(fxml));
-        } catch (RuntimeException e) {
+        } catch (Exception e) {
             Debug.error(-1, e);
         }
     }
@@ -234,7 +232,7 @@ public class App extends Application {
         try {
             return getFXMLLoader(fxml).load();
         } catch (IOException e) {
-            Debug.error(-1, e);
+            Debug.error(-6, e);
             return null;
         }
     }
@@ -243,7 +241,7 @@ public class App extends Application {
         try {
             return loader.load();
         } catch (IOException e) {
-            Debug.error(-1, e);
+            Debug.error(-6, e);
             return null;
         }
     }
@@ -254,8 +252,8 @@ public class App extends Application {
             URL fxmlLocation = App.class.getResource(fxml + ".fxml");
             FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocation);
             return fxmlLoader;
-        } catch (RuntimeException e) {
-            Debug.error(-1, e);
+        } catch (Exception e) {
+            Debug.error(-6, e);
             return null;
         }
         

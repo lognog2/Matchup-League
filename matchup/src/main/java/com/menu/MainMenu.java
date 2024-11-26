@@ -1,6 +1,5 @@
 package com.menu;
 
-import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
@@ -17,7 +16,7 @@ public class MainMenu extends Menu
     }
 
     @FXML
-    private void newSeason() throws IOException {
+    private void newSeason() {
         write("FXML: MainMenu.newSeason");
         setMode(Mode.SEASON);
         debug = debugCheckBox.isSelected();
@@ -25,7 +24,7 @@ public class MainMenu extends Menu
     }
 
     @FXML
-    private void newTournament() throws IOException {
+    private void newTournament() {
         write("FXML: MainMenu.newTournament");
         debug = debugCheckBox.isSelected();
         App.setRoot("tournament_select");

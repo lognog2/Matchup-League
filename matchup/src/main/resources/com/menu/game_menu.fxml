@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.GameMenu">
+<VBox alignment="CENTER" spacing="20.0" styleClass="bg-gray" stylesheets="@../../css/colors.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.GameMenu">
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
@@ -21,7 +21,7 @@
           <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="190.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <Label fx:id="opponentLabel" text="Opponent">
+      <Label fx:id="opponentLabel" prefWidth="250.0" style="-fx-font-size: 36px;" styleClass="team-logo" text="Opponent">
          <font>
             <Font size="24.0" />
          </font>
@@ -35,12 +35,12 @@
             <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
          </columnConstraints>
          <children>
-            <Label fx:id="opponentScoreLabel" alignment="CENTER" text="0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label fx:id="opponentScoreLabel" alignment="CENTER" text="0" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font size="68.0" />
                </font>
             </Label>
-            <Label fx:id="userScoreLabel" alignment="CENTER" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <Label fx:id="userScoreLabel" alignment="CENTER" text="0" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
                   <Font size="68.0" />
                </font>
@@ -49,7 +49,7 @@
       </GridPane>
       <HBox fx:id="resultBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" visible="false">
          <children>
-            <Label fx:id="resultLabel" text="Team wins!">
+            <Label fx:id="resultLabel" text="Team wins!" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -64,12 +64,12 @@
             </Button>
          </children>
       </HBox>
-      <Label fx:id="userLabel" text="User">
+      <Label fx:id="userLabel" prefWidth="250.0" style="-fx-font-size: 36px;" styleClass="team-logo" text="User">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <CheckBox fx:id="testCheck" mnemonicParsing="false" onAction="#setTest" text="Test matchup">
+      <CheckBox fx:id="testCheck" mnemonicParsing="false" onAction="#setTest" text="Test matchup" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>

@@ -43,7 +43,7 @@ public class SeasonMenu extends Menu
                 opponentLabel.setDisable(true);
                 playButton.setText("Sim round");
             } else {
-                nextLabel.setText("Next game: vs ");
+                nextLabel.setText("Next game:");
                 Team opponent = userTeam.getOpponent(round);
                 setLogo(opponentLabel, opponent);
                 opponentLabel.setDisable(false);

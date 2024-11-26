@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="cardBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="150.0" spacing="5.0" styleClass="fighter-card" stylesheets="@../../../css/colors.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.card.FighterCardController">
+<VBox fx:id="cardBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="150.0" spacing="5.0" styleClass="card-fighter" stylesheets="@../../../css/colors.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.card.FighterCardController">
    <children>
       <Label fx:id="typesLabel" text="(A)(B)(C)(D)(E)">
          <font>
@@ -38,6 +38,6 @@
       </Label>
    </children>
    <padding>
-      <Insets bottom="10.0" top="10.0" />
+      <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
    </padding>
 </VBox>

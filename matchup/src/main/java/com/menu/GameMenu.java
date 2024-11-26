@@ -1,6 +1,5 @@
 package com.menu;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
 import javafx.fxml.FXML;
@@ -18,20 +17,14 @@ import com.menu.card.FighterCard;
 public class GameMenu extends Menu {
 
     private double userScore = 0.0, opponentScore = 0.0;
+    private int FPT, FPG;
+    private int matchRound = 0;
     private Team opponentTeam;
     private List<FighterCard> userFighters, opponentFighters;
     private Game game;
-    private int FPT, FPG;
-    private int matchRound = 0;
-    @FXML private Label userLabel;
-    @FXML private Label opponentLabel;
-    @FXML private Label userScoreLabel;
-    @FXML private Label opponentScoreLabel;
-    @FXML private Label resultLabel;
+    @FXML private Label userLabel, opponentLabel, userScoreLabel, opponentScoreLabel, resultLabel;
     @FXML private CheckBox testCheck;
-    @FXML private GridPane playField;
-    @FXML private GridPane userGrid;
-    @FXML private GridPane opponentGrid;
+    @FXML private GridPane playField, userGrid, opponentGrid;
     @FXML private HBox resultBox;
     
     @FXML private void initialize() {
@@ -43,16 +36,16 @@ public class GameMenu extends Menu {
 
         userFighters = new ArrayList<>(FPT);
         opponentFighters = new ArrayList<>(FPT);
-    
-        userLabel.setText(userTeam.getName());
         opponentLabel.setText(opponentTeam.getName());
-        //setTextColor(userLabel, userTeam.getColor(0));
-        //setTextColor(opponentLabel, opponentTeam.getColor(0));
+        setLogo(userLabel, userTeam);
+        setLogo(opponentLabel, opponentTeam);
         setGrids();
     }
 
     private void setGrids() {
         write("GameMenu.setGrids");
+        userGrid.setGridLinesVisible(false);
+        opponentGrid.setGridLinesVisible(false);
         setFighterList(userTeam, userFighters, userGrid, true);
         setFighterList(opponentTeam, opponentFighters, opponentGrid, false);
         setPlayField();
@@ -226,7 +219,7 @@ public class GameMenu extends Menu {
         resetOpponents();
     }
 
-    @FXML private void exitGame() throws IOException {
+    @FXML private void exitGame() {
         write("FXML: GameMenu.exitGame");
         simRound();
         App.goBack();

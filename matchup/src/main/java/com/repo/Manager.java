@@ -1173,18 +1173,18 @@ public class Manager
     public boolean autogen_mergeTeam(Team t, League lg) {
         //Debug.write("mergeTeam", t.getID(), lg.getID());
         try {
-        String autoName = "player" + t.getID();
-        Player autoPlayer = new Player(autoName + " (CPU)");
+            String autoName = "player" + t.getID();
+            Player autoPlayer = new Player(autoName + " (CPU)");
 
-        if (assignTeam(t, lg) > 0 && assignPlayer(autoPlayer, t)) {
-            ses.merge(autoPlayer);
-            ses.merge(t);
-            ses.merge(lg);
-            return true;
-        } else {
-            Debug.write("Could not ");
-            return false;
-        }
+            if (assignTeam(t, lg) > 0 && assignPlayer(autoPlayer, t)) {
+                ses.merge(autoPlayer);
+                ses.merge(t);
+                ses.merge(lg);
+                return true;
+            } else {
+                Debug.write("Could not ");
+                return false;
+            }
         } catch (RuntimeException e) {
             Debug.error(-2, e);
             return false;

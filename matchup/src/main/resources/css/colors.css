@@ -104,7 +104,14 @@
     -fx-background-color: linear-gradient(from 50% 0% to 50% 90%, -light-gray, -black);
 }
 
-.fighter-card {
+.card-fighter {
+    background-color: -white;
+    -fx-background-color: -white;
+    border-color: -black;
+    -fx-border-color: -black;
+}
+
+.card-game {
     background-color: -white;
     -fx-background-color: -white;
     border-color: -black;

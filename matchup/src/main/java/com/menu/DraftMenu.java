@@ -23,7 +23,7 @@ public class DraftMenu extends Menu {
     private List<Fighter> fighterPool;
     private List<Team> draftOrder;
     private Fighter selectedFighter;
-    private int currentPage = 1, round = 1;
+    private int currentPage = 1, draftRound = 0;
     private int totalPages, draftIndex;
     private final int displaySize = 12, displayColumns = displaySize / 2;
     private final int totalRounds = manager.getFPT();
@@ -83,7 +83,7 @@ public class DraftMenu extends Menu {
     private void doDraft() {
         write("DraftMenu.doDraft");
         Platform.runLater(() -> {
-            roundLabel.setText("Round " + ++round + "/" + totalRounds);
+            roundLabel.setText("Round " + ++draftRound + "/" + totalRounds);
         });
 
         //System.out.println("doDraft");
@@ -118,7 +118,7 @@ public class DraftMenu extends Menu {
                     selectFighter(false);
                 }
                 verifyProgress(roundProgress.getProgress());
-                if (round == totalRounds) {
+                if (draftRound == totalRounds) {
                     endDraft();
                 } else {
                     doDraft();
