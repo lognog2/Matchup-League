@@ -1,19 +1,18 @@
-# Matchup League version 1.1.2
+# Matchup League version 1.2.0
 
 To run the program: `& mvn javafx:run -f "c:\Users\logan\github\Matchup-League\matchup\pom.xml"`
 
 ## New in 1.2.0
-- Colors!
+- UI coloring and improvements
+- Team now have 2 colors
 - Bug fixes
   
 ## Coming soon in 1.2.1:
-- idk
+- Analytics
 
 ### Coming eventually in 1.2
 - Multiple seasons in one playthrough
 - League tiers - get promoted if you win your league
-- Tabletop multiplayer
-- UI Styles
 
 ## See Also
 - See program-breakdown.pdf for an outdated explanation of the program 
