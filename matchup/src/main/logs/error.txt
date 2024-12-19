@@ -1,5 +1,5 @@
 Debug writer initialized
-2024-11-25T20:13:49.949078600-05:00[America/New_York]
+2024-12-19T17:40:21.262595800-05:00[America/New_York]
 Version: 1.2.0 Development
 File location: src\main\logs\error.txt
 

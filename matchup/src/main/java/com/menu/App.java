@@ -170,12 +170,24 @@ public class App extends Application {
 
     /**
      * Gets the app's manager
-     * @return appManager
+     * @return app's manager
      * @since 1.1.2
+     * @see Manager
      */
     public static Manager getManager() {
         Debug.write("App.getManager");
         return manager;
+    }
+
+    /**
+     * Gets the app's repository
+     * @return app's manager's repo
+     * @since 1.2.1
+     * @see Repository
+     */
+    public static Repository getRepo() {
+        Debug.write("App.getRepo");
+        return repo;
     }
 
     /**
@@ -264,31 +276,15 @@ public class App extends Application {
      * @param fxml Name of fxml file
      * @param parent Parent pane of controller
      * @return Controller object
-     * @throws IOException
      * @since 1.1.0
      * @version 2
      */
-    public static Object getController(String fxml, Pane parent) throws IOException {
+    public static Object getController(String fxml, Pane parent) {
         Debug.write("App.getController", fxml, parent.getAccessibleText());
         FXMLLoader loader = getFXMLLoader(fxml);
         Parent root = loadFXML(loader);
         parent.getChildren().add(root);
         return loader.getController();
-    }
-
-    /**
-     * Sets a new scene. 
-     * @param fxml fmxl file path
-     * @param o Controller object
-     * @return New scene
-     * @throws IOException
-     * @since 1.1.2
-     */
-    public static Scene setController(String fxml, Object o) {
-        Debug.write("App.getController", fxml, o);
-        FXMLLoader loader = getFXMLLoader(fxml);
-        Parent root = loadFXML(loader);
-        return new Scene(root, 640, 480);
     }
 
     /**
@@ -469,4 +465,36 @@ public class App extends Application {
      * @since 1.1.1
      */
     public static int flip (int index) {Debug.write("App.flip", index);return (index == 0) ? 1 : 0;}
+
+
+    /**
+     * Array holding the chars for every available type. This array cannot be modified.
+     * @since 1.0
+     */
+    public final static Type[] allTypes() {return Type.values();}
+    /**
+     * List of all types and corresponding character.
+     * <p>As of 1.2.1, types are still to be stored as raw chars in entities and the database.
+     * @since 1.0
+     * @version 2 (1.2.1)
+     */
+    public enum Type {
+        MELEE ('M'),
+        RANGE('R'),
+        EXPLOSIVE('E'),
+        FIRE('F'),
+        WATER('W'),
+        ELECTRIC('L'),
+        MAGIC('G'),
+        MECHANICAL('C'),
+        AERIAL('A'),
+        ICE('I'),
+        STAR('S'),
+        EVIL('V');
+        private char typeChar;
+        Type(char type) {
+            this.typeChar = type;
+        }
+        public char getChar() {return typeChar;}
+    } //end Type
 } //end App class 

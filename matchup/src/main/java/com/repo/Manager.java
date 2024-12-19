@@ -83,7 +83,7 @@ public class Manager
         this.ses = ses;
     }
 
-    //get methods
+    /* GET METHODS */
 
     /**
      * Gets fighters per team.
@@ -134,7 +134,28 @@ public class Manager
      */
     public int spareFighters() {Debug.write("Manager.spareFighters"); return FPT - FPG;}
 
-    //set methods
+    /**
+     * Returns total number of each fighter in database as ints
+     * @return total fighter count
+     * @since 1.2.1
+     * @see Repository#totalFighterCount()
+     */
+    public int getTotalFighters() {
+        return (int)repo.totalFighterCount();
+    }
+
+    /**
+     * Returns total number of each entity in database as ints
+     * @return total fighter count
+     * @since 1.2.1
+     * @see Repository#totalFighterCount()
+     */
+    public int getTotalTeams() {
+        return (int)repo.totalFighterCount();
+    }
+
+
+    /* SET METHODS */
 
     /**
      * Sets fighters per team.

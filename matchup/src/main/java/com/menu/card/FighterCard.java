@@ -1,10 +1,7 @@
 package com.menu.card;
 
-import java.io.IOException;
 import com.entities.Fighter;
 import com.menu.App;
-import com.util.Debug;
-
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.layout.VBox;
@@ -50,14 +47,9 @@ public class FighterCard extends VBox
      * @version 2
      */
     private boolean connect() {
-        try {
-            fcc = (FighterCardController)App.getController(fxmlPath, this);
-            fcc.setFighterCard(this);
-            return true;
-        } catch (IOException e) {
-            Debug.error(-1, e);
-            return false;
-        }
+        fcc = (FighterCardController)App.getController(fxmlPath, this);
+        fcc.setFighterCard(this);
+        return true;
     }
 
     //get methods

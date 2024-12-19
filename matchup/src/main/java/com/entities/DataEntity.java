@@ -37,6 +37,18 @@ public abstract class DataEntity extends App
      * @return auto-generated object
      * @since 1.0
      */
-    protected abstract Object autogen();
+    protected abstract DataEntity autogen();
     //public abstract Object defaultgen();
+
+    /**
+     * Enum containing the name of each data entity
+     * @since 1.2.1
+     */
+    public enum Entity {
+        FIGHTER,
+        TEAM,
+        LEAGUE,
+        GAME,
+        PLAYER
+    }
 }
