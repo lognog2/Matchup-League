@@ -1,5 +1,7 @@
 package com.entities;
 
+import com.menu.App;
+
 import jakarta.persistence.*;
 
 /**
@@ -343,16 +345,7 @@ public class Fighter extends DataEntity
     public final int INTERVAL() {return 10;}
 
     /**
-     * @return char array of all types
-     * @since 1.0
-     */
-    public char[] allTypes() {
-        char[] typeList = {'M','R','E','F','W','L','G','C','A','I','V','S'};
-        return typeList;
-    }
-
-    /**
-     * Gets fighter's types as a string.
+     * Gets fighter's types as a string, with each type surrounded by parentheses.
      * @return Types as a string
      * @since 1.1.0
      */
@@ -546,7 +539,7 @@ public class Fighter extends DataEntity
      * @since 1.0
      */
     private char randomType() {
-        return allTypes()[(int)(Math.random() * allTypes().length)];
+        return App.allTypes()[(int)(Math.random() * App.allTypes().length)].getChar();
     }
 
     /**

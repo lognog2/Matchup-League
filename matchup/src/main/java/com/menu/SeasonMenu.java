@@ -14,16 +14,11 @@ public class SeasonMenu extends Menu
     private League selectedLeague;
     private int selectedRound;
     private int userRank;
-    @FXML private Label teamLabel;
-    @FXML private Label roundLabel;
-    @FXML private Label nextLabel;
-    @FXML private Label opponentLabel;
-    @FXML private Label recordLabel;
-    @FXML private Button playButton;
-    @FXML private ChoiceBox<String> leagueChoice;
-    @FXML private ChoiceBox<String> gameChoice;
-    @FXML private VBox standingsBox;
-    @FXML private VBox gameBox;
+    @FXML private Label teamLabel, nextLabel, opponentLabel;
+    @FXML private Label recordLabel, roundLabel;
+    @FXML private Button playButton, analyticsButton;
+    @FXML private ChoiceBox<String> leagueChoice, gameChoice;
+    @FXML private VBox standingsBox, gameBox;
     
     @FXML 
     public void initialize() {
@@ -129,7 +124,7 @@ public class SeasonMenu extends Menu
 
     @FXML 
     private void startGame() {
-        write("FXML: SeasonMenu.startGame");
+        write("SeasonMenu.startGame");
         if (!seasonOver()) {
             if (userOnBye()) {
                 simRound();
@@ -146,6 +141,7 @@ public class SeasonMenu extends Menu
         }
     }
 
-    @FXML private void toTeamView() {write("FXML: SeasonMenu.toTeamView"); App.setRoot("view\\team_view");}
+    @FXML private void toTeamView() {write("SeasonMenu.toTeamView"); App.setRoot("view\\team_view");}
+    @FXML private void toAnalytics() {write("SeasonMenu.toAnalytics"); App.setRoot("analytics\\analytics");}
     @FXML private void toMenu() {write("SeasonMenu.toMainMenu"); super.toMainMenu();}
 }

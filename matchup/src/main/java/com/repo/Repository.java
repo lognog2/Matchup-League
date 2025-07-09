@@ -16,7 +16,7 @@ import com.util.Debug;
 public class Repository 
 {
     /**
-     * Empty constructor
+     * Repository constructor
      * @since 1.1.0
      */
     public Repository() {
@@ -97,7 +97,8 @@ public class Repository
      */
     public boolean playerNameExists(String name) {return pDAO.count("name = '" + name + "'") > 0;}
 
-    //get tuple
+    /* GET TUPLE */
+
     /**
      * @param name league name
      * @return first league found with specified name, or null if none found
@@ -143,7 +144,8 @@ public class Repository
     public Game getGame_byTeams(Team team1, Team team2) 
     {return gDAO.selectOne("team1.name = '" + team1.getName() + "' AND team2.name = '" + team2.getName() + "'");}
 
-    //get list
+
+    /* GET LIST */
 
     /**
      * Gets the team at the top of the rankings in each league.
@@ -196,15 +198,15 @@ public class Repository
 
     /**
      * Gets all user players in the database.
+     * <p>mySQL stores enums as index, change if number of strategies changes
      * @return List of players with user strategy
      * @since 1.1.1
      */
     public List<Player> getAllUsers() {
-        //mySQL stores enums as index, change if number of strategies changes
         return pDAO.select("strategy = 5");
     }
 
-    //get full list
+   /* GET FULL LIST */
 
     /**
      * @return List of all fighters in the database
@@ -222,11 +224,42 @@ public class Repository
      */
     public List<League> allLeagues() {return lgDAO.select();}
 
-    //stats
+    /* COUNTS */
+
+    /**
+     * Gets number of total fighters in database as a long.
+     * @return total num of fighters
+     * @since 1.2.1
+     */
+    public long totalFighterCount() {return fDAO.count();}
+
+    /**
+     * Gets number of total teams in database as a long.
+     * @return total num of teams
+     * @since 1.2.1
+     */
+    public long totalTeamCount() {return tDAO.count();}
+
+    /**
+     * Gets number of total leaguesin database as a long.
+     * @return total num of leagues
+     * @since 1.2.1
+     */
+    public long totalLeagueCount() {return lgDAO.count();}
+
+    /* STATS */
 
     public double avgBase(Team t) {return fDAO.avg("base", "team.TID = " + t.TID());}
 
-    //draft queries
+    /**
+     * Gets the frequency of a type among all fighters
+     * @param type type, in its char from
+     * @param column types, strType, or wkType
+     * @return percentage of fighters with that type in that column
+     */
+    public double typeFreq(String column, char type) {return (100.0 * (fDAO.count(column + " LIKE '%" + type + "%'") / (double)totalFighterCount()));}
+
+    /* DRAFT QUERIES */
 
     /**
      * @return List of all fighters without a team
@@ -257,46 +290,7 @@ public class Repository
      */
     public boolean hasExtraFighters(int fpt) {return extraFighters(fpt) >= 0;}
 
-    //TODO: move to menu where it will display
-    /**
-     * Executes fighter survey, prints to console the frequency of each
-     * type, each strength and weakness type, and average strength and weakness value
-     * @since 1.0
-     */
-    public void fighterSurvey()
-    {
-        //setup
-        final long totalFighters = fDAO.count();
-        if (totalFighters == 0) return;
-        final char[] allTypes = {'M', 'R', 'E', 'F', 'W', 'L', 'G', 'C', 'A', 'I', 'S', 'V'};
-        System.out.println(totalFighters + " total fighters");
-
-        System.out.println("\nType frequency");
-        for (char type : allTypes)
-        {
-            double pct = (100.0 * (fDAO.count("types LIKE '%" + type + "%'") / (double)totalFighters));
-            System.out.printf(fullType(type) + ": %.0f%%\n", pct);
-        }
-
-        //avg base
-        System.out.printf("\nAverage base power: %.0f\n", fDAO.avg("base"));
-
-        System.out.println("\nStrength frequency/average");
-        for (char type : allTypes)
-        {
-            double pct = (100.0 * (fDAO.count("strType LIKE '%" + type + "%'") / (double)totalFighters));
-            double avg = fDAO.avg("strVal", "strType LIKE '%" + type + "%'");
-            System.out.printf(fullType(type) + ": %.0f%%, %.0f\n", pct, avg);
-        }
-
-        System.out.println("\nWeakness frequency/average");
-        for (char type : allTypes)
-        {
-            double pct = (100.0 * (fDAO.count("wkType LIKE '%" + type + "%'") / (double)totalFighters));
-            double avg = -1.0 * (fDAO.avg("wkVal", "wkType LIKE '%" + type + "%'"));
-            System.out.printf(fullType(type) + ": %.0f%%, %.0f\n", pct, avg);
-        }
-    }
+    /* MISC */
 
     /**
      * Returns full name of given type.

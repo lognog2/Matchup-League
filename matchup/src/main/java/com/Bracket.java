@@ -81,6 +81,13 @@ public class Bracket {
         }
     }
 
+    /**
+     * Multiplies a number x by 2 repeatedly until it is greater than the input n.
+     * The series 2^n where n is any int > 0 are considered 'perfect bracket' numbers
+     * @param num input number
+     * @return next number from multiplying by 2
+     * @since 1.1.1
+     */
     private int nextFactorOfTwo(int num) {
         if (num < 1) return 0;
         int factor = 2;
